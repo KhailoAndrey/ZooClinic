@@ -1,0 +1,13 @@
+{
+  "name": "zooclinic",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://KhailoAndrey.github.io/ZooClinic",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /ZooClinic/"
+  },
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
+  }
+}
