@@ -1,0 +1,12 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: $page-bgn-color;
+}
+.header__container {
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    height: 100px;
+}
