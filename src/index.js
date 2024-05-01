@@ -1,6 +1,7 @@
 // ---Banner slider---
 
-new Swiper('.banner__slider', {
+new Swiper('.swiper', {
+  direction: 'vertical',
   loop: true,
   initialSlide: 0,
   slidesPerView: 1,
