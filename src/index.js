@@ -7,16 +7,18 @@ new Swiper('.swiper', {
   slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination',
+    type: 'bullets',
     clickable: true,
+    verticalClass: 'swiper-pagination-vertical'	
   },
   autoplay: {
-    delay: 1000,
-    stopOnLastSlide: true,
+    delay: 10000,
+    // stopOnLastSlide: true,
     disableOnInteraction: false,
   },
-  speed: 3000,
-  effect: 'fade',
-  crossFade: true,
+  speed: 10000,
+  effect: 'slide',
+  // crossFade: true,
 });
 
 // ------
