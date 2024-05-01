@@ -16,7 +16,7 @@
 
 .banner__main-text {
   // gap: 279px;
-  // width: 100%;
+  width: 100%;
   max-width: 1720px;
   position: absolute;
   top: 50%;
@@ -27,12 +27,16 @@
   justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
-  border: 2px solid red;
+  // border: 2px solid red;
 }
 
-.banner__main-text img {
-  // width: 100%;
-  // max-height: auto;
+.banner__main-text img1 {
+  max-width: 625px;
+  max-height: auto;
+}
+.banner__main-text img2 {
+  max-width: 816px;
+  max-height: auto;
 }
 
 .img {
