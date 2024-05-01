@@ -19,19 +19,37 @@
     </div>
     <ul class="header__contacts">
       <li class="header__contacts-item">
-        <img class="phone-icon" src="./images/phone.svg" alt="phone" width="17" height="20">
+        <img
+          class="phone-icon"
+          src="./images/phone.svg"
+          alt="phone"
+          width="17"
+          height="20"
+        />
         <p>+38 063 230 60 07</p>
         <button>
-            <img src="./images/arrow-down.svg" alt="arrow-down">
+          <img src="./images/arrow-down.svg" alt="arrow-down" />
         </button>
       </li>
       <li>
         <button type="button" class="header__button-link">
-          <img src="./images/snakemini.png" alt="Logo" />
+          <div class="button-ellipse">
+            <img
+              src="./images/snakemini.png"
+              alt="Logo"
+              width="29"
+              height="16"
+            />
+          </div>
           <p>Зв’язатися</p>
         </button>
       </li>
-      <li>UA RU</li>
+      <li>
+        <ul class="language-switcher">
+          <li><button onclick="changeLanguage(this)">UA</button></li>
+          <li><button class="active" onclick="changeLanguage(this)">RU</button></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </header>
