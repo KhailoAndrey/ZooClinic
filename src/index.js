@@ -1,6 +1,6 @@
 // ---Banner slider---
 
-new Swiper('.swiper', {
+const swiper = new swiper('.swiper', {
   direction: 'vertical',
   loop: true,
   initialSlide: 0,
@@ -12,13 +12,13 @@ new Swiper('.swiper', {
     verticalClass: 'swiper-pagination-vertical'	
   },
   autoplay: {
-    delay: 10000,
+    delay: 1000,
     // stopOnLastSlide: true,
     disableOnInteraction: false,
   },
-  speed: 10000,
-  effect: 'slide',
-  // crossFade: true,
+  speed: 3000,
+  effect: 'fade',
+  crossFade: true,
 });
 
 // ------
