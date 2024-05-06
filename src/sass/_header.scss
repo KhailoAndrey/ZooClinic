@@ -1,9 +1,11 @@
 .header {
   position: fixed;
   width: 100vw;
+  // max-width: 1720px;
+
   // height: 120px;
   // border: 1px solid red;
-
+  padding: 0 100px;
   //   background: $page-bgn-color;
   z-index: 100;
   margin-top: 25px;
@@ -11,10 +13,11 @@
 }
 .header__container {
   // padding: 0 100px;
-    // border: 1px solid red;
+  // margin: 0 100px;
+  // border: 1px solid red;
 
   display: flex;
-    margin: 0 auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 1720px;
   // height: 120px;
