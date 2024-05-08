@@ -1,28 +1,3 @@
-// ---Banner slider---
-
-// const swiper = new swiper('.swiper', {
-//   direction: 'vertical',
-//   loop: true,
-//   initialSlide: 0,
-//   slidesPerView: 1,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'bullets',
-//     clickable: true,
-//     verticalClass: 'swiper-pagination-vertical'
-//   },
-//   autoplay: {
-//     delay: 1000,
-//     // stopOnLastSlide: true,
-//     disableOnInteraction: false,
-//   },
-//   speed: 3000,
-//   effect: 'fade',
-//   crossFade: true,
-// });
-
-// ------
-
 const slides = document.querySelectorAll('.slide');
 const pagination = document.querySelector('.pagination');
 let currentSlide = 0;
@@ -78,7 +53,7 @@ function goToSlide(index) {
 createPaginationButtons();
 // showSlide(currentSlide);
 
-// setInterval(() => {
-//     currentSlide = (currentSlide + 1) % slides.length;
-//     goToSlide(currentSlide);
-// }, 3000);
+setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    goToSlide(currentSlide);
+}, 5000);
