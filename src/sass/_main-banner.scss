@@ -40,9 +40,10 @@
 #slide3 {
   height: 100%;
   display: flex;
-  background-image: url('../images/slide1.png');
-  background-size: cover;
+  background-image: url('../images/slide3.png');
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 #slide4 {
   height: 100%;
@@ -59,6 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
 }
 .slide-title {
   display: flex;
@@ -387,11 +389,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url('../images/slide2.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 933px;
-  height: 925px;
+  height: 100%;
+  // height: 925px;
 }
 .bigBtnYellow {
   width: 192px;
@@ -409,6 +412,10 @@
   border: none;
   transition: all 0.3s ease;
   transform-origin: center;
+}
+.posSlide3 {
+  bottom: -200%;
+  margin-bottom: 60px;
 }
 .bigBtnYellow img:nth-child(1) {
   width: 27px;
@@ -450,4 +457,59 @@
   to {
     transform: rotate(0deg);
   }
+}
+.slide3-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.slide3-title-line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.s3tl1-word1 {
+  color: #f6fff8;
+  font-family: 'Cormorant Unicase';
+  font-size: 145.402px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%; /* 159.942px */
+  letter-spacing: -5.816px;
+  text-transform: uppercase;
+}
+.s3tl1-word2 {
+  color: #f6fff8;
+  font-family: 'Cormorant Unicase';
+  font-size: 65.162px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%; /* 71.678px */
+  text-transform: uppercase;
+}
+.slide3-title-line2 {
+  color: rgba(246, 255, 248, 1);
+  font-family: 'Cormorant Unicase';
+  font-size: 348px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60%; /* 383.119px */
+  letter-spacing: -18px;
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(7px);
+}
+.slide3-title-line3 {
+  display: flex;
+  justify-content: end;
+  color: #f6fff8;
+  text-align: right;
+  font-family: 'Cormorant Unicase';
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96%; /* 47.04px */
+  letter-spacing: -0.49px;
+  text-transform: uppercase;
 }
