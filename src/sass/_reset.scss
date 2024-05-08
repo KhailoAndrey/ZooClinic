@@ -12,6 +12,10 @@ body {
   background: #000;
 }
 
+span {
+  user-select: none;
+}
+
 img,
 picture,
 video,

@@ -1,34 +1,35 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
-    loop: true,
-    speed: 1000,
-  autoplay: {
-   delay: 5000,
-    },
-    effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-    },
-//   mousewheel: {
-//     invert: true,
-//   },
+  loop: true,
+  speed: 1500,
+    autoplay: {
+     delay: 5000,
+      },
 
+  effect: 'cube',
+  cubeEffect: {
+    slideShadows: false,
+  },
+  //   mousewheel: {
+  //     invert: true,
+  //   },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    type: 'bullets',
+    clickable: true,
+  },
+  on: {
+    slideChange: function () {
+      var swiper = this;
+      var currentSlide = document.querySelector('.count');
+      var slideNumber = (swiper.realIndex + 1).toString().padStart(2, '0');
+      currentSlide.textContent = slideNumber;
     },
-//   parallax: true,
-
+  },
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+    nextEl: '.btnY',
+    // prevEl: '.swiper-button-prev',
   },
 });
