@@ -32,6 +32,9 @@ select {
   font: inherit;
   cursor: pointer;
 }
+button {
+  transition: all 1s ease-in;
+}
 
 ol,
 ul {
@@ -42,8 +45,13 @@ ul {
 a {
   text-decoration: none;
   color: currentColor;
+  transition: all 1s ease-in;
 }
 
+a:hover,
+button:hover {
+  transform: scale(1.2);
+}
 address {
   font-style: normal;
 }

@@ -48,9 +48,13 @@
   line-height: 19.25px;
   letter-spacing: 0.18px;
 
-  &:hover {
-    scale: (1.2);
-  }
+  // &:hover {
+  //   scale: (1.2);
+  // }
+}
+.header__nav-link{
+  display: flex;
+  gap: 8px;
 }
 
 .header__logo {
