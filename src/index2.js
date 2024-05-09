@@ -1,8 +1,9 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
-  loop: true,
-  speed: 1500,
+    loop: true,
+  loopAdditionalSlides: 0,
+  speed: 3000,
     autoplay: {
      delay: 5000,
       },

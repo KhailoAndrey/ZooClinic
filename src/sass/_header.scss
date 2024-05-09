@@ -16,9 +16,9 @@
   align-items: center;
 }
 .header-main {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  top: 0;
+  top: 100%;
   padding: 15px 25px;
   border-radius: 0px 0px 30px 30px;
   background: rgba(6, 99, 27, 0.75);
