@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
   loopAdditionalSlides: 0,
   speed: 3000,
     autoplay: {
-     delay: 5000,
+     delay: 7000,
       },
 
   effect: 'cube',
