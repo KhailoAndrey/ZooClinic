@@ -45,12 +45,11 @@ ul {
 a {
   text-decoration: none;
   color: currentColor;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-a:hover,
-button:hover {
-  transform: scale(1.2);
+a:hover {
+  transform: scale(1.1);
 }
 address {
   font-style: normal;

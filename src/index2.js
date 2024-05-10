@@ -3,9 +3,9 @@ const swiper = new Swiper('.swiper', {
   direction: 'vertical',
     loop: true,
   loopAdditionalSlides: 0,
-  speed: 3000,
+  speed: 7000,
     autoplay: {
-     delay: 7000,
+     delay: 9000,
       },
 
   effect: 'cube',
