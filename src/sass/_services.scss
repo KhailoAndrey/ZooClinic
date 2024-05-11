@@ -4,6 +4,10 @@
   border-radius: 50px 50px 0px 0px;
   border-top: 1.5px solid rgba(10, 97, 26, 0.3);
   background: rgba(255, 255, 255, 0.75);
+  background-image: url('../images/services-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .services-title {
   width: 100%;
@@ -271,6 +275,7 @@
 .box11 {
   width: 335px;
   height: 317px;
+  padding: 45px;
   border-radius: 30px;
   background-image: url('../images/services11.png');
 }
