@@ -487,9 +487,6 @@
   width: 192px;
   height: 192px;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -96px;
   background-color: #dadc00;
   border-radius: 100%;
   display: flex;
@@ -500,9 +497,16 @@
   transition: all 0.3s ease;
   transform-origin: center;
 }
+.posSlide2{
+  bottom: 0;
+  left: 50%;
+  margin-left: -96px;
+  
+}
 .posSlide3 {
   bottom: 0;
   margin-bottom: 60px;
+  // margin-left: -96px;
 }
 .posSlide4 {
   width: 252px;
@@ -510,6 +514,7 @@
   left: 81%;
   bottom: 0;
   margin-bottom: 140px;
+  margin-left: -96px;
   z-index: 200;
 }
 .bigBtnYellow img:nth-child(1) {
