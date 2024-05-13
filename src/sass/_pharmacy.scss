@@ -1,0 +1,309 @@
+.pharm-container {
+  padding: 75px 100px;
+  max-width: 1920px;
+}
+.pharm-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.pharm-block1 {
+  //   border: 1px solid red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pharm-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 40px;
+  img {
+    // align-items: center;
+    // width: 198px;
+    height: 196px;
+    border-radius: 20px;
+    // margin-left: auto;
+    // margin-right: 55px;
+    // border: 1px solid red;
+  }
+}
+.pharm-title-text {
+  //   align-items: center;
+  //   padding: 0;
+  //   margin-right: 88px;
+  color: #04a427;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+  letter-spacing: -0.2px;
+  //   border: 1px solid red;
+}
+.pharm-description {
+  width: 1170px;
+  margin-left: 55px;
+  //   border: 1px solid red;
+  height: 207px;
+  color: #06631b;
+  font-family: Montserrat;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123%; /* 52.89px */
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+}
+.parm-desc-green1 {
+  color: #04a427;
+  font-family: 'Cormorant Unicase';
+  font-size: 49px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.98px;
+}
+.parm-desc-green2 {
+  color: #04a427;
+  font-family: Montserrat;
+  font-size: 43px;
+  font-weight: 500;
+  letter-spacing: 0.86px;
+}
+.pharm-block2 {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  height: 670px;
+  display: flex;
+  //   flex-direction: column;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+  //   border: 1px solid red;
+}
+.pharm-block2-cont {
+  // width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.pharm-circles {
+  position: absolute;
+  top: 0;
+  width: 894px;
+  height: 894px;
+  border-radius: 100%;
+  background: rgba(20, 114, 12, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pharm-circles > div {
+  width: 751.453px;
+  height: 751.453px;
+  border-radius: 100%;
+  background: rgba(20, 114, 12, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pharm-circles > div > div {
+  width: 587.787px;
+  height: 587.787px;
+  border-radius: 100%;
+  background: rgba(20, 114, 12, 0.04);
+}
+.pharm-title-word1 {
+  color: #06631b;
+  font-family: 'Cormorant Unicase';
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%; /* 101.2px */
+  letter-spacing: -7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 215px;
+  //   margin-bottom: -200px;
+}
+.pharm-block2-img {
+}
+.pharm-title-line2 {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // border: 1px solid red;
+  position: absolute;
+  left: 65px;
+  gap: 15px;
+  margin-top: -30px;
+  z-index: 1;
+}
+.pharm-title-line2-word1 {
+  color: #04a427;
+  font-family: 'Cormorant Unicase';
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 300;
+  //   line-height: 80%; /* 181.27px */
+  text-transform: uppercase;
+  margin-top: -40px;
+}
+
+.pharm-title-line2-word2 {
+  color: #06631b;
+  font-family: 'Cormorant Unicase';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80%; /* 70.4px */
+  letter-spacing: -3.2px;
+  text-transform: uppercase;
+  margin-top: -50px;
+}
+.pharm-block2-right {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  //   bottom: 0;
+}
+.pharm-block2-desc {
+  width: 489px;
+  height: 370px;
+  border-radius: 40px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  background: var(--Bg_01, #f3fff6);
+  backdrop-filter: blur(3.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    width: 343px;
+    height: 77px;
+    color: #04a427;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    text-transform: uppercase;
+  }
+}
+.pharm-small-img {
+  width: 126px;
+  height: 156px;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.pharm-block3 {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1720px;
+  height: 675px;
+  padding: 8px 10px;
+  border-radius: 40px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  background: linear-gradient(295deg, #042917 0.87%, #195b0a 67.56%);
+  display: flex;
+}
+.pharm-block3-right {
+  padding: 60px;
+  //   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  justify-content: space-between;
+}
+.pharm-block3-desc {
+  width: 757px;
+  height: 207px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 51.6px */
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+}
+.pharm-block3-right-down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.pharm-block3-right-down-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  span {
+    color: #fff;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+  }
+}
+.pharm-block4 {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.pharm-block4-btn-link {
+  width: 850px;
+  height: 78px;
+  border-radius: 20px;
+  border: none;
+  border-top: 1.5px solid #04a427;
+  border-bottom: 1.5px solid #04a427;
+  background-image: url('../images/snake-btn.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 19.8px */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.pharm-block4-btn-choose {
+  width: 850px;
+  height: 78px;
+  border-radius: 20px;
+  border: none;
+  border-top: 1.5px solid #04a427;
+  border-bottom: 1.5px solid #04a427;
+  background: #e2ffe9;
+  box-shadow: 0px -4px 7px 0px rgba(4, 164, 39, 0.1) inset,
+    0px 4px 7px 0px rgba(4, 164, 39, 0.1) inset;
+  backdrop-filter: blur(3.5px);
+  color: #04a427;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 19.8px */
+  text-transform: uppercase;
+}
