@@ -4,13 +4,13 @@
 
 .slider {
   position: relative;
-  // width: 100vw;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 .slide-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 1920px;
   transition: transform 0.5s ease;
 }
@@ -18,9 +18,9 @@
   // max-width: 1920px;
   height: 100%;
   display: flex;
-  background-image: url('../images/slide1.png');
-  background-size: cover;
-  background-position: center;
+  // background-image: url('../images/slide1.png');
+  // background-size: cover;
+  // background-position: center;
 }
 #slide2 {
   height: 100%;
@@ -38,7 +38,7 @@
   // background-repeat: no-repeat;
 }
 #slide3 {
-  width: 100vw;
+  // width: 100vw;
   height: 100%;
   display: flex;
   //   background-image: url('../images/slide3.png');
@@ -242,9 +242,9 @@
 .callSms {
   width: 108px;
   height: 186px;
-  position: sticky;
+  position: fixed;
   // right: 0;
-  left: calc(100% - 108px);
+  right: calc((100vw - 1920px) / 2);
   bottom: 65px;
   display: flex;
   flex-direction: column;
