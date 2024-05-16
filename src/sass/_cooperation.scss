@@ -47,7 +47,7 @@
 .coop-bage-desc {
   width: 403px;
   height: 154px;
-    border-radius: 28px;
+  border-radius: 28px;
   border-top: 1px solid rgba(4, 164, 39, 0.4);
   border-bottom: 1px solid rgba(4, 164, 39, 0.4);
   background: rgba(255, 255, 255, 0.91);
@@ -57,11 +57,11 @@
   gap: 14px;
   padding: 30px 60px;
   margin-left: -30px;
-//   border: 1px solid red;
+  //   border: 1px solid red;
   position: relative;
 }
 .sign {
-//   border: 1px solid red;
+  //   border: 1px solid red;
   width: 74px;
   height: 54px;
   position: absolute;
@@ -80,7 +80,7 @@
   text-transform: uppercase;
 }
 .coop-bage-text {
-//   border: 1px solid red;
+  //   border: 1px solid red;
   color: #06631b;
   text-align: center;
   font-family: Montserrat;
@@ -143,6 +143,7 @@
   margin-left: 30px;
 }
 .coop-vacan-block {
+  position: relative;
   width: 1170px;
   height: 697px;
   border-radius: 40px;
@@ -153,4 +154,75 @@
   img {
     height: 100%;
   }
+}
+.coop-vacan-group {
+  width: 794px;
+  height: 681px;
+  padding: 13px 40px;
+  border-radius: 34px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  background: #f3fff6;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.coop-vacan-item {
+  display: flex;
+  width: 714px;
+  height: 100px;
+  padding: 25px 40px 25px 50px;
+  border-radius: 40px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  backdrop-filter: blur(3.5px);
+  align-items: center;
+  justify-content: space-between;
+}
+.lapa {
+  width: 30px;
+  height: 34px;
+}
+.coop-vacan-item-title {
+  display: flex;
+  gap: 10px;
+  //   border: 1px solid red;
+  align-items: center;
+  //   justify-content: center;
+}
+.coop-vacan-item-desc {
+  display: flex;
+  flex-direction: column;
+  //   gap: 10px;
+}
+.coop-vacan-item-number {
+  color: #04a427;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+.coop-vacan-item-name {
+  color: #06631b;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123%; /* 24.6px */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.coop-vacan-plus-btn {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
 }
