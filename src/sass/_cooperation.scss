@@ -148,7 +148,7 @@
   height: 697px;
   border-radius: 40px;
   margin-top: 20px;
-  background: var(--accent_01, #04a427);
+  background: #04a427;
   display: flex;
   justify-content: flex-end;
   img {
@@ -225,4 +225,62 @@
   height: 42px;
   border: none;
   background: transparent;
+}
+.bigBtnGreen {
+  width: 193px;
+  height: 193px;
+  background-color: #04a427;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+}
+.bigBtnGreen img:nth-child(1) {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate(-25%, -35%);
+}
+.bigBtnGreen span {
+  width: 166px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 19.8px */
+  text-transform: uppercase;
+  transform: rotate(-30deg);
+}
+.bigBtnGreen img:nth-child(3) {
+  width: 44px;
+  height: 28px;
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  transform: translate(-75%, -70%) rotate(-30deg);
+}
+.bigBtnGreen:hover {
+  box-shadow: 0 0 50px rgba(53, 114, 3, 0.9);
+  animation: rotateBtn 2s infinite linear;
+}
+
+@keyframes rotateBtn {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
