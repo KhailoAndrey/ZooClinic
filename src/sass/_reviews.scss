@@ -1,0 +1,187 @@
+.reviews-container {
+  padding: 0 100px 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.rev-title-group {
+  width: 620px;
+  height: 261px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 50px 50px;
+  border-radius: 40px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  backdrop-filter: blur(3.5px);
+}
+.rev-title {
+  color: #04a427;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+.rev-desc {
+  color: #04a427;
+  text-align: center;
+  font-family: 'Cormorant Unicase';
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 53.9px */
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+  span {
+    color: #06631b;
+    font-family: Montserrat;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.86px;
+    text-transform: uppercase;
+  }
+}
+.rev-main-block {
+  width: 1720px;
+  height: 675px;
+  border-radius: 40px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  background: #fff;
+  padding: 8px;
+  display: flex;
+  gap: 25px;
+}
+.rev-main-cover {
+  position: relative;
+  padding: 0;
+  width: 835px;
+  height: 659px;
+  border-radius: 34px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  //   background: url(<path-to-image>) lightgray 0px -344.375px / 100% 189.957% no-repeat;
+}
+.rev-main-stats {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 13px;
+  bottom: 22px;
+  div {
+    width: 397px;
+    height: 123px;
+    padding-bottom: 20px;
+    border-radius: 15.574px;
+    border-top: 0.584px solid rgba(4, 164, 39, 0.4);
+    border-bottom: 0.584px solid rgba(4, 164, 39, 0.4);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1.3627219200134277px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+}
+.rev-main-stats-count {
+  // border: 1px solid red;
+  //   width: 182px;
+  //   height: 58px;
+  color: #04a427;
+  text-align: justify;
+  font-family: 'Cormorant Unicase';
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 78px */
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+}
+.rev-main-stats-text {
+  color: #06631b;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 22.14px */
+  text-transform: uppercase;
+}
+.rev-main-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rev-main-group-stats {
+  display: flex;
+  gap: 15px;
+  img {
+    width: 268px;
+    height: 178px;
+    border-radius: 20px;
+  }
+  div {
+    padding: 0 45px 10px;
+    width: 561px;
+    height: 178px;
+    border-radius: 27px;
+    border-top: 1px solid rgba(4, 164, 39, 0.4);
+    border-bottom: 1px solid rgba(4, 164, 39, 0.4);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 30px;
+  }
+}
+.rev-main-group-stats-count {
+  color: #04a427;
+  text-align: justify;
+  font-family: 'Cormorant Unicase';
+  font-size: 132px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80%;
+  letter-spacing: 2.656px;
+  text-transform: uppercase;
+}
+.rev-main-group-stats-info {
+  color: #06631b;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 19.68px */
+  text-transform: uppercase;
+}
+.rev-slider {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.rev-slider-swiper {
+  width: 572px;
+  height: 457px;
+  border: 1px solid red;
+  flex-shrink: 0;
+}
+.parrot {
+  width: 246px;
+  height: 246px;
+  border-radius: 30px;
+}
