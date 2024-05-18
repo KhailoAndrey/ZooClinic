@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.slider', {
   // Optional parameters
   direction: 'vertical',
     loop: true,
@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper', {
   //   },
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.pagination',
     clickable: true,
   },
   on: {
@@ -32,5 +32,32 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.btnY',
     // prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiper2 = new Swiper('.serts-swiper-container', {
+    loop: true,
+  // loopAdditionalSlides: 1,
+  slidesPerView: 3,
+  // speed: 7000,
+  //   autoplay: {
+  //    delay: 5000,
+  // },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 50,
+    slideShadows: false,
+    // stretch: '18px',
+    depth: 100,
+    scale: 1,
+  },
+  pagination: {
+    el: '.pagin-btn-group',
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    prevEl: '.serts-btn-prev',
+    nextEl: '.serts-btn-next',
   },
 });
