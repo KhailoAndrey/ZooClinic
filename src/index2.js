@@ -1,12 +1,12 @@
 const swiper = new Swiper('.slider', {
   // Optional parameters
   direction: 'vertical',
-    loop: true,
+  loop: true,
   loopAdditionalSlides: 0,
   speed: 7000,
-    autoplay: {
-     delay: 9000,
-      },
+  autoplay: {
+    delay: 9000,
+  },
 
   effect: 'cube',
   cubeEffect: {
@@ -36,7 +36,7 @@ const swiper = new Swiper('.slider', {
 });
 
 const swiper2 = new Swiper('.serts-swiper-container', {
-    loop: true,
+  loop: true,
   // loopAdditionalSlides: 1,
   slidesPerView: 3,
   // speed: 7000,
@@ -59,5 +59,25 @@ const swiper2 = new Swiper('.serts-swiper-container', {
   navigation: {
     prevEl: '.serts-btn-prev',
     nextEl: '.serts-btn-next',
+  },
+});
+
+const swiper3 = new Swiper('.review-swiper-container', {
+  loop: true,
+  slidesPerView: 1,
+  speed: 2000,
+  parallax: true,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'slide',
+  pagination: {
+    el: '.review-swiper-pagin',
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    prevEl: '.review-swiper-prev',
+    nextEl: '.review-swiper-next',
   },
 });
