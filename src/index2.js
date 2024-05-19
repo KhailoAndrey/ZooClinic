@@ -81,3 +81,36 @@ const swiper3 = new Swiper('.review-swiper-container', {
     nextEl: '.review-swiper-next',
   },
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const blocks = document.querySelectorAll('.ques-main-block-item');
+
+  blocks.forEach(block => {
+    const plusBtn = block.querySelector('.plus-btn');
+    const minusBtn = block.querySelector('.minus-btn');
+    const openAnswer = block.querySelector('.open-answer');
+
+    plusBtn.addEventListener('click', function () {
+      // Закрываем все остальные блоки
+      blocks.forEach(otherBlock => {
+        if (otherBlock !== block) {
+          otherBlock.querySelector('.open-answer').classList.add('hidden');
+          otherBlock.querySelector('.plus-btn').classList.remove('hidden');
+          otherBlock.querySelector('.minus-btn').classList.add('hidden');
+        }
+      });
+
+      // Открываем текущий блок
+      openAnswer.classList.remove('hidden');
+      plusBtn.classList.add('hidden');
+      minusBtn.classList.remove('hidden');
+    });
+
+    minusBtn.addEventListener('click', function () {
+      // Закрываем текущий блок
+      openAnswer.classList.add('hidden');
+      plusBtn.classList.remove('hidden');
+      minusBtn.classList.add('hidden');
+    });
+  });
+});
