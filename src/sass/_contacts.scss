@@ -6,13 +6,16 @@
   border-top: 1.5px solid rgba(7, 97, 26, 0.3);
   border-bottom: 1.5px solid rgba(7, 97, 26, 0.3);
   background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .contacts-title-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 60px;
+  //   margin-bottom: 60px;
 }
 .contacts-title-group-name {
   color: #04a427;
@@ -136,4 +139,84 @@
   line-height: normal;
   text-decoration: underline;
   margin-left: 22px;
+}
+.contacts-map {
+  //   border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cont-img-info {
+  width: 559px;
+  height: 548px;
+  border-radius: 27px;
+  border-top: 1px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1px solid rgba(4, 164, 39, 0.4);
+  background: #06631b;
+  backdrop-filter: blur(2px);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.cont-img-info-desc {
+  width: 100%;
+  //   height: 174px;
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cont-img-info-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  span {
+    display: flex;
+    gap: 3px;
+  }
+}
+.cont-img-info-phone {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: justify;
+  font-family: 'Cormorant Unicase';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 60px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.cont-img-info-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: #dadc00;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+}
+.map-block {
+  padding: 0;
+  max-width: 1140px;
+  //   flex-grow: 1;
+  height: 545px;
+  border-radius: 30px;
+  border-top: 1.5px solid #04a427;
+  border-bottom: 1.5px solid #04a427;
 }
