@@ -183,6 +183,7 @@
   line-height: 120%; /* 19.2px */
   span {
     display: flex;
+    align-items: baseline;
     gap: 3px;
   }
 }
