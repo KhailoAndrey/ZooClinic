@@ -34,7 +34,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 123%; /* 52.89px */
-  letter-spacing: 0.86px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 .contacts-title-green {
@@ -54,7 +54,7 @@
   justify-content: space-between;
 }
 .contacts-card {
-//   width: 560px;
+    // width: 560px;
   height: 180px;
   border-radius: 27px;
   border-top: 1px solid rgba(4, 164, 39, 0.4);
@@ -141,7 +141,6 @@
   margin-left: 22px;
 }
 .contacts-map {
-  //   border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -213,11 +212,11 @@
   line-height: 120%; /* 24px */
 }
 .map-block {
-  padding: 0;
   max-width: 1140px;
-  //   flex-grow: 1;
   height: 545px;
   border-radius: 30px;
   border-top: 1.5px solid #04a427;
   border-bottom: 1.5px solid #04a427;
+  overflow: hidden;
+  // border: 1px solid red;
 }
