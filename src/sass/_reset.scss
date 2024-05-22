@@ -16,6 +16,7 @@ body {
   // display: flex;
   // justify-content: center;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 /* Скрыть скроллбар в Firefox, Edge */
 // body {
@@ -25,6 +26,9 @@ body {
 // body::-webkit-scrollbar {
 //   display: none;
 // }
+section {
+  scroll-margin-top: 60px; /* высота вашего хедера */
+}
 
 span {
   user-select: none;

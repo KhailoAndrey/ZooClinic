@@ -7,14 +7,10 @@ const swiper = new Swiper('.slider', {
   autoplay: {
     delay: 9000,
   },
-
   effect: 'cube',
   cubeEffect: {
     slideShadows: false,
   },
-  //   mousewheel: {
-  //     invert: true,
-  //   },
   // If we need pagination
   pagination: {
     el: '.pagination',
@@ -30,24 +26,25 @@ const swiper = new Swiper('.slider', {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.btnY',
-    // prevEl: '.swiper-button-prev',
+    nextEl: '.moreBtn',
   },
 });
+const nextButtons = document.querySelectorAll('.btnY');
+      nextButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              swiper.slideNext();
+          });
+      });
+
+
 
 const swiper2 = new Swiper('.serts-swiper-container', {
   loop: true,
-  // loopAdditionalSlides: 1,
   slidesPerView: 3,
-  // speed: 7000,
-  //   autoplay: {
-  //    delay: 5000,
-  // },
   effect: 'coverflow',
   coverflowEffect: {
     rotate: 50,
     slideShadows: false,
-    // stretch: '18px',
     depth: 100,
     scale: 1,
   },
