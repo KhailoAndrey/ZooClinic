@@ -25,7 +25,9 @@
 .visit-before > img {
   width: 188px;
   height: 150px;
-  border-radius: 20px 20px 56px 20px;
+  border-radius: 40px;
+  // border: 1px solid red;
+  border-radius: 30px 30px 40px 40px;
   mix-blend-mode: darken;
   position: absolute;
   left: 0;
@@ -95,6 +97,9 @@
   flex-direction: column;
   gap: 25px;
   align-items: center;
+  img {
+    border-radius: 30px;
+  }
 }
 .img4 {
   width: 137px;
@@ -175,10 +180,14 @@
     line-height: 120%; /* 24px */
     text-transform: uppercase;
   }
+  img {
+    border-radius: 40px;
+  }
   .img-pos {
     position: absolute;
     right: 0;
     bottom: 0;
+    border-radius: 30px;
   }
 }
 .visit-after-line2 {
@@ -201,6 +210,7 @@
   }
 }
 .line2-img-pos {
+  border-radius: 40px;
   position: absolute;
   left: 0;
   top: 50%;
@@ -212,6 +222,9 @@
   gap: 75px;
   align-items: center;
   justify-content: space-between;
+  img {
+    border-radius: 30px;
+  }
 }
 .visit-after-line2-item2-frame {
   width: 565px;
@@ -258,6 +271,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  img {
+    border-radius: 30px;
+  }
   span {
     width: 226px;
     color: #095119;

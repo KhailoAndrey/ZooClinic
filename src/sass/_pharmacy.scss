@@ -22,7 +22,7 @@
     // align-items: center;
     // width: 198px;
     height: 196px;
-    border-radius: 20px;
+    border-radius: 30px;
     // margin-left: auto;
     // margin-right: 55px;
     // border: 1px solid red;
@@ -128,6 +128,7 @@
   //   margin-bottom: -200px;
 }
 .pharm-block2-img {
+  border-radius: 50px;
 }
 .pharm-title-line2 {
   display: flex;
@@ -199,7 +200,7 @@
 .pharm-small-img {
   width: 126px;
   height: 156px;
-  border-radius: 15px;
+  border-radius: 20px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -215,6 +216,9 @@
   border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
   background: linear-gradient(295deg, #042917 0.87%, #195b0a 67.56%);
   display: flex;
+  img {
+    border-radius: 40px;
+  }
 }
 .pharm-block3-right {
   padding: 60px;

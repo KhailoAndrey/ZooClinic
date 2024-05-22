@@ -54,7 +54,7 @@
   justify-content: space-between;
 }
 .contacts-card {
-    // width: 560px;
+  // width: 560px;
   height: 180px;
   border-radius: 27px;
   border-top: 1px solid rgba(4, 164, 39, 0.4);
@@ -158,6 +158,9 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  img {
+    border-radius: 30px;
+  }
 }
 .cont-img-info-desc {
   width: 100%;

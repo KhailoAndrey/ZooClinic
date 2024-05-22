@@ -4,7 +4,7 @@
   border-radius: 50px 50px 0px 0px;
   border-top: 1.5px solid rgba(10, 97, 26, 0.3);
   background: rgba(255, 255, 255, 0.75);
-  // background-image: url('../images/services-bg.png');
+  // background-image: url('../images/services-bg.jpg');
   // background-position: center;
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -71,6 +71,9 @@
   line-height: 120%; /* 21.6px */
   letter-spacing: -0.18px;
 }
+.services-team-img{
+  border-radius: 40px;
+}
 
 .services-main {
   margin-top: 57px;
@@ -94,14 +97,14 @@
   width: 761px;
   background-size: cover;
   background-position: center;
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 45px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .sml1-box1 {
-  background-image: url('../images/services2.png');
+  background-image: url('../images/services2.jpg');
 }
 .services-main-box-title {
   color: #06631b;
@@ -135,14 +138,14 @@
   width: 379px;
   background-size: cover;
   background-position: center;
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 45px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .sml1-box2 {
-  background-image: url('../images/services3.png');
+  background-image: url('../images/services3.jpg');
 }
 .mid-box {
   width: 489px;
@@ -168,16 +171,16 @@
   }
 }
 .sml1-box4 {
-  background-image: url('../images/services4.png');
+  background-image: url('../images/services4.jpg');
 }
 .sml1-box5 {
-  background-image: url('../images/services5.png');
+  background-image: url('../images/services5.jpg');
 }
 .sml1-box6 {
-  background-image: url('../images/services6.png');
+  background-image: url('../images/services6.jpg');
 }
 .sml1-box7 {
-  background-image: url('../images/services7.png');
+  background-image: url('../images/services7.jpg');
 }
 
 .services-main-block3 {
@@ -203,8 +206,8 @@
 .sml1-box8 {
   width: 489px;
   height: 528px;
-  border-radius: 30px;
-  background-image: url('../images/services8.png');
+  border-radius: 40px;
+  background-image: url('../images/services8.jpg');
 }
 .services-main-block3-line2-left {
   display: flex;
@@ -226,8 +229,8 @@
 .sml1-box9 {
   width: 215px;
   height: 215px;
-  border-radius: 30px;
-  background-image: url('../images/services9.png');
+  border-radius: 40px;
+  background-image: url('../images/services9.jpg');
 }
 .services-main-block3-line2-right {
   display: flex;
@@ -240,7 +243,7 @@
   width: 627px;
   height: 694px;
   border-radius: 40px;
-  background-image: url('../images/services10.png');
+  background-image: url('../images/services10.jpg');
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -249,7 +252,7 @@
     top: 0;
     width: 627px;
     height: 120px;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     background: rgba(243, 255, 246, 0.7);
     backdrop-filter: blur(3px);
     display: flex;
@@ -278,8 +281,8 @@
   width: 335px;
   height: 317px;
   padding: 45px;
-  border-radius: 30px;
-  background-image: url('../images/services11.png');
+  border-radius: 40px;
+  background-image: url('../images/services11.jpg');
 }
 .box12 {
   display: flex;
@@ -302,8 +305,8 @@
 .sml1-box12 {
   width: 215px;
   height: 215px;
-  border-radius: 30px;
-  background-image: url('../images/services12.png');
+  border-radius: 40px;
+  background-image: url('../images/services12.jpg');
 }
 .sml3-box13 {
   position: relative;
@@ -321,6 +324,7 @@
     position: absolute;
     bottom: 0;
     left: 30px;
+    background: transparent;
   }
 }
 

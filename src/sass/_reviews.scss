@@ -67,10 +67,10 @@
   padding: 0;
   width: 835px;
   height: 659px;
-  border-radius: 34px;
+  border-radius: 40px;
   border-top: 1.5px solid rgba(4, 164, 39, 0.4);
   border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
-  //   background: url(<path-to-image>) lightgray 0px -344.375px / 100% 189.957% no-repeat;
+  overflow: hidden;
 }
 .rev-main-stats {
   display: flex;
@@ -129,7 +129,7 @@
   img {
     width: 268px;
     height: 178px;
-    border-radius: 20px;
+    border-radius: 30px;
   }
   div {
     padding: 0 45px 10px;
@@ -217,6 +217,7 @@
   img {
     width: 103px;
     height: 103px;
+    border-radius: 100%;
   }
 }
 .slide-frame-head-info {

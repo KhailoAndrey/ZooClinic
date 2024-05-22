@@ -18,8 +18,10 @@
   height: 650px;
   border-radius: 40px;
   padding: 60px;
+  // overflow: hidden;
 }
 .preps-intro-img {
+  border-radius: 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -108,7 +110,8 @@
 .preps-info-serv-img {
   width: 406px;
   height: 300px;
-  border-radius: 40px;
+  overflow: hidden;
+  border-radius: 50px;
 }
 .preps-info-serv-text {
   display: flex;
@@ -149,6 +152,10 @@
   width: 845px;
   height: 650px;
   position: relative;
+  img {
+    border-radius: 50px;
+  }
+
   button {
     position: absolute;
     left: 37px;
