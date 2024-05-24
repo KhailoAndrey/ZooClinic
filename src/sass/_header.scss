@@ -66,8 +66,9 @@
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  color: inherit;
+  color: #fff;
 }
+
 .filii-popap {
   width: 400px;
   height: 618px;
@@ -87,11 +88,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.filii-popap.show {
-  // display: block;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
+
 // .popup-content {
 // position: relative;
 // }
@@ -112,40 +109,33 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.filii-phone{
-  color:  #04A427;
-text-align: justify;
-font-family: "Cormorant Unicase";
-font-size: 38px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 38px */
-letter-spacing: 0.5px;
-text-transform: uppercase;
-// margin-bottom: 20px;
+.filii-phone {
+  color: #04a427;
+  text-align: justify;
+  font-family: 'Cormorant Unicase';
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 38px */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  // margin-bottom: 20px;
   // border: 1px solid red;
 }
-.filii-address{
+.filii-address {
   display: flex;
   gap: 5px;
   align-items: start;
   margin-top: 10px;
-  color: #06631B;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 123%; /* 22.14px */
-text-transform: uppercase;
+  color: #06631b;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 22.14px */
+  text-transform: uppercase;
 }
 
-.closeFiliiPopap {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
-}
 .header__nav-link {
   display: flex;
   gap: 8px;
@@ -166,15 +156,20 @@ text-transform: uppercase;
   gap: 8px;
   align-items: center;
   justify-content: center;
+  // border: 1px solid red;
+  position: relative;
 }
 
 .phone-icon {
   fill: $color-text;
 }
 
-.header__contacts-item button {
+.header__contacts-item-btn {
   background: transparent;
   border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .header__contacts-item img {
   fill: $color-white;
@@ -189,7 +184,89 @@ text-transform: uppercase;
   line-height: normal;
   letter-spacing: 0.22px;
 }
+.popap-phone {
+  width: 400px;
+  height: 415px;
+  position: absolute;
+  left: 0;
+  top: 37px;
+  // border: 1px solid red;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(2px);
+  padding: 23px 21px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.popap-phone-wrap {
+  width: 358px;
+  height: 368px;
+  border-radius: 20px;
+  border-top: 1px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1px solid rgba(4, 164, 39, 0.4);
+  background: #06631b;
+  backdrop-filter: blur(2px);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 
+  img {
+    border-radius: 20px;
+  }
+}
+.popap-phone-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.popap-phone-info-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    color: #f3fff6;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 18px */
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+.popap-phone-info-numbers {
+  display: flex;
+  flex-direction: column;
+  // gap: 10px;
+  span {
+    color: #fff;
+    text-align: justify;
+    font-family: 'Cormorant Unicase';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 38px */
+    letter-spacing: 0.76px;
+    text-transform: uppercase;
+  }
+}
+.popap-phone-info-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: end;
+  color: #dadc00;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
 .header__button-link {
   display: inline-flex;
   padding: 3px 39px 3px 5px;
@@ -241,7 +318,17 @@ text-transform: uppercase;
 .language-switcher button.active {
   opacity: 1;
 }
-
+.active {
+  // color: #dadc00;
+}
+.show {
+  // display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.hidden {
+  display: none;
+}
 //---------------------------
 // /* Стили для контейнера выпадающего списка */
 // .custom-select {

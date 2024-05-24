@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const openPopupButtons = document.querySelectorAll('.header__filii');
-    const popups = document.querySelectorAll('.filii-popap');
+    const openPopupButtons = document.querySelectorAll('.header__filii, .header__contacts-item-btn');
+    const popups = document.querySelectorAll('.filii-popap, .popap-phone');
 
     // Функция для переключения видимости попапа
     const togglePopup = (popup) => {
@@ -120,11 +120,13 @@ document.addEventListener('DOMContentLoaded', () => {
             popup.classList.remove('hidden');
             setTimeout(() => {
                 popup.classList.add('show');
+                openPopupButtons.forEach(button => button.classList.add('active')); // Добавляем класс active при открытии попапа
             }, 10); // Небольшая задержка для срабатывания анимации
         } else {
             popup.classList.remove('show');
             setTimeout(() => {
                 popup.classList.add('hidden');
+                openPopupButtons.forEach(button => button.classList.remove('active')); // Убираем класс active при закрытии попапа
             }, 500); // Время должно совпадать с transition-duration в CSS
         }
     };
@@ -160,5 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 
