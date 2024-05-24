@@ -30,13 +30,11 @@ const swiper = new Swiper('.slider', {
   },
 });
 const nextButtons = document.querySelectorAll('.btnY');
-      nextButtons.forEach(button => {
-          button.addEventListener('click', () => {
-              swiper.slideNext();
-          });
-      });
-
-
+nextButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    swiper.slideNext();
+  });
+});
 
 const swiper2 = new Swiper('.serts-swiper-container', {
   loop: true,
@@ -111,3 +109,56 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openPopupButtons = document.querySelectorAll('.header__filii');
+    const popups = document.querySelectorAll('.filii-popap');
+
+    // Функция для переключения видимости попапа
+    const togglePopup = (popup) => {
+        if (popup.classList.contains('hidden')) {
+            popup.classList.remove('hidden');
+            setTimeout(() => {
+                popup.classList.add('show');
+            }, 10); // Небольшая задержка для срабатывания анимации
+        } else {
+            popup.classList.remove('show');
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 500); // Время должно совпадать с transition-duration в CSS
+        }
+    };
+
+    // Открыть/закрыть попап по клику на кнопку
+    openPopupButtons.forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation(); // Останавливаем всплытие события
+            togglePopup(popups[index]);
+        });
+    });
+
+    // Закрыть попап при клике вне его области
+    document.addEventListener('click', (e) => {
+        popups.forEach((popup, index) => {
+            if (!popup.contains(e.target) && !openPopupButtons[index].contains(e.target)) {
+                if (!popup.classList.contains('hidden')) {
+                    togglePopup(popup);
+                }
+            }
+        });
+    });
+
+    // Закрыть попап по нажатию клавиши Esc
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            popups.forEach((popup, index) => {
+                if (!popup.classList.contains('hidden')) {
+                    togglePopup(popup);
+                    openPopupButtons[index].blur(); // Убираем фокус со всех кнопок
+                }
+            });
+        }
+    });
+});
+
+
