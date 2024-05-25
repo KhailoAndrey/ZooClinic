@@ -26,13 +26,14 @@ const swiper = new Swiper('.slider', {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.moreBtn',
+    nextEl: '.btnY',
   },
 });
-const nextButtons = document.querySelectorAll('.btnY');
+const slideNumber = 3;
+const nextButtons = document.querySelectorAll('.moreBtn');
 nextButtons.forEach(button => {
   button.addEventListener('click', () => {
-    swiper.slideNext();
+    swiper.slideTo(slideNumber);
   });
 });
 
@@ -161,6 +162,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const openFormOverlayButtons = document.querySelectorAll('.form-popap-btn');
+  const formOverlay = document.querySelector('.overlay-container');
+  const backdropOverlay = document.querySelector('.backdrop-overlay');
+
+  openFormOverlayButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      formOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        formOverlay.classList.add('show');
+      }, 10); // Небольшая задержка для активации перехода
+      button.blur(); // Убираем фокус с кнопки
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      formOverlay.classList.remove('show');
+      setTimeout(() => {
+        formOverlay.classList.add('hidden');
+      }, 500); // Задержка совпадает с длительностью перехода
+    }
+  });
+
+  backdropOverlay.addEventListener('click', (e) => {
+    if (e.target === backdropOverlay) {
+      formOverlay.classList.remove('show');
+      setTimeout(() => {
+        formOverlay.classList.add('hidden');
+      }, 500); // Задержка совпадает с длительностью перехода
+    }
+  });
 });
 
 

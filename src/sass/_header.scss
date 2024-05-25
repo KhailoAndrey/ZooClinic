@@ -318,9 +318,6 @@
 .language-switcher button.active {
   opacity: 1;
 }
-.active {
-  // color: #dadc00;
-}
 .show {
   // display: block;
   opacity: 1;
@@ -329,50 +326,3 @@
 .hidden {
   display: none;
 }
-//---------------------------
-// /* Стили для контейнера выпадающего списка */
-// .custom-select {
-//   position: relative;
-//   display: inline-block;
-// }
-
-// /* Стили для стилизованной стрелки */
-// .custom-select::after {
-//   content: '\25BC'; /* стрелка вниз */
-//   position: absolute;
-//   top: 50%;
-// //   right: 15px;
-//   transform: translateY(-50%);
-// }
-
-// /* Стили для скрытого оригинального списка */
-// select {
-// //   display: none;
-// }
-
-// /* Стили для стилизованного выпадающего списка */
-// .custom-options {
-//   display: none;
-//   position: absolute;
-//   background-color: #f1f1f1;
-//   min-width: 160px;
-//   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-//   z-index: 1;
-// }
-
-// /* Показываем выпадающий список, когда пользователь нажимает на контейнер */
-// .custom-select.active .custom-options {
-//   display: block;
-// }
-
-// /* Стили для каждого элемента в выпадающем списке */
-// .custom-options option {
-//   padding: 12px 20px;
-//   cursor: pointer;
-//   border-bottom: 1px solid #ddd;
-// }
-
-// /* Стили для выделенного элемента в выпадающем списке */
-// .custom-options option:hover {
-//   background-color: #ddd;
-// }
