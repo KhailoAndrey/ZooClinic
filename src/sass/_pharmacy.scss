@@ -310,4 +310,11 @@
   font-weight: 600;
   line-height: 110%; /* 19.8px */
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1);
+  }
 }
