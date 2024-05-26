@@ -168,35 +168,102 @@ document.addEventListener('DOMContentLoaded', () => {
   const openFormOverlayButtons = document.querySelectorAll('.form-popap-btn');
   const formOverlay = document.querySelector('.overlay-container');
   const backdropOverlay = document.querySelector('.backdrop-overlay');
+  const backdropOverlaySubmit = document.querySelector('.backdrop-overlay-submit');
+  const closeButtons = document.querySelectorAll('.close-img, .back-btn a');
 
+  // Функция для показа оверлея
+  const showOverlay = (overlay) => {
+    formOverlay.classList.remove('hidden');
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+  };
+
+  // Функция для скрытия оверлея
+  const hideOverlay = (overlay) => {
+    overlay.classList.remove('show');
+    setTimeout(() => {
+      if (!backdropOverlay.classList.contains('show') && !backdropOverlaySubmit.classList.contains('show')) {
+        formOverlay.classList.add('hidden');
+      }
+    }, 500); // Соответствие длительности перехода
+  };
+
+  // Показываем первый оверлей по клику на кнопку
   openFormOverlayButtons.forEach(button => {
     button.addEventListener('click', () => {
-      formOverlay.classList.remove('hidden');
-      setTimeout(() => {
-        formOverlay.classList.add('show');
-      }, 10); // Небольшая задержка для активации перехода
+      showOverlay(backdropOverlay);
       button.blur(); // Убираем фокус с кнопки
     });
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      formOverlay.classList.remove('show');
+  // Обработка отправки формы
+   document.addEventListener('submit', (e) => {
+    if (e.target.matches('#overlay-contact-form, #contact-form')) {
+      e.preventDefault(); // Предотвращаем фактическую отправку формы
+      hideOverlay(backdropOverlay);
       setTimeout(() => {
-        formOverlay.classList.add('hidden');
-      }, 500); // Задержка совпадает с длительностью перехода
+        showOverlay(backdropOverlaySubmit);
+      }, 500); // Ждем пока первый оверлей скроется
     }
   });
 
-  backdropOverlay.addEventListener('click', (e) => {
-    if (e.target === backdropOverlay) {
-      formOverlay.classList.remove('show');
-      setTimeout(() => {
-        formOverlay.classList.add('hidden');
-      }, 500); // Задержка совпадает с длительностью перехода
+  // Закрытие оверлеев по нажатию клавиши Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (backdropOverlay.classList.contains('show')) {
+        hideOverlay(backdropOverlay);
+      } else if (backdropOverlaySubmit.classList.contains('show')) {
+        hideOverlay(backdropOverlaySubmit);
+      }
     }
+  });
+
+  // Закрытие оверлеев при клике вне области контента
+  formOverlay.addEventListener('click', (e) => {
+    if (e.target === backdropOverlay && backdropOverlay.classList.contains('show')) {
+      hideOverlay(backdropOverlay);
+    } else if (e.target === backdropOverlaySubmit && backdropOverlaySubmit.classList.contains('show')) {
+      hideOverlay(backdropOverlaySubmit);
+    }
+  });
+
+  // Закрытие оверлеев при клике на кнопки закрытия или ссылку "Назад до головної"
+  closeButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      hideOverlay(backdropOverlaySubmit);
+    });
   });
 });
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.getElementsByClassName('close-img')[0];
+  
+  document.querySelectorAll('.zoomable-image').forEach(img => {
+    img.onclick = function() {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+  
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      modal.style.display = 'none';
+    }
+  });
+});
