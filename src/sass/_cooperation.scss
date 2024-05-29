@@ -294,6 +294,9 @@
     font-weight: 400;
     line-height: 120%; /* 19.2px */
     letter-spacing: -0.16px;
+    li + li {
+      margin-top: 6px;
+    }
   }
 }
 .vacan-buttons {
