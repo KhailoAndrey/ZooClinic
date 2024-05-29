@@ -267,3 +267,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const items = document.querySelectorAll('.coop-vacan-item');
+
+  items.forEach(item => {
+    const plusBtn = item.querySelector('.plus-btn');
+    const minusBtn = item.querySelector('.minus-btn');
+    const opis = item.querySelector('.coop-vacan-item-opis');
+
+    plusBtn.addEventListener('click', function () {
+      // Закрываем все остальные элементы
+      items.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.querySelector('.coop-vacan-item-opis');
+          otherItem.querySelector('.plus-btn');
+          otherItem.querySelector('.minus-btn'); 
+        }
+      });
+
+      // Открываем текущий элемент
+      opis.classList.remove('hidden');
+      plusBtn.classList.add('hidden');
+      minusBtn.classList.remove('hidden');
+      item.classList.add('vacan-open');
+    });
+
+    minusBtn.addEventListener('click', function () {
+      // Закрываем текущий элемент
+      opis.classList.add('hidden');
+      plusBtn.classList.remove('hidden');
+      minusBtn.classList.add('hidden');
+      item.classList.remove('vacan-open');
+    });
+  });
+});
+
