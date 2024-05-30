@@ -133,18 +133,18 @@ input[type='email'] {
   // border: 1px solid red;
 }
 
-input[type='checkbox'] {
+.form-checkbox {
   display: none;
 }
 
-input[type='checkbox'] + label {
+.form-checkbox + label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   user-select: none;
 }
 
-input[type='checkbox'] + label::before {
+.form-checkbox + label::before {
   content: '';
   position: absolute;
   left: 0;
@@ -158,12 +158,12 @@ input[type='checkbox'] + label::before {
   box-sizing: border-box;
 }
 
-input[type='checkbox']:checked + label::before {
+.form-checkbox:checked + label::before {
   background-color: #04a427;
   border-color: #04a427;
 }
 
-input[type='checkbox']:checked + label::after {
+.form-checkbox:checked + label::after {
   content: '';
   position: absolute;
   left: 6px;

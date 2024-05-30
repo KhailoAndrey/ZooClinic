@@ -155,18 +155,18 @@ form {
   //   margin-bottom: 50px;
 }
 
-input[type='checkbox'] {
+.overlay-checkbox {
   display: none;
 }
 
-input[type='checkbox'] + label {
+.overlay-checkbox + label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   user-select: none;
 }
 
-input[type='checkbox'].overlay-checkbox + label::before {
+.overlay-checkbox + label::before {
   content: '';
   position: absolute;
   left: 0;
@@ -180,12 +180,12 @@ input[type='checkbox'].overlay-checkbox + label::before {
   box-sizing: border-box;
 }
 
-input[type='checkbox']:checked + label::before {
+.overlay-checkbox:checked + label::before {
   background-color: #04a427;
   border-color: #04a427;
 }
 
-input[type='checkbox']:checked + label::after {
+.overlay-checkbox:checked + label::after {
   content: '';
   position: absolute;
   left: 6px;

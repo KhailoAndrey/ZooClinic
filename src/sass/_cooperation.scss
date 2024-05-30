@@ -174,8 +174,190 @@
   flex-direction: column;
   gap: 11px;
   overflow: hidden;
+  // border: 1px solid red;
+}
+.vacan-form-submit {
+  width: 714px;
+  height: 653px;
+  border-radius: 43px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: start;
+}
+.vacan-form-submit-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.checkbox-container {
+  width: 240px;
+}
+.title {
+  color: #095119;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+.checkbox-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.vacan-checkbox,
+.vacan-form-checkbox {
+  display: none;
+}
+.checkbox-label,
+.vacan-form-checkbox-label {
+  width: 100%;
+  color: #06631b;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  // display: flex;
+  // align-items: center;
+}
+
+.vacan-checkbox + label::before,
+.vacan-form-checkbox + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #04a427;
+  border-radius: 4px;
+  background-color: transparent;
+  box-sizing: border-box;
+  // position: relative;
+  min-height: 20px;
+}
+
+.vacan-checkbox:checked + label::before,
+.vacan-form-checkbox:checked + label::before {
+  background-color: #04a427;
+  border-color: #04a427;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // border: 1px solid red;
+}
+.vacan-checkbox:checked + label::after,
+.vacan-form-checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.vacan-form-submit-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  > button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    // border: 1px solid red;
+    margin-bottom: 20px;
+  }
+  > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+}
+.vacan-form-submit-title {
+  width: 419px;
+  height: 174px;
+  border-radius: 33px;
+  border-top: 1.5px solid rgba(4, 164, 39, 0.4);
+  border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 10px;
+  color: #095119;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  > img {
+    width: 76px;
+  }
+}
+.vacan-submit-form-group {
+  width: 100%;
+}
+.vacan-submit-form-group-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 50px;
+  gap: 8px;
+  position: relative;
+}
+.vacan-btn-link-submit {
+  width: 308px;
+  height: 46px;
+  border: none;
+  border-radius: 14px;
+  border-top: 1px solid #04a427;
+  border-bottom: 1px solid #04a427;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-image: url('../images/snake-btn.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 17.6px */
+  text-transform: uppercase;
+  img {
+    width: 10px;
+    height: 14px;
+  }
 }
 .coop-vacan-item {
+  // border: 1px solid red;
   display: flex;
   width: 714px;
   // height: auto;
@@ -190,6 +372,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  display: none; //need to delete after finish form vacan submit!!!
 }
 .vacan-open {
   position: absolute;
@@ -304,7 +487,7 @@
   display: flex;
   gap: 8px;
   button {
-    width: 308.372px;
+    width: 308px;
     height: 46px;
     border: none;
     border-radius: 14px;
@@ -321,7 +504,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--icon-color, #fff);
+  color: #fff;
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -339,14 +522,14 @@
   box-shadow: 0px -4px 7px 0px rgba(4, 164, 39, 0.1) inset,
     0px 4px 7px 0px rgba(4, 164, 39, 0.1) inset;
   backdrop-filter: blur(3.5px);
-  color:  #04A427;
-text-align: center;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 110%; /* 19.8px */
-text-transform: uppercase;
+  color: #04a427;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 19.8px */
+  text-transform: uppercase;
 }
 .bigBtnGreen {
   width: 193px;
