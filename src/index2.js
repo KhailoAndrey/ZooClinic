@@ -303,3 +303,37 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Получаем все кнопки с классом vacan-btn-link
+    const vacanBtnLinks = document.querySelectorAll('.vacan-btn-link');
+    const vacanFormSubmit = document.querySelector('.vacan-form-submit');
+    const closeButton = vacanFormSubmit.querySelector('.vacan-form-submit-btn-close');
+    
+    vacanBtnLinks.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Находим соответствующие элементы
+            const parent = button.closest('.coop-vacan-item');
+            const opis = parent.querySelector('.coop-vacan-item-opis');
+            const minusBtn = parent.querySelector('.minus-btn');
+            const plusBtn = parent.querySelector('.plus-btn');
+
+            // Добавляем/убираем классы hidden
+            opis.classList.add('hidden');
+            parent.classList.remove('vacan-open');
+            minusBtn.classList.add('hidden');
+            plusBtn.classList.remove('hidden');
+            vacanFormSubmit.classList.remove('hidden');
+        });
+    });
+
+    // Добавляем обработчик события на кнопку закрытия
+    closeButton.addEventListener('click', function() {
+        // Логирование для отладки
+        console.log('Close button clicked:', closeButton);
+
+        // Добавляем класс hidden к vacan-form-submit
+        vacanFormSubmit.classList.add('hidden');
+    });
+});
+
+
