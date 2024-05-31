@@ -158,19 +158,26 @@
   border-radius: 80px;
 }
 
-.close-img {
+.close-img-btn {
   position: absolute;
   top: 15px;
   right: 35px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
+  line-height: 100%;
   transition: 0.3s;
+  padding: 10px;
+  padding-top: 0;
+  background-color: #fff;
+  border: 2px solid #06631b;
+  color: #06631b;
+  border-radius: 100%;
 }
 
-.close-img:hover,
-.close-img:focus {
-  color: #06631b;
+.close-img-btn:hover,
+.close-img-btn:focus {
+  color: #04a427;
   text-decoration: none;
   cursor: pointer;
 }
