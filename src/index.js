@@ -3,10 +3,10 @@ const swiper = new Swiper('.slider', {
   direction: 'vertical',
   loop: true,
   loopAdditionalSlides: 0,
-  speed: 7000,
-  // autoplay: {
-  //   delay: 9000,
-  // },
+  speed: 5000,
+  autoplay: {
+    delay: 7000,
+  },
   effect: 'cube',
   cubeEffect: {
     slideShadows: false,

@@ -71,7 +71,7 @@
   line-height: 120%; /* 21.6px */
   letter-spacing: -0.18px;
 }
-.services-team-img{
+.services-team-img {
   border-radius: 40px;
 }
 
@@ -320,11 +320,12 @@
   border-top: 1.5px solid #04a427;
   border-bottom: 1.5px solid #04a427;
   backdrop-filter: blur(3.5px);
-  img {
+  > img {
+    width: 148px;
+    height: 86px;
     position: absolute;
-    bottom: 0;
+    bottom: -5;
     left: 30px;
     background: transparent;
   }
 }
-
