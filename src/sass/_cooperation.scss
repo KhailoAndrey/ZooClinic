@@ -151,7 +151,7 @@
   background: #04a427;
   display: flex;
   justify-content: flex-end;
-  img {
+  > img {
     height: 100%;
     border-radius: 40px;
   }
@@ -194,6 +194,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  img {
+    border-radius: 25px;
+  }
 }
 .checkbox-container {
   width: 240px;
