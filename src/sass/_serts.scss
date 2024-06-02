@@ -74,11 +74,14 @@
 }
 
 .nav-btn-cont {
+  // width: 100%;
   display: flex;
   gap: 25px;
-  position: absolute;
-  bottom: 75px;
-  right: 150px;
+  margin: 50px;
+  margin-bottom: 0;
+  // position: absolute;
+  // bottom: 75px;
+  // right: 150px;
 }
 .pagin-btn-group .swiper-pagination-bullet {
   width: 10px;
