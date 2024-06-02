@@ -176,7 +176,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const backdropOverlaySubmit = document.querySelector(
     '.backdrop-overlay-submit'
   );
-  const closeButtons = document.querySelectorAll('.close-img, .back-btn a');
+  const closeButtons = document.querySelectorAll(
+    '.close-img, .cls-btn, .back-btn a'
+  );
 
   // Функция для показа оверлея
   const showOverlay = overlay => {
@@ -249,7 +251,12 @@ document.addEventListener('DOMContentLoaded', () => {
   closeButtons.forEach(button => {
     button.addEventListener('click', e => {
       e.preventDefault();
-      hideOverlay(backdropOverlaySubmit);
+      if (backdropOverlay.classList.contains('show')) {
+        hideOverlay(backdropOverlay);
+      } else if (backdropOverlaySubmit.classList.contains('show')) {
+        hideOverlay(backdropOverlaySubmit);
+        document.activeElement.blur();
+      }
     });
   });
 });
@@ -349,9 +356,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Добавляем обработчик события на кнопку закрытия
   closeButton.addEventListener('click', function () {
-    // Логирование для отладки
-    console.log('Close button clicked:', closeButton);
-
     // Добавляем класс hidden к vacan-form-submit
     vacanFormSubmit.classList.add('hidden');
   });

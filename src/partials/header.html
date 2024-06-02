@@ -10,12 +10,13 @@
       <li class="header__nav-list-item">
         <button class="header__filii">
           <img src="./images/Frame 15.svg" alt="point" />
-          Філії
+          <span>Філії</span>
           <img
             src="./images/arrow-down.svg"
             alt="arrow-down"
             width="14"
             height="8"
+            class="arrow"
           />
         </button>
         <div class="filii-popap hidden">
@@ -161,9 +162,11 @@
       </li>
       <li>
         <ul class="language-switcher">
-          <li><button class="active" onclick="changeLanguage(this)">UA</button></li>
           <li>
-            <button  onclick="changeLanguage(this)">RU</button>
+            <button class="active" onclick="changeLanguage(this)">UA</button>
+          </li>
+          <li>
+            <button onclick="changeLanguage(this)">RU</button>
           </li>
         </ul>
       </li>

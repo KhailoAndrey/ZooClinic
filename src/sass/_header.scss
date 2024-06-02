@@ -48,11 +48,12 @@
 }
 
 .header__nav-list-item {
+  text-align: center;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 19.25px;
+  line-height: 100%;
   letter-spacing: 0.18px;
 
   // &:hover {
@@ -60,13 +61,17 @@
   // }
 }
 .header__filii {
-  width: 94px;
+  width: 86px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: transparent;
   color: #fff;
+  padding: 0;
+  .arrow {
+    margin-top: 2px;
+  }
 }
 
 .filii-popap {

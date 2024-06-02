@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: end;
   gap: 8px;
+  transform: rotate(10deg);
 }
 .bage-photo {
   width: 403px;
@@ -115,7 +116,8 @@
   line-height: 123%; /* 60.27px */
   letter-spacing: 0.98px;
   text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 40px;
+  // z-index: 1;
 
   //   border: 1px solid red;
   .green {
@@ -140,7 +142,7 @@
   letter-spacing: 0.32px;
   text-transform: uppercase;
   margin-top: 65px;
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 .coop-vacan-block {
   position: relative;
@@ -586,11 +588,18 @@
 }
 
 @keyframes rotateBtn {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
+  0%,
+  100% {
     transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(30deg);
   }
 }
 
