@@ -1,22 +1,49 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
   overflow-x: hidden;
   margin: 0 auto;
-  width: 100vw;
+  width:  100vw;
   max-width: 1920px;
   padding: 0;
   height: 100%;
   // overflow: hidden;
   // background: $page-bgn-color;
-  background: rgba(4, 164, 39, 0.4);
+  background: rgba(4, 164, 39, 0.6);
   // display: flex;
   // justify-content: center;
-  scrollbar-width: thin;
+  // scrollbar-width: thin;
+  // scrollbar-color: #04a427 rgba(4, 164, 39, 0.1);
   scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 14px;
+  // height: 12px;
+  z-index: 9999999;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 14px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(4, 164, 39, 0.25);
+  background: #04a427;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  border: 1px solid rgba(4, 164, 39, 0.4);
+  background: #e2ffe9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(4, 164, 39, 0.5);
+  cursor: pointer;
 }
 /* Скрыть скроллбар в Firefox, Edge */
 // body {
@@ -28,6 +55,8 @@ body {
 // }
 section {
   scroll-margin-top: 60px; /* высота вашего хедера */
+  // width:  100vw;
+  max-width: 1906px;
 }
 
 span {
