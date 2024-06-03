@@ -195,7 +195,7 @@
 .vacan-form-submit-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   img {
     border-radius: 25px;
   }
@@ -218,6 +218,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: flex-start;
 }
 .vacan-checkbox,
 .vacan-form-checkbox {
@@ -236,6 +237,8 @@
   padding-left: 30px;
   cursor: pointer;
   user-select: none;
+  // border: 1px solid red;
+
   // display: flex;
   // align-items: center;
 }
@@ -245,8 +248,9 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform-origin: top left;
+  // transform: translateY(-50%);
   width: 20px;
   height: 20px;
   border: 2px solid #04a427;
@@ -255,6 +259,11 @@
   box-sizing: border-box;
   // position: relative;
   min-height: 20px;
+  // border: 1px solid red;
+}
+.vacan-form-checkbox + .policy::before {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .vacan-checkbox:checked + label::before,
@@ -271,13 +280,16 @@
   content: '';
   position: absolute;
   left: 6px;
-  top: 30%;
+  top: 2px;
   transform: translateY(-50%);
   width: 8px;
   height: 12px;
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+.vacan-form-checkbox:checked + .policy::after{
+  top: 30%;
 }
 
 .vacan-form-submit-right {
@@ -583,7 +595,7 @@
   transform: translate(-75%, -70%) rotate(-30deg);
 }
 .bigBtnGreen:hover {
-  box-shadow: 0 0 50px rgba(53, 114, 3, 0.9);
+  box-shadow: 0 0 20px rgba(53, 114, 3, 0.9);
   animation: rotateBtn 2s infinite linear;
 }
 
