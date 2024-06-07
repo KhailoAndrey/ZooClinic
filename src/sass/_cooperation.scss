@@ -443,6 +443,10 @@
   text-transform: uppercase;
 }
 .coop-vacan-plus-btn {
+  @media screen and (max-width: 767px) {
+    width: 29px;
+    height: 29px;    
+  }
   padding: 0;
   width: 42px;
   height: 42px;
