@@ -39,8 +39,32 @@ nextButtons.forEach(button => {
 
 const swiper2 = new Swiper('.serts-swiper-container', {
   loop: true,
-  slidesPerView: 3,
+  // slidesPerView: 3,
   effect: 'coverflow',
+  speed: 2000,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 14,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 18,
+    },
+  },
   coverflowEffect: {
     rotate: 50,
     slideShadows: false,
