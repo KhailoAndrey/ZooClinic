@@ -326,9 +326,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // Закрываем все остальные элементы
       items.forEach(otherItem => {
         if (otherItem !== item) {
-          otherItem.querySelector('.coop-vacan-item-opis');
-          otherItem.querySelector('.plus-btn');
-          otherItem.querySelector('.minus-btn');
+          // otherItem.querySelector('.coop-vacan-item-opis');
+          // otherItem.querySelector('.plus-btn');
+          // otherItem.querySelector('.minus-btn');
+          otherItem.classList.add('hidden');
         }
       });
 
@@ -345,6 +346,9 @@ document.addEventListener('DOMContentLoaded', function () {
       plusBtn.classList.remove('hidden');
       minusBtn.classList.add('hidden');
       item.classList.remove('vacan-open');
+      items.forEach(otherItem => {
+        otherItem.classList.remove('hidden');
+      });
     });
   });
 });
@@ -360,6 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const vacanSubmitOverlay = document.querySelector('.vacan-submit-overlay');
   const vacanBtnLinkSubmit = document.querySelector('.vacan-btn-link-submit');
   const openFormButton = document.querySelector('.open-form');
+  const items = document.querySelectorAll('.coop-vacan-item');
 
   vacanBtnLinks.forEach(function (button) {
     button.addEventListener('click', function () {
@@ -382,6 +387,9 @@ document.addEventListener('DOMContentLoaded', function () {
   closeButton.addEventListener('click', function () {
     // Добавляем класс hidden к vacan-form-submit
     vacanFormSubmit.classList.add('hidden');
+    items.forEach(otherItem => {
+      otherItem.classList.remove('hidden');
+    });
   });
 
   function validateForm() {
@@ -407,6 +415,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (validateForm()) {
       // Если форма валидна, добавляем класс hidden к vacan-form-submit
       vacanFormSubmit.classList.add('hidden');
+      items.forEach(otherItem => {
+        otherItem.classList.remove('hidden');
+      });
       // Убираем класс hidden с vacan-submit-overlay
       vacanSubmitOverlay.classList.remove('hidden');
     } else {
