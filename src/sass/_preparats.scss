@@ -10,21 +10,40 @@
   gap: 30px;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding: 35px 13px;
+    border-radius: 25px;
+    gap: 15px;
+  }
 }
 .preps-intro {
   position: relative;
   width: 100%;
-  //   width: 1720px;
   height: 650px;
   border-radius: 40px;
   padding: 60px;
   // overflow: hidden;
+  background-image: url('../images/prep1.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/prep1-mob.webp');
+    min-height: 279px;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+  }
 }
 .preps-intro-img {
   border-radius: 40px;
   position: absolute;
   top: 0;
   left: 0;
+  @media screen and (max-width: 767px) {
+    border-radius: 30px;
+    width: 100%;
+  }
 }
 .preps-title {
   width: 489px;
@@ -37,6 +56,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px 15px;
+  }
 }
 .preps-title-text {
   width: 327px;
@@ -48,6 +73,11 @@
   line-height: 113%; /* 22.6px */
   letter-spacing: -0.2px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+  }
 }
 .preps-btn {
   position: absolute;
@@ -58,6 +88,10 @@
   height: 65px;
   border: none;
   background-color: transparent;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: block;
 }
 .preps-desc {
   width: 627px;
@@ -68,6 +102,12 @@
   backdrop-filter: blur(3.5px);
   display: flex;
   padding: 25px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    border-radius: 27px;
+    padding: 16px 8px;
+  }
 }
 .preps-desc-text {
   width: 576px;
@@ -80,12 +120,24 @@
   font-weight: 400;
   line-height: 120%; /* 21.6px */
   letter-spacing: -0.18px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-align: left;
+  }
 }
 .preps-info {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
 }
 .preps-info-services {
   display: flex;
@@ -93,19 +145,36 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  @media screen and (max-width: 767px) {
+    gap: 15px;
+  }
 }
 .preps-info-serv {
   padding: 5px;
   width: 845px;
-  height: 310.067px;
+  height: 310px;
   border-radius: 40px;
   border-top: 1.5px solid rgba(4, 164, 39, 0.4);
   border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
   background: #fff;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 48px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+}
+.preps-info-serv:nth-child(2) {
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
 }
 .preps-info-serv-img {
   width: 406px;
@@ -113,12 +182,20 @@
   overflow: hidden;
   border-radius: 40px;
   // overflow: hidden;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    border-radius: 27px;
+  }
 }
 .preps-info-serv-text {
   display: flex;
   flex-direction: column;
   gap: 25px;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    gap: 17px;
+  }
 }
 .pist-title {
   width: 320px;
@@ -131,6 +208,12 @@
   line-height: 100%; /* 40px */
   letter-spacing: -0.8px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    font-size: 21px;
+    letter-spacing: -0.42px;
+  }
 }
 .pist-desc {
   width: 320px;
@@ -141,6 +224,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 21.6px */
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+  }
 }
 .left {
   justify-content: start;
@@ -148,19 +236,70 @@
 .right {
   text-align: right;
   justify-content: end;
+  @media screen and (max-width: 767px) {
+    text-align: left;
+    justify-content: start;
+  }
 }
 .preps-info-serv-right {
   width: 845px;
   height: 650px;
   position: relative;
-  overflow: hidden;
-  > img {
-    border-radius: 40px;
+  // overflow: hidden;
+  background-image: url('../images/prep4.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/prep4-mob.webp');
+    width: 100%;
+    min-height: 223px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  // > img {
+  //   border-radius: 40px;
+  //   @media screen and (max-width: 767px) {
+  //     border-radius: 20px;
+  //     scale: 1.5;
+  //   }
+  // }
 
   button {
     position: absolute;
     left: 37px;
     bottom: 37px;
+    @media screen and (max-width: 767px) {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      // left: 50%;
+      // bottom: 50%;
+      // transform: translate(-50%, 50%);
+      width: 145px;
+      height: 145px;
+    }
+    img:nth-child(1) {
+      @media screen and (max-width: 767px) {
+        width: 19px;
+        height: 19px;
+      }
+    }
+    span {
+      width: auto;
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+    img:nth-child(3) {
+      @media screen and (max-width: 767px) {
+        width: 30px;
+        height: 19px;
+      }
+    }
   }
 }
