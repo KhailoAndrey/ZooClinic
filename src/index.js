@@ -74,14 +74,6 @@ const swiper2 = new Swiper('.serts-swiper-container', {
   pagination: {
     el: '.pagin-btn-group',
     clickable: true,
-    renderBullet: function (index, className) {
-      const maxBullets = 5;
-      const totalBullets = this.slides.length;
-      if (totalBullets <= maxBullets || index < maxBullets) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-      return '';
-    },
   },
   // Navigation arrows
   navigation: {
