@@ -56,7 +56,7 @@
   line-height: 260px;
   letter-spacing: -0.05em;
   color: rgba(246, 255, 248, 1);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .slide-title-line1 {
   width: 100%;
@@ -391,6 +391,10 @@
   height: 100%;
 }
 .bigBtnYellow {
+  @media screen and (max-width: 767px) {
+    width: 120px;
+    height: 120px;
+  }
   width: 192px;
   height: 192px;
   position: absolute;
@@ -426,6 +430,10 @@
   // mix-blend-mode: normal;
 }
 .bigBtnYellow img:nth-child(1) {
+  @media screen and (max-width: 767px) {
+    width: 15px;
+    height: 15px;
+  }
   width: 27px;
   height: 27px;
   position: absolute;
@@ -434,6 +442,12 @@
   transform: translate(-25%, -35%);
 }
 .bigBtnYellow span {
+  @media screen and (max-width: 767px) {
+    width: 106px;
+    // height: 22px;
+    height: auto;
+  font-size: 13px;
+  }
   width: 146px;
   height: 40px;
   transform: rotate(-30deg);
@@ -447,6 +461,10 @@
   text-transform: uppercase;
 }
 .bigBtnYellow img:nth-child(3) {
+  @media screen and (max-width: 767px) {
+    width: 16px;
+    height: 24px;
+  }
   position: absolute;
   top: 75%;
   left: 70%;
@@ -607,8 +625,13 @@
   gap: 26px;
 }
 .owner-name {
-  width: 336.147px;
-  height: 47.323px;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 110%;
+  }
+  width: 336px;
+  height: 47px;
   color: #04a427;
   font-family: 'Cormorant Unicase';
   font-size: 30px;
@@ -619,6 +642,11 @@
   text-transform: uppercase;
 }
 .owner-title {
+  @media screen and (max-width: 767px) {
+    width: 260px;
+    height: 46px;
+    font-size: 14px;
+  }
   width: 347.705px;
   height: 33.802px;
   color: #06631b;
@@ -630,6 +658,10 @@
   text-transform: uppercase;
 }
 .owner-word {
+  @media screen and (max-width: 767px) {
+    // width: 260px;
+    font-size: 14px;
+  }
   color: #04a427;
   font-family: Montserrat;
   font-size: 18px;
@@ -639,6 +671,12 @@
   text-transform: uppercase;
 }
 .owner-soclinks {
+  @media screen and (max-width: 767px) {
+    gap: 15px;
+    img {
+      width: 27px;
+    }
+  }
   display: flex;
   gap: 22px;
 }

@@ -4,9 +4,9 @@ const swiper = new Swiper('.slider', {
   loop: true,
   loopAdditionalSlides: 0,
   speed: 5000,
-  autoplay: {
-    delay: 7000,
-  },
+  // autoplay: {
+  //   delay: 7000,
+  // },
   effect: 'cube',
   cubeEffect: {
     slideShadows: false,
@@ -39,8 +39,32 @@ nextButtons.forEach(button => {
 
 const swiper2 = new Swiper('.serts-swiper-container', {
   loop: true,
-  slidesPerView: 3,
+  // slidesPerView: 3,
   effect: 'coverflow',
+  speed: 2000,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 14,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 18,
+    },
+  },
   coverflowEffect: {
     rotate: 50,
     slideShadows: false,
@@ -50,6 +74,14 @@ const swiper2 = new Swiper('.serts-swiper-container', {
   pagination: {
     el: '.pagin-btn-group',
     clickable: true,
+    renderBullet: function (index, className) {
+      const maxBullets = 5;
+      const totalBullets = this.slides.length;
+      if (totalBullets <= maxBullets || index < maxBullets) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+      return '';
+    },
   },
   // Navigation arrows
   navigation: {
@@ -113,9 +145,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', () => {
   const openPopupButtons = document.querySelectorAll(
-    '.header__filii, .header__contacts-item-btn'
+    '.header__filii, .header__contacts-item-btn, .pharm-choose-btn'
   );
-  const popups = document.querySelectorAll('.filii-popap, .popap-phone');
+  const popups = document.querySelectorAll(
+    '.filii-popap, .popap-phone, .pharmacy-popap'
+  );
 
   // Функция для переключения видимости попапа
   const togglePopup = popup => {
@@ -302,9 +336,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // Закрываем все остальные элементы
       items.forEach(otherItem => {
         if (otherItem !== item) {
-          otherItem.querySelector('.coop-vacan-item-opis');
-          otherItem.querySelector('.plus-btn');
-          otherItem.querySelector('.minus-btn');
+          // otherItem.querySelector('.coop-vacan-item-opis');
+          // otherItem.querySelector('.plus-btn');
+          // otherItem.querySelector('.minus-btn');
+          otherItem.classList.add('hidden');
         }
       });
 
@@ -321,6 +356,9 @@ document.addEventListener('DOMContentLoaded', function () {
       plusBtn.classList.remove('hidden');
       minusBtn.classList.add('hidden');
       item.classList.remove('vacan-open');
+      items.forEach(otherItem => {
+        otherItem.classList.remove('hidden');
+      });
     });
   });
 });
@@ -336,6 +374,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const vacanSubmitOverlay = document.querySelector('.vacan-submit-overlay');
   const vacanBtnLinkSubmit = document.querySelector('.vacan-btn-link-submit');
   const openFormButton = document.querySelector('.open-form');
+  const items = document.querySelectorAll('.coop-vacan-item');
 
   vacanBtnLinks.forEach(function (button) {
     button.addEventListener('click', function () {
@@ -358,6 +397,9 @@ document.addEventListener('DOMContentLoaded', function () {
   closeButton.addEventListener('click', function () {
     // Добавляем класс hidden к vacan-form-submit
     vacanFormSubmit.classList.add('hidden');
+    items.forEach(otherItem => {
+      otherItem.classList.remove('hidden');
+    });
   });
 
   function validateForm() {
@@ -383,6 +425,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (validateForm()) {
       // Если форма валидна, добавляем класс hidden к vacan-form-submit
       vacanFormSubmit.classList.add('hidden');
+      items.forEach(otherItem => {
+        otherItem.classList.remove('hidden');
+      });
       // Убираем класс hidden с vacan-submit-overlay
       vacanSubmitOverlay.classList.remove('hidden');
     } else {
