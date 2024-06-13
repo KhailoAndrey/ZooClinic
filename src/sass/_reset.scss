@@ -20,7 +20,7 @@ body {
   // scrollbar-width: thin;
   // scrollbar-color: #04a427 rgba(4, 164, 39, 0.1);
   scroll-behavior: smooth;
-  scrollbar-gutter: stable;
+  // scrollbar-gutter: stable;
 }
 ::-webkit-scrollbar {
   @media screen and (max-width: 767px) {
