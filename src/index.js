@@ -3,13 +3,16 @@ const swiper = new Swiper('.slider', {
   direction: 'vertical',
   loop: true,
   loopAdditionalSlides: 0,
-  speed: 6000,
+  speed: 4000,
   autoplay: {
     delay: 5000,
   },
-  effect: 'cube',
-  cubeEffect: {
-    slideShadows: false,
+  effect: 'fade',
+  // cubeEffect: {
+  //   slideShadows: false,
+  // },
+  fadeEffect: {
+    crossFade: true,
   },
   // If we need pagination
   pagination: {
