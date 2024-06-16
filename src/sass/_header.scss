@@ -8,6 +8,13 @@
   // border: 1px solid red;
   width: 100%;
   // max-width: 1920px;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    width: 100%;
+    // width: 320px;
+    left: 0;
+    transform: translateX(0);
+  }
 }
 .header__container,
 .header__container-main {
@@ -15,6 +22,67 @@
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.header__container-mob {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    // aspect-ratio: 3 / 2;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 20px;
+    gap: 0;
+    // border: 1px solid red;
+  }
+  display: none;
+}
+.head-mob-btn-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.lang-switch-btn {
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.838px; /* 114.137% */
+  background-color: transparent;
+}
+.btn-contact-mob {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(1px);
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  // div {
+  //   background-color: #fff;
+  //   border-radius: 100%;
+  //   width: 28px;
+  //   height: 28px;
+  //   display: flex;
+  //   align-items: center;
+  // }
+}
+.burger-mob-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 100%;
+  border: none;
 }
 .main-container {
   position: relative;
@@ -37,6 +105,9 @@
   backdrop-filter: blur(10px);
   z-index: 5555;
   // overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
 }
 .header__nav-list {
   display: flex;
@@ -304,8 +375,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 68px;
-  border: 1px solid var(--dark-gren, #095119);
-  background: $color-white;
+  border: 1px solid #095119;
+  background: #fff;
 }
 
 .language-switcher {

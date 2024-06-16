@@ -61,8 +61,10 @@ body {
 section {
   scroll-margin-top: 60px; /* высота вашего хедера */
   // width:  100vw;
-  @media screen and (max-width: 768px) {
-    max-width: 768px;    
+  @media screen and (max-width: 767px) {
+    max-width: 767px;    
+    // width: 100%;
+    scroll-margin-top: 60px; /* высота вашего хедера */
   }
   max-width: 1906px;
 }
