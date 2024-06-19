@@ -8,9 +8,10 @@ export function changeLanguage(button) {
 
 window.changeLanguage = changeLanguage;
 
-document
-  .querySelector('.lang-switch-btn')
-  .addEventListener('click', function () {
-    var span = this.querySelector('span');
-    span.textContent = span.textContent === 'RU' ? 'UA' : 'RU';
+document.querySelectorAll('.lang-switch-btn').forEach(function (button) {
+  button.addEventListener('click', function () {
+    document.querySelectorAll('.lang-switch-btn span').forEach(function (span) {
+      span.textContent = span.textContent === 'RU' ? 'UA' : 'RU';
+    });
   });
+});
