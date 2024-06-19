@@ -40,6 +40,7 @@ nextButtons.forEach(button => {
   });
 });
 
+// свайпер сертификатов
 const swiper2 = new Swiper('.serts-swiper-container', {
   loop: true,
   // slidesPerView: 3,
@@ -85,6 +86,7 @@ const swiper2 = new Swiper('.serts-swiper-container', {
   },
 });
 
+// свайпер отзывов
 const swiper3 = new Swiper('.review-swiper-container', {
   loop: true,
   slidesPerView: 1,
@@ -105,6 +107,7 @@ const swiper3 = new Swiper('.review-swiper-container', {
   },
 });
 
+// раскрытие закрытие вопрос-ответ
 document.addEventListener('DOMContentLoaded', function () {
   const blocks = document.querySelectorAll('.ques-main-block-item');
 
@@ -138,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// модалка филий
 document.addEventListener('DOMContentLoaded', () => {
   const openPopupButtons = document.querySelectorAll(
     '.header__filii, .header__contacts-item-btn, .pharm-choose-btn'
@@ -198,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// показ оверлеев
 document.addEventListener('DOMContentLoaded', () => {
   const openFormOverlayButtons = document.querySelectorAll('.form-popap-btn');
   const formOverlay = document.querySelector('.overlay-container');
@@ -290,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// модалка сертификатов
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImage');
@@ -319,6 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// блок вакансий
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.coop-vacan-item');
 
@@ -358,6 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// блок вакансий
 document.addEventListener('DOMContentLoaded', function () {
   // Получаем все кнопки с классом vacan-btn-link
   const vacanBtnLinks = document.querySelectorAll('.vacan-btn-link');
@@ -437,5 +445,105 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   closeVacanOverlay.addEventListener('click', function () {
     vacanSubmitOverlay.classList.add('hidden');
+  });
+});
+
+// открытие закрытие бургер меню
+document.querySelectorAll('.burger-mob-btn').forEach(function (button) {
+  button.addEventListener('click', function () {
+    document.querySelector('.burger-container').classList.remove('hidden');
+  });
+});
+
+document
+  .querySelector('.burger-btn-close')
+  .addEventListener('click', function () {
+    document.querySelector('.burger-container').classList.add('hidden');
+  });
+
+document.querySelectorAll('.burger-container a').forEach(function (link) {
+  link.addEventListener('click', function () {
+    document.querySelector('.burger-container').classList.add('hidden');
+  });
+});
+
+// открытие попапа филии на мобилке
+document.addEventListener('DOMContentLoaded', () => {
+  const filMobBtn = document.querySelector('.fil-mob-btn');
+  const filMobPopap = document.querySelector('.fil-mob-popap');
+  const imgShow = filMobBtn.querySelector('.show');
+  const imgHidden = filMobBtn.querySelector('.hidden');
+
+  function openPopup() {
+    filMobPopap.classList.remove('hidden');
+    imgShow.classList.add('hidden');
+    imgHidden.classList.remove('hidden');
+  }
+
+  function closePopup() {
+    filMobPopap.classList.add('hidden');
+    imgShow.classList.remove('hidden');
+    imgHidden.classList.add('hidden');
+  }
+
+  filMobBtn.addEventListener('click', function () {
+    if (filMobPopap.classList.contains('hidden')) {
+      openPopup();
+    } else {
+      closePopup();
+    }
+  });
+
+  // Закрытие попапа при клике вне его области (используем mousedown вместо click)
+  document.addEventListener('click', function (event) {
+    if (
+      !filMobPopap.contains(event.target) &&
+      !filMobBtn.contains(event.target)
+    ) {
+      closePopup();
+    }
+  });
+});
+
+// открытие закрытие соцсетей
+document.addEventListener('DOMContentLoaded', () => {
+  const smsPopapBtn = document.querySelector('.sms-popap-btn');
+  const smsPopap = document.querySelector('.sms-popap');
+  const smsCloseBtn = smsPopap.querySelector('button');
+
+  smsPopapBtn.addEventListener('click', function () {
+    smsPopap.classList.remove('hidden');
+  });
+
+  smsCloseBtn.addEventListener('click', function () {
+    smsPopap.classList.add('hidden');
+  });
+  // Закрытие попапа при клике вне его области
+  document.addEventListener('click', function (event) {
+    if (
+      !smsPopap.contains(event.target) &&
+      !smsPopapBtn.contains(event.target)
+    ) {
+      smsPopap.classList.add('hidden');
+    }
+  });
+});
+
+// открытие закрытие телефонов
+document.addEventListener('DOMContentLoaded', () => {
+  const telPopapBtn = document.querySelector('.tel-popap-btn');
+  const telPopap = document.querySelector('.tel-popap');
+
+  telPopapBtn.addEventListener('click', function () {
+    telPopap.classList.toggle('hidden');
+  });
+  // Закрытие попапа при клике вне его области
+  document.addEventListener('click', function (event) {
+    if (
+      !telPopap.contains(event.target) &&
+      !telPopapBtn.contains(event.target)
+    ) {
+      telPopap.classList.add('hidden');
+    }
   });
 });

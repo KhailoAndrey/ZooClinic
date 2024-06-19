@@ -267,63 +267,6 @@
   }
 }
 
-.callSms {
-  width: 108px;
-  position: fixed;
-  right: calc((100vw - 1920px) / 2);
-  bottom: 65px;
-  margin-right: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  z-index: 11111;
-  @media screen and (max-width: 767px) {
-    width: 51px;
-    bottom: 40px;
-    margin: 0;
-    right: 10;
-    gap: 0;
-  }
-  button {
-    width: 68px;
-    height: 68px;
-    border: none;
-    background-color: rgba(246, 255, 248, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    @media screen and (max-width: 767px) {
-      width: 32px;
-      height: 32px;
-      // border-radius: 100%;
-    }
-    &:hover {
-      animation: callsms-hover 700ms linear infinite;
-    }
-  }
-}
-.sms {
-  width: 108px;
-  height: 108px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../images/BgSms.png');
-  @media screen and (max-width: 767px) {
-    background-image: url('../images/BgSms-mob.svg');
-    // border: 1px solid red;
-    width: 51px;
-    height: 51px;
-  }
-}
-.filii-mob-btn {
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: flex;
-  }
-}
 .pagination {
   display: flex;
   flex-direction: column;
@@ -379,10 +322,10 @@
   display: none;
   transition: opacity 0.4s ease-in-out, width 0.4s ease-in-out,
     height 0.4s ease-in-out;
-    @media screen and (max-width: 767px) {
-      width: 12px;
-      height: 12px;
-    }
+  @media screen and (max-width: 767px) {
+    width: 12px;
+    height: 12px;
+  }
 }
 .swiper-pagination-bullet-active {
   background-color: rgba(243, 255, 246, 1);
