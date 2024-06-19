@@ -1,0 +1,2 @@
+window.changeLanguage=function(t){document.querySelectorAll(".language-switcher button").forEach(function(t){t.classList.remove("active")}),t.classList.add("active")},document.querySelectorAll(".lang-switch-btn").forEach(function(t){t.addEventListener("click",function(){document.querySelectorAll(".lang-switch-btn span").forEach(function(t){t.textContent="RU"===t.textContent?"UA":"RU"})})});
+//# sourceMappingURL=index.6ed68da0.js.map
