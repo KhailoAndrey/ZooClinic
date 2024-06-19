@@ -533,10 +533,15 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const telPopapBtn = document.querySelector('.tel-popap-btn');
   const telPopap = document.querySelector('.tel-popap');
+  const imgShow = telPopapBtn.querySelector('.show');
+  const imgHidden = telPopapBtn.querySelector('.hidden');
 
   telPopapBtn.addEventListener('click', function () {
     telPopap.classList.toggle('hidden');
+    imgShow.classList.toggle('hidden');
+    imgHidden.classList.toggle('hidden');
   });
+
   // Закрытие попапа при клике вне его области
   document.addEventListener('click', function (event) {
     if (
@@ -544,6 +549,8 @@ document.addEventListener('DOMContentLoaded', () => {
       !telPopapBtn.contains(event.target)
     ) {
       telPopap.classList.add('hidden');
+      imgShow.classList.remove('hidden');
+      imgHidden.classList.add('hidden');
     }
   });
 });
