@@ -21,6 +21,10 @@ body {
   // scrollbar-color: #04a427 rgba(4, 164, 39, 0.1);
   scroll-behavior: smooth;
   // scrollbar-gutter: stable;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 ::-webkit-scrollbar {
   @media screen and (max-width: 767px) {
