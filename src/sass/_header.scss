@@ -211,6 +211,9 @@
   font-weight: 400;
   line-height: 123%; /* 22.14px */
   text-transform: uppercase;
+  span {
+    text-align: left;
+  }
 }
 
 .header__nav-link {
