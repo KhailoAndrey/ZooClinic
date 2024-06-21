@@ -451,19 +451,19 @@ document.addEventListener('DOMContentLoaded', function () {
 // открытие закрытие бургер меню
 document.querySelectorAll('.burger-mob-btn').forEach(function (button) {
   button.addEventListener('click', function () {
-    document.querySelector('.burger-container').classList.remove('hidden');
+    document.querySelector('.burger-overlay').classList.remove('hidden');
   });
 });
 
 document
   .querySelector('.burger-btn-close')
   .addEventListener('click', function () {
-    document.querySelector('.burger-container').classList.add('hidden');
+    document.querySelector('.burger-overlay').classList.add('hidden');
   });
 
-document.querySelectorAll('.burger-container a').forEach(function (link) {
+document.querySelectorAll('.burger-overlay a').forEach(function (link) {
   link.addEventListener('click', function () {
-    document.querySelector('.burger-container').classList.add('hidden');
+    document.querySelector('.burger-overlay').classList.add('hidden');
   });
 });
 
