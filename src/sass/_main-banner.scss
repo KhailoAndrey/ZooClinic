@@ -361,6 +361,12 @@
   line-height: 178px;
   letter-spacing: -12.46px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 53px;
+    letter-spacing: -3.7px;
+    
+  }
+
 }
 .slide2-title-line1-words2 {
   display: flex;
@@ -448,6 +454,12 @@
   text-transform: uppercase;
   mix-blend-mode: overlay;
   margin-top: -60px;
+  @media screen and (max-width: 767px) {
+    font-size: 49px;
+    letter-spacing: -2.4px;
+
+    
+  }
 }
 .slide2-img {
   position: absolute;
@@ -460,6 +472,20 @@
   background-repeat: no-repeat;
   width: 933px;
   height: 100%;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/bg-slide2-mob.webp');
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    // width: 100%;
+    width: 270px;
+    height: 280px;
+    // height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .bigBtnYellow {
   @media screen and (max-width: 767px) {
@@ -479,10 +505,28 @@
   transition: all 0.3s ease;
   transform-origin: center;
 }
+.yellow-btn-mob {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
+    position: absolute;
+    bottom: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .posSlide2 {
   bottom: 0;
   left: 50%;
   margin-left: -96px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .posSlide3 {
   bottom: 0;
