@@ -204,7 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // показ оверлеев
 document.addEventListener('DOMContentLoaded', () => {
-  const openFormOverlayButtons = document.querySelectorAll('.form-popap-btn');
+  const openFormOverlayButtons = document.querySelectorAll(
+    '.form-popap-btn, .btn-contact-mob'
+  );
   const formOverlay = document.querySelector('.overlay-container');
   const backdropOverlay = document.querySelector('.backdrop-overlay');
   const backdropOverlaySubmit = document.querySelector(

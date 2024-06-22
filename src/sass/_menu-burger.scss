@@ -1,6 +1,7 @@
 .burger-overlay {
   width: 300px !important;
-  height: 635px;
+  min-height: 635px;
+  // height: 100vh;
   border-radius: 0px 20px 20px 0px;
   background: rgba(243, 255, 246, 0.9);
   backdrop-filter: blur(11.5px);
@@ -9,6 +10,7 @@
   left: 0;
   z-index: 99999;
   padding: 20px;
+  overflow: scroll;
 }
 .header-burger {
   width: 100%;
@@ -79,6 +81,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 333;
   span {
     color: #06631b;
     font-family: Montserrat;
@@ -103,7 +106,7 @@
     line-height: 110%; /* 17.6px */
   }
 }
-.burg-tel{
+.burg-tel {
   position: relative;
 }
 .burg-tel-btn {
