@@ -554,3 +554,67 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// открытите/закрытие попапа филии в бургере
+document.addEventListener('DOMContentLoaded', () => {
+  const burgFiliiBtn = document.querySelector('.burg-filii-btn');
+  const filBurgPopap = document.querySelector('.fil-burg-popap');
+
+  function openPopup() {
+    filBurgPopap.classList.remove('hidden');
+  }
+
+  function closePopup() {
+    filBurgPopap.classList.add('hidden');
+  }
+
+  burgFiliiBtn.addEventListener('click', function (event) {
+    event.stopPropagation();
+    if (filBurgPopap.classList.contains('hidden')) {
+      openPopup();
+    } else {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('click', function (event) {
+    if (
+      !filBurgPopap.contains(event.target) &&
+      !burgFiliiBtn.contains(event.target)
+    ) {
+      closePopup();
+    }
+  });
+});
+
+// открытите/закрытие попапа телефонов в бургере
+document.addEventListener('DOMContentLoaded', () => {
+  const burgTelBtn = document.querySelector('.burg-tel-btn');
+  const telBurgPopap = document.querySelector('.tel-burg-popap');
+
+  function openPopup() {
+    telBurgPopap.classList.remove('hidden');
+  }
+
+  function closePopup() {
+    telBurgPopap.classList.add('hidden');
+  }
+
+  burgTelBtn.addEventListener('click', function (event) {
+    event.stopPropagation();
+    if (telBurgPopap.classList.contains('hidden')) {
+      openPopup();
+    } else {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('click', function (event) {
+    if (
+      !telBurgPopap.contains(event.target) &&
+      !burgTelBtn.contains(event.target)
+    ) {
+      closePopup();
+    }
+  });
+});
