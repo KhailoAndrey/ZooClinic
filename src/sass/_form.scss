@@ -13,7 +13,6 @@
   flex-direction: row;
   gap: 0;
   margin: 75px 100px 0 100px;
-  //   height: 850px;
   align-items: start;
   justify-content: space-between;
   position: relative;
@@ -124,16 +123,13 @@
       grid-row: 2;
     }
     span {
-      // border: 1px solid red;
       width: 222px;
       grid-column: 2;
       grid-row: 2;
     }
   }
   flex-direction: row;
-  // width: 366px;
   height: 268px;
-  // text-align: left;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -213,7 +209,8 @@ input[type='email'] {
 
 .checkbox-group {
   @media screen and (max-width: 767px) {
-margin: 10px;  }
+    margin: 10px;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +331,6 @@ margin: 10px;  }
     font-size: 13px;
     width: 106px;
     height: 22px;
-
   }
   width: 146px;
   height: 40px;
