@@ -311,19 +311,36 @@
   background: #fff;
   padding: 20px;
   display: flex;
+  flex-direction: row;
   gap: 15px;
   justify-content: space-between;
   align-items: start;
   position: absolute;
   z-index: 1;
-  // display: none; //need to delete after finish form vacan submit!!!
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    height: auto;
+    // border: 1px solid red;
+    padding: 10px;
+    gap: 0;
+    position: relative;
+  }
 }
 .vacan-form-submit-left {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  @media screen and (max-width: 767px) {
+    gap: 10px;
+  }
   img {
     border-radius: 25px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 }
 .checkbox-container {
@@ -338,6 +355,9 @@
   line-height: 110%; /* 19.8px */
   letter-spacing: 0.18px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+  }
 }
 .checkbox-list {
   margin-top: 15px;
@@ -345,6 +365,10 @@
   flex-direction: column;
   gap: 15px;
   align-items: flex-start;
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
+    gap: 5px;
+  }
 }
 .vacan-checkbox,
 .vacan-form-checkbox {
@@ -363,10 +387,10 @@
   padding-left: 30px;
   cursor: pointer;
   user-select: none;
-  // border: 1px solid red;
-
-  // display: flex;
-  // align-items: center;
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+    padding-left: 20px;
+  }
 }
 
 .vacan-checkbox + label::before,
@@ -383,9 +407,15 @@
   border-radius: 4px;
   background-color: transparent;
   box-sizing: border-box;
-  // position: relative;
   min-height: 20px;
+  // position: relative;
   // border: 1px solid red;
+  @media screen and (max-width: 767px) {
+    width: 15px;
+    min-height: 15px;
+    height: 15px;
+    border: 1px solid #04a427;
+  }
 }
 .vacan-form-checkbox + .policy::before {
   top: 50%;
@@ -413,6 +443,12 @@
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+  @media screen and (max-width: 767px) {
+    left: 5px;
+    top: 1;
+    width: 6px;
+    height: 10px;
+  }
 }
 .vacan-form-checkbox:checked + .policy::after {
   top: 30%;
@@ -423,6 +459,9 @@
   flex-direction: column;
   align-items: end;
   width: 100%;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
   > form {
     width: 100%;
     display: flex;
@@ -430,6 +469,10 @@
     align-items: center;
     gap: 16px;
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+      margin-top: 10px;
+      gap: 5px;
+    }
   }
 }
 .vacan-form-submit-btn-close {
@@ -438,6 +481,12 @@
   background: transparent;
   // border: 1px solid red;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    width: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 .vacan-form-submit-title {
   width: 419px;
@@ -459,8 +508,19 @@
   line-height: 110%; /* 22px */
   letter-spacing: 0.2px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    padding: 15 10px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
   > img {
     width: 76px;
+    @media screen and (max-width: 767px) {
+      width: 40px;
+    }
   }
 }
 .vacan-submit-form-group {
@@ -470,7 +530,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-bottom: 50px;
   gap: 8px;
   position: relative;
 }
@@ -497,6 +556,12 @@
   font-weight: 600;
   line-height: 110%; /* 17.6px */
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    padding: 10px;
+  }
   img {
     width: 10px;
     height: 14px;
@@ -867,7 +932,15 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  // justify-content: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+    position: relative;
+    // z-index: 333;
+    
+  }
   .vacan-submit-overlay-close {
     padding: 0;
     width: 100%;
@@ -885,6 +958,13 @@
     height: 142px;
     border-radius: 25px;
     margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      max-width: 425px;
+      height: auto;
+      margin-bottom: 10px;
+      
+    }
   }
 }
 .vacan-submit-overlay-title {
@@ -897,6 +977,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+    padding: 10;
+    // margin: 0 20px;
+  }
   span {
     width: 427px;
     color: #095119;
@@ -908,6 +995,13 @@
     line-height: 110%; /* 22px */
     letter-spacing: 0.2px;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      font-size: 15px;
+      padding: 10px;
+
+      
+    }
   }
 }
 .hidden {
