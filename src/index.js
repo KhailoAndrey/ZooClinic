@@ -4,16 +4,16 @@ const swiper = new Swiper('.slider', {
   loop: true,
   loopAdditionalSlides: 0,
   speed: 4000,
-  // autoplay: {
-  //   delay: 5000,
-  // },
-  effect: 'fade',
-  // cubeEffect: {
-  //   slideShadows: false,
-  // },
-  fadeEffect: {
-    crossFade: true,
+  autoplay: {
+    delay: 5000,
   },
+  // effect: 'fade',
+  cubeEffect: {
+    slideShadows: false,
+  },
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
   // If we need pagination
   pagination: {
     el: '.pagination',
