@@ -345,6 +345,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
+    max-width: 425px;
     // gap: 10px;
   }
 }
