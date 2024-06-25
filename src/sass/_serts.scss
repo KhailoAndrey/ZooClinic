@@ -106,7 +106,7 @@
   // width: 100%;
   display: flex;
   @media screen and (max-width: 767px) {
-    margin: 8px 5px 0;
+    margin: 8px 45px 0;
   }
   img {
     @media screen and (max-width: 767px) {
@@ -117,11 +117,7 @@
     height: 56px;
   }
   gap: 25px;
-  margin: 50px;
-  margin-bottom: 0;
-  // position: absolute;
-  // bottom: 75px;
-  // right: 150px;
+  margin: 50px 100px 0;
 }
 .pagin-btn-group .swiper-pagination-bullet {
   width: 10px;
@@ -181,6 +177,7 @@
   position: fixed;
   z-index: 10000;
   padding-top: 20px;
+  // margin-top: 20px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -194,6 +191,10 @@
     rgba(16, 106, 8, 0.3) 67.42%,
     rgba(12, 25, 1, 0.3) 98.97%
   );
+  backdrop-filter: blur(7px);
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 .modal-content {
@@ -205,18 +206,22 @@
   display: block;
   width: 80%;
   max-width: 700px;
-  border-radius: 80px;
+  border-radius: 30px;
 }
 
 .close-img-btn {
   position: absolute;
   @media screen and (max-width: 767px) {
+    width: 32px;
+    height: 32px;
     top: 25px;
     right: 5%;
     font-size: 20px;
     padding: 5px;
     padding-top: 0;
   }
+  width: 54px;
+  height: 54px;
   top: 15px;
   right: 35px;
   color: #fff;

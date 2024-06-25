@@ -8,6 +8,7 @@ const swiper = new Swiper('.slider', {
   //   delay: 5000,
   // },
   // effect: 'fade',
+  effect: 'cube',
   cubeEffect: {
     slideShadows: false,
   },
