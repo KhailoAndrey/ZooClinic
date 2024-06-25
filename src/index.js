@@ -621,3 +621,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// открытие/закрытие оверлея карты
+document.addEventListener('DOMContentLoaded', function () {
+  const overlayMapContainer = document.querySelector('.overlay-map-container');
+  const mapOverlayClose = document.querySelector('.map-overlay-close');
+  const mapOverlay = document.querySelector('.map-overlay');
+  const mapIframe = document.querySelector('.map-block-frame');
+
+  // Функция для закрытия оверлея
+  function closeOverlay() {
+    overlayMapContainer.classList.add('hidden');
+    mapIframe.src = 'about:blank'; // Очистить src iframe при закрытии
+  }
+
+  // Закрытие при клике на кнопку
+  mapOverlayClose.addEventListener('click', closeOverlay);
+
+  // Закрытие при нажатии на Esc
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeOverlay();
+    }
+  });
+
+  // Закрытие при клике вне карты
+  document.addEventListener('click', function (event) {
+    if (overlayMapContainer.classList.contains('hidden')) return;
+
+    if (!mapOverlay.contains(event.target)) {
+      closeOverlay();
+    }
+  });
+
+  // Обработчик кликов на ссылки для показа карт
+  const showMapLinks = document.querySelectorAll('.show-map-link');
+  showMapLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const mapUrl = link.getAttribute('data-map');
+      if (mapUrl) {
+        // Установим src iframe на пустое значение
+        mapIframe.src = '';
+
+        // Обновляем src только после того, как iframe станет пустым
+        setTimeout(function () {
+          mapIframe.src = mapUrl;
+          overlayMapContainer.classList.remove('hidden');
+        }, 300);
+      }
+    });
+  });
+
+});
+

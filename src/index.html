@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://maps.google.com"> -->
+
     <meta
       name="keywords"
       content="ветеринарна клініка Дніпро, зоотовари Дніпро, зоомагазин Дніпро, лікування тварин Дніпро, турбота про тварин, ZooWild, найкраща ветеринарна клініка, професійне лікування тварин, ветеринарні послуги Дніпро, зоомагазин ZooWild, ветеринарная клиника Днепр, зоотовары Днепр, зоомагазин Днепр, лечение животных Днепр, забота о животных, лучшая ветеринарная клиника, Найкраща ветеринарна клініка у Дніпрі, лучшая ветеринарная клиника, вет. клиника, топ вет клиника, профессиональное лечение животных, ветеринарные услуги Днепр, Светлана Ракитянская"
@@ -21,15 +23,15 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
-
+  
   <body>
     <include src="./partials/callsms.html"></include>
     <include src="./partials/menu-burger.html"></include>
     <include src="./partials/header.html"></include>
     <include src="./partials/main-banner.html"></include>
     <include src="./partials/overlay-form.html"></include>
+    <include src="./partials/overlay-map.html"></include>
     <div class="main-container">
       <include src="./partials/header-main.html"></include>
       <include src="./partials/company-numbers.html"></include>
@@ -48,6 +50,7 @@
     </div>
 
     <script type="module" src="./js/lang.js"></script>
+    <script type="module" src="./index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
   </body>
