@@ -145,10 +145,10 @@ document.addEventListener('DOMContentLoaded', function () {
 // модалка филий
 document.addEventListener('DOMContentLoaded', () => {
   const openPopupButtons = document.querySelectorAll(
-    '.header__filii, .header__contacts-item-btn, .pharm-choose-btn'
+    '.header__filii, .header__contacts-item-btn'
   );
   const popups = document.querySelectorAll(
-    '.filii-popap, .popap-phone, .pharmacy-popap'
+    '.filii-popap, .popap-phone'
   );
 
   // Функция для переключения видимости попапа
@@ -671,5 +671,40 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 300);
       }
     });
+  });
+});
+
+// открытие/закрытие оверлея аптек
+document.addEventListener('DOMContentLoaded', function () {
+  const chooseBtn = document.querySelector('.pharm-choose-btn');
+  const overlayContainer = document.querySelector('.pharm-choose-container');
+  const closeButton = document.querySelector('.farm-overlay-close');
+  const overlay = document.querySelector('.pharm-choose-overlay');
+
+  function openOverlay() {
+    overlayContainer.style.display = 'flex';
+  }
+
+  function closeOverlay() {
+    overlayContainer.style.display = 'none';
+  }
+
+  chooseBtn.addEventListener('click', openOverlay);
+  closeButton.addEventListener('click', closeOverlay);
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeOverlay();
+    }
+  });
+
+  overlayContainer.addEventListener('click', function (event) {
+    if (event.target === overlayContainer) {
+      closeOverlay();
+    }
+  });
+
+  overlay.addEventListener('click', function (event) {
+    event.stopPropagation();
   });
 });
