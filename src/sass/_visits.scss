@@ -13,6 +13,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 75px;
+  background-image: url('../images/bg-laps.webp');
+  background-position: center;
 }
 .visit-before {
   @media screen and (max-width: 767px) {

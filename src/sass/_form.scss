@@ -16,6 +16,8 @@
   align-items: start;
   justify-content: space-between;
   position: relative;
+  background-image: url('../images/bg-laps.webp');
+  background-position: center;
 }
 .form-small-photo {
   @media screen and (max-width: 767px) {
