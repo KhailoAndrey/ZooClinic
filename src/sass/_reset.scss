@@ -76,6 +76,11 @@ select {
 button {
   transition: all 1s ease-in;
 }
+input:focus {
+    outline: none;
+    border: none;
+}
+
 
 ol,
 ul {
