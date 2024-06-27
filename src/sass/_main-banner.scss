@@ -2,7 +2,15 @@
   margin: 0 auto;
   // padding: 0 100px;
 }
-
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 100000;
+}
 .slider {
   position: relative;
   width: 100%;
@@ -445,7 +453,7 @@
     margin: 0;
     font-size: 15px;
     padding: 0;
-    line-height: 100%; 
+    line-height: 100%;
     margin-left: auto;
   }
 }
@@ -462,7 +470,6 @@
     margin: 0;
     padding: 0;
     justify-content: center;
-    
   }
 }
 .slide2-title-line2-word1 {
@@ -475,7 +482,6 @@
   text-transform: uppercase;
   @media screen and (max-width: 767px) {
     display: none;
-    
   }
 }
 .slide2-title-line2-words2 {
@@ -487,7 +493,6 @@
     flex-direction: row;
     align-items: baseline;
     gap: 5px;
-    
   }
 }
 .s2tl2w21 {
@@ -501,8 +506,6 @@
   @media screen and (max-width: 767px) {
     font-size: 33px;
     line-height: 100%; /* 121px */
-    
-    
   }
 }
 .s2tl2w22 {
@@ -515,8 +518,6 @@
   text-transform: uppercase;
   @media screen and (max-width: 767px) {
     font-size: 13px;
-
-    
   }
 }
 

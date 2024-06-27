@@ -708,3 +708,13 @@ document.addEventListener('DOMContentLoaded', function () {
     event.stopPropagation();
   });
 });
+
+// показ интро видео
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.getElementById('intro-video');
+  const videoContainer = document.getElementById('video-container');
+
+  video.onended = function () {
+    videoContainer.classList.add('hidden');
+  };
+});
