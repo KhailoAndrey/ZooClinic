@@ -515,20 +515,24 @@
 }
 .rev-slider-nav {
   display: flex;
-  padding-left: 10px;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .review-swiper-pagin {
   // position: absolute;
   @media screen and (max-width: 767px) {
     gap: 10px;
   }
-  bottom: 23 !important;
-  left: 10 !important;
+  // bottom: 23 !important;
+  // left: 10 !important;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   gap: 20px;
-  max-width: 100%;
+  margin: 0 auto;
+  width: 160px !important;
 }
 .review-swiper-pagin .swiper-pagination-bullet {
   width: 10px;
@@ -555,13 +559,17 @@
 }
 .review-btn-cont {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
   @media screen and (max-width: 767px) {
-    gap: 17px;
+    gap: 15px;
   }
   gap: 25px;
   // position: absolute;
-  bottom: 0;
-  right: 0;
+  // bottom: 0;
+  // right: 0;
 }
 .review-swiper-prev {
   @media screen and (max-width: 767px) {
