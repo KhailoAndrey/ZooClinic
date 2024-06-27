@@ -147,9 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openPopupButtons = document.querySelectorAll(
     '.header__filii, .header__contacts-item-btn'
   );
-  const popups = document.querySelectorAll(
-    '.filii-popap, .popap-phone'
-  );
+  const popups = document.querySelectorAll('.filii-popap, .popap-phone');
 
   // Функция для переключения видимости попапа
   const togglePopup = popup => {
@@ -713,8 +711,10 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const video = document.getElementById('intro-video');
   const videoContainer = document.getElementById('video-container');
-
+  const sliderContainer = document.getElementById('slider-container');
+  video.load();
   video.onended = function () {
     videoContainer.classList.add('hidden');
+    sliderContainer.classList.remove('hidden');
   };
 });
