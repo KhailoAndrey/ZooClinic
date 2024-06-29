@@ -3,7 +3,7 @@ const swiper = new Swiper('.slider', {
   direction: 'vertical',
   loop: true,
   // loopAdditionalSlides: 0,
-  speed: 4000,
+  speed: 5000,
   autoplay: false,
   // autoplay: {
   //   delay: 5000,
@@ -35,13 +35,13 @@ const swiper = new Swiper('.slider', {
     nextEl: '.btnY',
   },
 });
-setTimeout(() => {
-  swiper.params.autoplay = {
-    delay: 5000, // Устанавливаем задержку между сменой слайдов
-    disableOnInteraction: false,
-  };
-  swiper.autoplay.start(); // Запускаем автоплей
-}, 10000); // 10 секунд
+// setTimeout(() => {
+//   swiper.params.autoplay = {
+//     delay: 5000, // Устанавливаем задержку между сменой слайдов
+//     disableOnInteraction: false,
+//   };
+//   swiper.autoplay.start(); // Запускаем автоплей
+// }, 10000); // 10 секунд
 const slideNumber = 3;
 const nextButtons = document.querySelectorAll('.moreBtn');
 nextButtons.forEach(button => {

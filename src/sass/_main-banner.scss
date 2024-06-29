@@ -72,6 +72,17 @@
     margin: 0;
   }
 }
+.slide3-wrapper {
+  @media screen and (max-width: 767px) {
+    background: linear-gradient(
+      89deg,
+      #081e02 0%,
+      #0c2502 11.26%,
+      #0d450c 96.23%,
+      #0b2b04 100%
+    );
+  }
+}
 .slide-title {
   display: flex;
   flex-direction: column;
@@ -610,9 +621,17 @@
     display: none;
   }
 }
+.slide3-btn{
+  position: absolute;
+  left: 50px;
+  top: 50%;
+}
 .posSlide3 {
   bottom: 0;
   margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .posSlide4 {
   width: 252px;
@@ -687,16 +706,44 @@
     transform: rotate(30deg);
   }
 }
+.slide3-img {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.slide3-mob {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+}
 .slide3-title {
   display: flex;
   flex-direction: column;
   width: 100%;
+  @media screen and (max-width: 767px) {
+    margin: 100px 0 auto;
+    
+  }
 }
 .slide3-title-line1 {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   align-items: baseline;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    // align-items: center;
+  }
 }
 .s3tl1-word1 {
   color: #f6fff8;
@@ -707,15 +754,33 @@
   line-height: 110%; /* 159.942px */
   letter-spacing: -5.816px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 42px;
+    letter-spacing: -1.7px;
+    padding-left: 10px;
+  }
 }
 .s3tl1-word2 {
   color: #f6fff8;
   font-family: 'Cormorant Unicase';
-  font-size: 65.162px;
+  font-size: 65px;
   font-style: normal;
   font-weight: 300;
   line-height: 110%; /* 71.678px */
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 29px;
+    margin-left: auto;
+    margin-right: 60px;
+  }
+}
+.slide3-title-line2-word{
+  display: block;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .slide3-title-line2 {
   color: #f6fff8;
@@ -727,6 +792,11 @@
   letter-spacing: -18px;
   text-transform: uppercase;
   mix-blend-mode: overlay;
+  @media screen and (max-width: 767px) {
+    font-size: 58px;
+    letter-spacing: -3px;
+    margin: 10px 0;    
+  }
 }
 .slide3-title-line3 {
   display: flex;
@@ -740,6 +810,10 @@
   line-height: 96%; /* 47.04px */
   letter-spacing: -0.49px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+    letter-spacing: -0.2px;
+  }
 }
 
 // slide 4
