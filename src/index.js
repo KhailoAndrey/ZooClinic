@@ -41,7 +41,7 @@ setTimeout(() => {
     disableOnInteraction: false,
   };
   swiper.autoplay.start(); // Запускаем автоплей
-}, 6000); 
+}, 10000); 
 const slideNumber = 3;
 const nextButtons = document.querySelectorAll('.moreBtn');
 nextButtons.forEach(button => {
