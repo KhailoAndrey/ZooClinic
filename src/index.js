@@ -35,13 +35,13 @@ const swiper = new Swiper('.slider', {
     nextEl: '.btnY',
   },
 });
-setTimeout(() => {
-  swiper.params.autoplay = {
-    delay: 5000, // Устанавливаем задержку между сменой слайдов
-    disableOnInteraction: false,
-  };
-  swiper.autoplay.start(); // Запускаем автоплей
-}, 6000); 
+// setTimeout(() => {
+//   swiper.params.autoplay = {
+//     delay: 5000, // Устанавливаем задержку между сменой слайдов
+//     disableOnInteraction: false,
+//   };
+//   swiper.autoplay.start(); // Запускаем автоплей
+// }, 6000); 
 const slideNumber = 3;
 const nextButtons = document.querySelectorAll('.moreBtn');
 nextButtons.forEach(button => {
@@ -726,4 +726,35 @@ document.addEventListener('DOMContentLoaded', function () {
     videoContainer.classList.add('hidden');
     sliderContainer.classList.remove('hidden');
   };
+});
+
+// раскрытие карточки на 4м слайде
+document.addEventListener('DOMContentLoaded', function () {
+  const plusBtn = document.querySelector('.slide4-plus-btn');
+  const minusBtn = document.querySelector('.slide4-minus-btn');
+  const ownerSlide4Mob = document.querySelector('.owner-slide4-mob');
+
+  plusBtn.addEventListener('click', function () {
+    plusBtn.classList.add('hidden');
+    minusBtn.classList.remove('hidden');
+    ownerSlide4Mob.classList.remove('hidden');
+  });
+
+  minusBtn.addEventListener('click', function () {
+    minusBtn.classList.add('hidden');
+    plusBtn.classList.remove('hidden');
+    ownerSlide4Mob.classList.add('hidden');
+  });
+
+  document.addEventListener('click', function (event) {
+    if (
+      !ownerSlide4Mob.contains(event.target) &&
+      !plusBtn.contains(event.target) &&
+      !minusBtn.contains(event.target)
+    ) {
+      ownerSlide4Mob.classList.add('hidden');
+      minusBtn.classList.add('hidden');
+      plusBtn.classList.remove('hidden');
+    }
+  });
 });
