@@ -35,13 +35,13 @@ const swiper = new Swiper('.slider', {
     nextEl: '.btnY',
   },
 });
-// setTimeout(() => {
-//   swiper.params.autoplay = {
-//     delay: 5000, // Устанавливаем задержку между сменой слайдов
-//     disableOnInteraction: false,
-//   };
-//   swiper.autoplay.start(); // Запускаем автоплей
-// }, 6000); 
+setTimeout(() => {
+  swiper.params.autoplay = {
+    delay: 5000, // Устанавливаем задержку между сменой слайдов
+    disableOnInteraction: false,
+  };
+  swiper.autoplay.start(); // Запускаем автоплей
+}, 6000); 
 const slideNumber = 3;
 const nextButtons = document.querySelectorAll('.moreBtn');
 nextButtons.forEach(button => {
