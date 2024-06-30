@@ -38,7 +38,7 @@ const swiper = new Swiper('.slider', {
 setTimeout(() => {
   swiper.params.autoplay = {
     delay: 5000, // Устанавливаем задержку между сменой слайдов
-    disableOnInteraction: false,
+    // disableOnInteraction: false,
   };
   swiper.autoplay.start(); // Запускаем автоплей
 }, 10000); 

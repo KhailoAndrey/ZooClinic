@@ -10,14 +10,17 @@
   height: 100vh;
   background: black;
   z-index: 100000;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 #video-container video {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Растягиваем видео, сохраняя соотношение сторон */
-  @media screen and (max-width: 767px) {
-    object-fit: fill; /* Растягиваем видео, сохраняя соотношение сторон */
-  }
+  // @media screen and (max-width: 767px) {
+  //   object-fit: fill; /* Растягиваем видео, сохраняя соотношение сторон */
+  // }
 }
 .slider {
   position: relative;
@@ -25,7 +28,7 @@
   height: 100svh;
   overflow: hidden;
   @media screen and (max-width: 767px) {
-    // height: 80svh;
+    // height: 90svh;
   }
 }
 .slide-container {
@@ -81,7 +84,7 @@
   width: 100%;
   height: 100%;
   margin: 0 100px;
-  padding: 0 100px;
+  // padding: 0 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
