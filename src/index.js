@@ -1,47 +1,74 @@
-const swiper = new Swiper('.slider', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-  // loopAdditionalSlides: 0,
-  speed: 5000,
-  autoplay: false,
-  // autoplay: {
-  //   delay: 5000,
-  //   // disableOnInteraction: false,
-  // },
-  // effect: 'fade',
-  effect: 'cube',
-  cubeEffect: {
-    slideShadows: false,
-  },
-  // fadeEffect: {
-  //   crossFade: true,
-  // },
-  // If we need pagination
-  pagination: {
-    el: '.pagination',
-    clickable: true,
-  },
-  on: {
-    slideChange: function () {
-      var swiper = this;
-      var currentSlide = document.querySelector('.count');
-      var slideNumber = (swiper.realIndex + 1).toString().padStart(2, '0');
-      currentSlide.textContent = slideNumber;
-    },
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.btnY',
-  },
-});
-setTimeout(() => {
-  swiper.params.autoplay = {
-    delay: 5000, // Устанавливаем задержку между сменой слайдов
-    // disableOnInteraction: false,
+// интро видео + слайдер
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.getElementById('intro-video');
+  const videoContainer = document.getElementById('video-container');
+  const sliderContainer = document.getElementById('slider-container');
+
+  // Перезагружаем видео при обновлении страницы
+  video.load();
+
+  // Добавляем сообщение в консоль для проверки загрузки видео
+  // console.log('Видео загружено и готово к воспроизведению');
+
+  let swiper; // Декларируем переменную для Swiper
+
+  video.onended = function () {
+    // Добавляем сообщение в консоль для проверки окончания видео
+    // console.log('Видео завершено');
+
+    videoContainer.classList.add('hidden');
+    sliderContainer.classList.remove('hidden');
+
+    // Инициализация Swiper без автоплея
+    swiper = new Swiper('.slider', {
+      direction: 'vertical',
+      loop: true,
+      speed: 4000,
+      autoplay: false, // Отключаем автоплей изначально
+      effect: 'cube',
+      cubeEffect: {
+        slideShadows: false,
+      },
+      pagination: {
+        el: '.pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.btnY',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        init: function () {
+          // console.log('Swiper инициализирован без автоплея');
+        },
+        slideChange: function () {
+          const swiper = this;
+          const currentSlide = document.querySelector('.count');
+          const slideNumber = (swiper.realIndex + 1)
+            .toString()
+            .padStart(2, '0');
+          currentSlide.textContent = slideNumber;
+
+          // Добавляем сообщение в консоль для проверки смены слайда
+          // console.log('Слайд изменен на номер ' + slideNumber);
+        },
+      },
+    });
+
+    // Запускаем автоплей через 10 секунд после завершения видео
+    setTimeout(() => {
+      // console.log('Запуск автоплея Swiper через 10 секунд');
+      swiper.params.autoplay = {
+        delay: 5000, // Устанавливаем задержку между сменой слайдов
+        disableOnInteraction: false,
+      };
+      swiper.autoplay.start(); // Запускаем автоплей
+      // console.log('Автоплей Swiper запущен');
+    }, 5000); // 10 секунд
   };
-  swiper.autoplay.start(); // Запускаем автоплей
-}, 10000); 
+});
+
+
 const slideNumber = 3;
 const nextButtons = document.querySelectorAll('.moreBtn');
 nextButtons.forEach(button => {
@@ -714,18 +741,6 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function (event) {
     event.stopPropagation();
   });
-});
-
-// показ интро видео
-document.addEventListener('DOMContentLoaded', function () {
-  const video = document.getElementById('intro-video');
-  const videoContainer = document.getElementById('video-container');
-  const sliderContainer = document.getElementById('slider-container');
-  video.load();
-  video.onended = function () {
-    videoContainer.classList.add('hidden');
-    sliderContainer.classList.remove('hidden');
-  };
 });
 
 // раскрытие карточки на 4м слайде
