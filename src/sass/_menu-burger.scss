@@ -1,16 +1,17 @@
 .burger-overlay {
   width: 300px !important;
   min-height: 635px;
+  height: auto;
   // height: 100vh;
   border-radius: 0px 20px 20px 0px;
   background: rgba(243, 255, 246, 0.9);
   backdrop-filter: blur(11.5px);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 99999;
   padding: 20px;
-  overflow: scroll;
+  // overflow: scroll;
 }
 .header-burger {
   width: 100%;
