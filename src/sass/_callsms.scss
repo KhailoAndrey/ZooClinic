@@ -2,7 +2,7 @@
   width: 108px;
   position: fixed;
   right: calc((100vw - 1920px) / 2);
-  bottom: 65px;
+  bottom: 110px;
   margin-right: 8px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   z-index: 11111;
   @media screen and (max-width: 767px) {
     width: 51px;
-    bottom: 40px;
+    bottom: 70px;
     margin: 0;
     right: 10;
     gap: 0;

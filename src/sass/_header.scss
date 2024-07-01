@@ -148,10 +148,11 @@
 
 .filii-popap {
   width: 400px;
-  height: 618px;
-  margin-top: 17px;
+  height: 638px;
+  // margin-top: 17px;
   // border: 1px solid red;
   position: absolute;
+  bottom: 80;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   border-radius: 20px;
@@ -269,7 +270,8 @@
   height: 415px;
   position: absolute;
   left: 0;
-  top: 37px;
+  // top: 37px;
+  bottom: 50;
   // border: 1px solid red;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.9);

@@ -53,6 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
           // console.log('Слайд изменен на номер ' + slideNumber);
         },
       },
+      
+    });
+
+    const slideNumber = 3;
+    const nextButtons = document.querySelectorAll('.moreBtn');
+    nextButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        swiper.slideTo(slideNumber);
+      });
     });
 
     // Запускаем автоплей через 10 секунд после завершения видео
