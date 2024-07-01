@@ -4,51 +4,75 @@ document.addEventListener('DOMContentLoaded', function () {
   const videoContainer = document.getElementById('video-container');
   const sliderContainer = document.getElementById('slider-container');
 
-  // Перезагружаем видео при обновлении страницы
-  video.load();
-  let swiper; // Декларируем переменную для Swiper
-  video.onended = function () {
-    videoContainer.classList.add('hidden');
-    sliderContainer.classList.remove('hidden');
-    // Запускаем автоплей через 10 секунд после завершения видео
+  const initializeSwiper = () => {
+    const swiper = new Swiper('.slider', {
+      direction: 'vertical',
+      loop: true,
+      speed: 5000,
+      autoplay: false, // Отключаем автоплей изначально
+      effect: 'cube',
+      cubeEffect: {
+        slideShadows: false,
+      },
+      pagination: {
+        el: '.pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.btnY',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        init: function () {
+        },
+        slideChange: function () {
+          const swiper = this;
+          const currentSlide = document.querySelector('.count');
+          const slideNumber = (swiper.realIndex + 1)
+            .toString()
+            .padStart(2, '0');
+          if (currentSlide) {
+            currentSlide.textContent = slideNumber;
+          }
+        },
+        autoplayStart: function () {
+        },
+        autoplayStop: function () {
+        },
+      },
+    });
+
+    // Запускаем автоплей через 10 секунд
     setTimeout(() => {
       swiper.params.autoplay = {
-        delay: 5000, // Устанавливаем задержку между сменой слайдов
+        delay: 6000, // Устанавливаем задержку между сменой слайдов
         disableOnInteraction: false,
       };
       swiper.autoplay.start(); // Запускаем автоплей
-    }, 5000);
+    }, 1000); 
+
+    return swiper;
   };
+
+  // Проверка ширины экрана для мобильных устройств
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    videoContainer.style.display = 'none';
+    sliderContainer.classList.remove('hidden');
+    initializeSwiper();
+  } else {
+    video.load();
+    video.onended = function () {
+      console.log('Видео завершено');
+
+      videoContainer.classList.add('hidden');
+      sliderContainer.classList.remove('hidden');
+
+      initializeSwiper();
+    };
+  }
 });
 
-// Инициализация Swiper без автоплея
-const swiper = new Swiper('.slider', {
-  direction: 'vertical',
-  loop: true,
-  speed: 4000,
-  autoplay: false, // Отключаем автоплей изначально
-  effect: 'cube',
-  cubeEffect: {
-    slideShadows: false,
-  },
-  pagination: {
-    el: '.pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.btnY',
-    prevEl: '.swiper-button-prev',
-  },
-  on: {
-    init: function () {},
-    slideChange: function () {
-      const swiper = this;
-      const currentSlide = document.querySelector('.count');
-      const slideNumber = (swiper.realIndex + 1).toString().padStart(2, '0');
-      currentSlide.textContent = slideNumber;
-    },
-  },
-});
+
 
 const slideNumber = 3;
 const nextButtons = document.querySelectorAll('.moreBtn');
