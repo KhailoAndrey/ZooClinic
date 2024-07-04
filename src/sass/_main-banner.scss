@@ -871,7 +871,7 @@
 .s3tl1-word1 {
   color: #f6fff8;
   font-family: 'Cormorant Unicase';
-  font-size: 145.402px;
+  font-size: 145px;
   font-style: normal;
   font-weight: 300;
   line-height: 110%; /* 159.942px */
@@ -881,6 +881,10 @@
     font-size: 42px;
     letter-spacing: -1.7px;
     padding-left: 10px;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 119px;
+    letter-spacing: -4.6px;
   }
 }
 .s3tl1-word2 {
@@ -895,6 +899,10 @@
     font-size: 29px;
     margin-left: auto;
     margin-right: 60px;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 53px;
+    margin-right: 80px;
   }
 }
 .slide3-title-line2-word {
@@ -920,6 +928,9 @@
     letter-spacing: -3px;
     margin: 10px 0;
   }
+  @media screen and (max-width: 1919px) {
+    font-size: 283px;
+  }
 }
 .slide3-title-line3 {
   display: flex;
@@ -938,6 +949,9 @@
     letter-spacing: -0.2px;
     margin-right: 40px;
     line-height: 150%; /* 47.04px */
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 40px;
   }
 }
 
