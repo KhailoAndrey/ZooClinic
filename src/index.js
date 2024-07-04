@@ -23,8 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: '.swiper-button-prev',
       },
       on: {
-        init: function () {
-        },
+        init: function () {},
         slideChange: function () {
           const swiper = this;
           const currentSlide = document.querySelector('.count');
@@ -35,10 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
             currentSlide.textContent = slideNumber;
           }
         },
-        autoplayStart: function () {
-        },
-        autoplayStop: function () {
-        },
+        autoplayStart: function () {},
+        autoplayStop: function () {},
       },
     });
 
@@ -49,8 +46,15 @@ document.addEventListener('DOMContentLoaded', function () {
         disableOnInteraction: false,
       };
       // swiper.autoplay.start(); // Запускаем автоплей
-    }, 1000); 
+    }, 1000);
 
+    const slideNumber = 3;
+    const nextButtons = document.querySelectorAll('.moreBtn');
+    nextButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        swiper.slideTo(slideNumber);
+      });
+    });
     return swiper;
   };
 
@@ -70,16 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
       initializeSwiper();
     };
   }
-});
-
-
-
-const slideNumber = 3;
-const nextButtons = document.querySelectorAll('.moreBtn');
-nextButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    swiper.slideTo(slideNumber);
-  });
 });
 
 // свайпер сертификатов
