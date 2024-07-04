@@ -94,8 +94,6 @@
 }
 .header-main {
   position: sticky;
-  // position: absolute;
-  // z-index: 10000;
   width: 100%;
   top: 0;
   padding: 15px 100px;
@@ -104,19 +102,22 @@
   box-shadow: 0px 4px 7px 0px rgba(6, 99, 27, 0.2);
   backdrop-filter: blur(10px);
   z-index: 5555;
-  // overflow: hidden;
   @media screen and (max-width: 767px) {
     padding: 0;
     border-radius: 0px 0px 20px 20px;
+  }
+  @media screen and (max-width: 1919px) {
+    border-radius: 0px 0px 30px 30px;
+    padding: 15px 25px;
   }
 }
 .header__nav-list {
   display: flex;
   gap: 54px;
-  color: $color-white;
-  //   margin: 0 auto;
-  //   width: auto;
-  //   height: 100px;
+  color: #fff;
+  @media screen and (max-width: 1919px) {
+    gap: 43px;
+  }
 }
 
 .header__nav-list-item {
@@ -127,10 +128,11 @@
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.18px;
-
-  // &:hover {
-  //   scale: (1.2);
-  // }
+  @media screen and (max-width: 1919px) {
+    font-size: 17px;
+    letter-spacing: 0.17px;
+    line-height: 92%;
+  }
 }
 .header__filii {
   width: 86px;
@@ -251,19 +253,26 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  @media screen and (max-width: 1919px) {
+    gap: 6px;
+  }
 }
 .header__contacts-item img {
-  fill: $color-white;
+  fill: #fff;
 }
 
 .header__contacts-item p {
-  color: $color-text;
+  color: #f6fff8;
   font-family: Montserrat;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.22px;
+  @media screen and (max-width: 1919px) {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
 }
 .popap-phone {
   width: 400px;
@@ -358,13 +367,17 @@
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(1.5px);
+  @media screen and (max-width: 1919px) {
+    padding: 2px 15px 2px 4px;
+    gap: 7px;
+  }
   &:hover {
     scale: 1.1;
   }
 }
 
 .header__button-link p {
-  color: $color-white;
+  color: #fff;
   text-align: center;
   font-family: Montserrat;
   font-size: 18px;
@@ -383,10 +396,27 @@
   border-radius: 68px;
   border: 1px solid #095119;
   background: #fff;
+  @media screen and (max-width: 1919px) {
+    width: 31px;
+    height: 31px;
+    border-radius: 55px;
+  }
+  img {
+    width: 29px;
+    height: 16px;
+    @media screen and (max-width: 1919px) {
+      width: 23px;
+      height: 13px;
+    }
+  }
 }
 
 .language-switcher {
   display: flex;
+  gap: 10px;
+  @media screen and (max-width: 1919px) {
+    gap: 6px;
+  }
 }
 
 .language-switcher button {
@@ -399,6 +429,10 @@
   font-weight: 400;
   line-height: 22px;
   opacity: 0.6;
+  padding: 0;
+  @media screen and (max-width: 1919px) {
+    font-size: 14px;
+  }
 }
 .language-switcher button.active {
   opacity: 1;

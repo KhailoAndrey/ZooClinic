@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         delay: 6000, // Устанавливаем задержку между сменой слайдов
         disableOnInteraction: false,
       };
-      swiper.autoplay.start(); // Запускаем автоплей
+      // swiper.autoplay.start(); // Запускаем автоплей
     }, 1000); 
 
     return swiper;
