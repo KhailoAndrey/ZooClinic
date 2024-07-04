@@ -102,13 +102,13 @@
   box-shadow: 0px 4px 7px 0px rgba(6, 99, 27, 0.2);
   backdrop-filter: blur(10px);
   z-index: 5555;
-  @media screen and (max-width: 767px) {
-    padding: 0;
-    border-radius: 0px 0px 20px 20px;
-  }
   @media screen and (max-width: 1919px) {
     border-radius: 0px 0px 30px 30px;
     padding: 15px 25px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    border-radius: 0px 0px 20px 20px;
   }
 }
 .header__nav-list {
