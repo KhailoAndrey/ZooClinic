@@ -1086,11 +1086,26 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  @media screen and (max-width: 1919px) {
+    width: 450px;
+    height: 200px;
+    border-radius: 33px;
+    right: 70px;
+    top: 23%;
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 80px;
+    gap: 16px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
 .owner-name {
+  @media screen and (max-width: 1919px) {
+    font-size: 30px;
+    letter-spacing: -0.6px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 20px;
     letter-spacing: 0.4px;
@@ -1108,6 +1123,9 @@
   text-transform: uppercase;
 }
 .owner-title {
+  @media screen and (max-width: 1919px) {
+    font-size: 17px;
+  }
   @media screen and (max-width: 767px) {
     width: 260px;
     height: 46px;
@@ -1124,8 +1142,10 @@
   text-transform: uppercase;
 }
 .owner-word {
+  @media screen and (max-width: 1919px) {
+    font-size: 17px;
+  }
   @media screen and (max-width: 767px) {
-    // width: 260px;
     font-size: 14px;
   }
   color: #04a427;
@@ -1137,9 +1157,15 @@
   text-transform: uppercase;
 }
 .owner-soclinks {
+  @media screen and (max-width: 1919px) {
+    gap: 18px;
+  }
   @media screen and (max-width: 767px) {
     gap: 15px;
     img {
+      @media screen and (max-width: 1919px) {
+        width: 24px;
+      }
       width: 27px;
     }
   }
@@ -1148,11 +1174,12 @@
 }
 
 .signature {
-  // width: 96px;
-  // height: 73px;
+  @media screen and (max-width: 1919px) {
+    right: 0;
+    bottom: -10;
+  }
   position: fixed;
   bottom: 0;
-  // border: 1px solid red;
   right: 40px;
 }
 .btn-owner-block {
