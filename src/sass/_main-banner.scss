@@ -95,7 +95,8 @@
     margin: 0;
   }
   @media screen and (max-width: 1919px) {
-    margin: 0 25px;
+    margin: 0;
+    padding: 0 25px;
   }
 }
 .slide3-wrapper {
@@ -186,6 +187,9 @@
     position: absolute;
     left: auto;
     bottom: 140px;
+  }
+  @media screen and (max-width: 1919px) {
+    left: 70px;
   }
   button {
     width: 80px;
@@ -285,7 +289,6 @@
     width: 445px;
     height: 128px;
     right: 25px;
-
   }
   span {
     color: rgba(242, 242, 242, 1);
@@ -446,17 +449,20 @@
   font-size: 178px;
   font-style: normal;
   font-weight: 300;
-  line-height: 178px;
+  line-height: 100%;
   letter-spacing: -12.46px;
   text-transform: uppercase;
   @media screen and (max-width: 767px) {
     font-size: 53px;
     letter-spacing: -3.7px;
     line-height: 100%;
-    // display: flex;
-    // justify-content: end;
     margin-right: 36;
     margin-left: auto;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 122px;
+    line-height: 110%;
+    letter-spacing: -10px;
   }
 }
 .slide2-title-line1-words2 {
@@ -490,13 +496,16 @@
     margin-right: auto;
     align-items: start;
   }
+  @media screen and (max-width: 1919px) {
+    font-size: 108px;
+  }
   span {
     display: none;
     @media screen and (max-width: 767px) {
       display: block;
       color: #f6fff8;
       font-family: 'Cormorant Unicase';
-      font-size: 20.88px;
+      font-size: 21px;
       font-style: normal;
       font-weight: 300;
       line-height: 120%; /* 22.968px */
@@ -522,6 +531,10 @@
     line-height: 100%;
     margin-left: auto;
   }
+  @media screen and (max-width: 1919px) {
+    font-size: 20px;
+    margin-top: -20px;
+  }
 }
 
 // line 2
@@ -537,6 +550,10 @@
     padding: 0;
     justify-content: center;
   }
+  @media screen and (max-width: 1919px) {
+    padding: 0 130px 0 200px;
+    margin: 0;
+  }
 }
 .slide2-title-line2-word1 {
   color: #f6fff8;
@@ -549,6 +566,9 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (max-width: 1919px) {
+    font-size: 112px;
+  }
 }
 .slide2-title-line2-words2 {
   display: flex;
@@ -559,6 +579,9 @@
     flex-direction: row;
     align-items: baseline;
     gap: 5px;
+  }
+  @media screen and (max-width: 1919px) {
+    gap: 0;
   }
 }
 .s2tl2w21 {
@@ -573,6 +596,9 @@
     font-size: 33px;
     line-height: 100%; /* 121px */
   }
+  @media screen and (max-width: 1919px) {
+    font-size: 88px;
+  }
 }
 .s2tl2w22 {
   color: #f6fff8;
@@ -584,6 +610,9 @@
   text-transform: uppercase;
   @media screen and (max-width: 767px) {
     font-size: 13px;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 20px;
   }
 }
 
@@ -607,6 +636,11 @@
     font-size: 49px;
     letter-spacing: -2.4px;
     margin: 0;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 230px;
+    letter-spacing: -5px;
+    margin-top: -40px;
   }
 }
 .slide2-img {
@@ -634,11 +668,18 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  @media screen and (max-width: 1919px) {
+    width: 700px;
+  }
 }
 .bigBtnYellow {
   @media screen and (max-width: 767px) {
     width: 120px;
     height: 120px;
+  }
+  @media screen and (max-width: 1919px) {
+    width: 150px;
+    height: 150px;
   }
   width: 192px;
   height: 192px;
@@ -674,6 +715,10 @@
   margin-left: -96px;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (max-width: 1919px) {
+    margin-left: -86px;
+    // margin: 0;
   }
 }
 .slide3-btn {
@@ -714,6 +759,10 @@
     width: 15px;
     height: 15px;
   }
+  @media screen and (max-width: 1919px) {
+    width: 20px;
+    height: 20px;
+  }
   width: 27px;
   height: 27px;
   position: absolute;
@@ -727,6 +776,10 @@
     // height: 22px;
     height: auto;
     font-size: 13px;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 17px;
+    height: 30px;
   }
   width: 146px;
   height: 40px;
@@ -744,6 +797,10 @@
   @media screen and (max-width: 767px) {
     width: 16px;
     height: 24px;
+  }
+  @media screen and (max-width: 1919px) {
+    width: 33px;
+    height: 22px;
   }
   position: absolute;
   top: 75%;
