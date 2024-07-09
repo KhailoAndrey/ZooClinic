@@ -3,6 +3,10 @@
   max-width: 1920px;
   // background-image: url('../images/bg-laps.webp');
   // background-position: center;
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    padding: 75px 25px 0;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 35px 15px;
@@ -33,30 +37,26 @@
   justify-content: space-between;
   align-items: start;
   gap: 40px;
+  @media screen and (max-width: 1919px) {
+    gap: 60px;
+  }
   @media screen and (max-width: 767px) {
-    // justify-content: start;
-    // align-items: start;
     margin-right: auto;
-    // gap: 20px;
   }
   img {
-    // align-items: center;
-    // width: 198px;
     height: 196px;
     border-radius: 20px;
-    // margin-left: auto;
-    // margin-right: 55px;
-    // border: 1px solid red;
+    display: block;
+    @media screen and (max-width: 1919px) {
+      width: 204px;
+      height: 230px;
+    }
     @media screen and (max-width: 767px) {
       display: none;
     }
-    display: block;
   }
 }
 .pharm-title-text {
-  //   align-items: center;
-  //   padding: 0;
-  //   margin-right: 88px;
   color: #04a427;
   font-family: Montserrat;
   font-size: 20px;
@@ -84,6 +84,12 @@
   line-height: 123%; /* 52.89px */
   letter-spacing: 0.86px;
   text-transform: uppercase;
+  @media screen and (max-width: 1919px) {
+    font-size: 40px;
+    height: auto;
+    margin-right: -25px;
+    letter-spacing: 0.8px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -98,6 +104,9 @@
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0.98px;
+  @media screen and (max-width: 1919px) {
+    font-size: 45px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 22px;
   }
@@ -111,18 +120,18 @@
   margin-top: 60px;
   height: 670px;
   display: flex;
-  //   flex-direction: column;
   gap: 60px;
   justify-content: space-between;
   align-items: center;
-  //   border: 1px solid red;
+  @media screen and (max-width: 1919px) {
+    height: 540px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     margin-top: 17px;
     gap: 0;
     height: 174px;
     align-items: start;
-    // justify-content: start;
   }
 }
 .pharm-block2-cont {
@@ -156,6 +165,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1919px) {
+    width: 723px;
+    height: 723px;
+    top: -90px;
+  }
   @media screen and (max-width: 767px) {
     width: 232px;
     height: 232px;
@@ -170,6 +184,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1919px) {
+    width: 607px;
+    height: 607px;
+  }
   @media screen and (max-width: 767px) {
     width: 196px;
     height: 196px;
@@ -180,6 +198,10 @@
   height: 587.787px;
   border-radius: 100%;
   background: rgba(20, 114, 12, 0.04);
+  @media screen and (max-width: 1919px) {
+    width: 475px;
+    height: 475px;
+  }
   @media screen and (max-width: 767px) {
     width: 152px;
     height: 152px;
@@ -197,7 +219,10 @@
   position: absolute;
   left: 0;
   top: 215px;
-  //   margin-bottom: -200px;
+  @media screen and (max-width: 1919px) {
+    font-size: 74px;
+    top: 155px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 21px;
     letter-spacing: -1.47px;
@@ -210,6 +235,11 @@
   width: 620px;
   height: 670px;
   border-radius: 40px;
+  @media screen and (max-width: 1919px) {
+    width: 501px;
+    height: 542px;
+    border-radius: 32px;
+  }
   @media screen and (max-width: 767px) {
     width: 152px;
     height: 174px;
@@ -219,14 +249,15 @@
 .pharm-title-line2 {
   display: flex;
   flex-direction: column;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // border: 1px solid red;
   position: absolute;
   left: 65px;
   gap: 15px;
   margin-top: -30px;
   z-index: 1;
+  @media screen and (max-width: 1919px) {
+    gap: 12px;
+    left: 40px;
+  }
   @media screen and (max-width: 767px) {
     position: relative;
     left: auto;
@@ -242,6 +273,11 @@
   font-weight: 300;
   text-transform: uppercase;
   margin-top: -40px;
+  @media screen and (max-width: 1919px) {
+    font-size: 133px;
+    line-height: 110%;
+    // margin: 0;
+  }
   @media screen and (max-width: 767px) {
     font-size: 41px;
     margin: 0;
@@ -259,6 +295,11 @@
   letter-spacing: -3.2px;
   text-transform: uppercase;
   margin-top: -50px;
+  @media screen and (max-width: 1919px) {
+    font-size: 51px;
+    letter-spacing: -2.6px;
+    margin-top: -40px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 18px;
     letter-spacing: -0.9px;
@@ -272,7 +313,9 @@
   position: absolute;
   right: 0;
   top: 0;
-  //   bottom: 0;
+  @media screen and (max-width: 1919px) {
+    gap: 49px;
+  }
 }
 .pharm-block2-desc {
   width: 489px;
@@ -285,6 +328,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1919px) {
+    width: 395px;
+    height: 300px;
+    border-radius: 32px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -299,6 +347,10 @@
     font-weight: 400;
     line-height: 130%; /* 26px */
     text-transform: uppercase;
+    @media screen and (max-width: 1919px) {
+      width: 373px;
+      height: 83px;
+    }
   }
 }
 .pharm-small-img {
@@ -308,6 +360,11 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  @media screen and (max-width: 1919px) {
+    width: 102px;
+    height: 126px;
+    border-radius: 12px;
+  }
   @media screen and (max-width: 767px) {
     width: 45px;
     height: 45px;
@@ -326,6 +383,12 @@
   background: linear-gradient(295deg, #042917 0.87%, #195b0a 67.56%);
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 1919px) {
+    height: auto;
+    margin-top: 24px;
+    padding: 6px 8px;
+    border-radius: 32px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -338,6 +401,11 @@
     width: 835px;
     height: 659px;
     border-radius: 34px;
+    @media screen and (max-width: 1919px) {
+      width: 675px;
+      height: 533px;
+      border-radius: 27px;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
       height: auto;
@@ -347,11 +415,12 @@
 }
 .pharm-block3-right {
   padding: 60px;
-  //   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  //   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1919px) {
+    padding: 44px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 0;
@@ -369,6 +438,12 @@
   line-height: 120%; /* 51.6px */
   letter-spacing: 0.86px;
   text-transform: uppercase;
+  @media screen and (max-width: 1919px) {
+    width: 626px;
+    height: 168px;
+    font-size: 36px;
+    letter-spacing: 0.72px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -381,6 +456,9 @@
   justify-content: space-between;
   align-items: end;
   gap: 0;
+  @media screen and (max-width: 1919px) {
+    padding-right: 80px;
+  }
   @media screen and (max-width: 767px) {
     margin-top: 25px;
     gap: 9px;
@@ -392,9 +470,11 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  @media screen and (max-width: 1919px) {
+    gap: 15px;
+  }
   @media screen and (max-width: 767px) {
     gap: 13px;
-    // flex: 1;
   }
   span {
     color: #fff;
@@ -404,6 +484,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 21.6px */
+    @media screen and (max-width: 1919px) {
+      font-size: 16px;
+    }
     @media screen and (max-width: 767px) {
       font-size: 14px;
     }
@@ -413,11 +496,14 @@
   width: 358px;
   height: 272px;
   border-radius: 30px;
+  @media screen and (max-width: 1919px) {
+    width: 290px;
+    height: 220px;
+    border-radius: 24px;
+  }
   @media screen and (max-width: 767px) {
     width: 137px;
     height: 126px;
-    // width: auto;
-    // height: auto;
     border-radius: 20px;
   }
 }
@@ -425,11 +511,14 @@
   width: 181px;
   height: 130px;
   border-radius: 20px;
+  @media screen and (max-width: 1919px) {
+    width: 153px;
+    height: 110px;
+    border-radius: 16px;
+  }
   @media screen and (max-width: 767px) {
     width: 128px;
     height: 92px;
-    // width: auto;
-    // height: auto;
     border-radius: 15px;
   }
 }
@@ -439,8 +528,10 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  // position: relative;
-  // border: 1px solid red;
+  @media screen and (max-width: 1919px) {
+    margin-top: 30px;
+    gap: 16px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     flex-direction: column;
@@ -471,6 +562,13 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  @media screen and (max-width: 1919px) {
+    width: 687px;
+    height: 63px;
+    border-radius: 16px;
+    font-size: 17px;
+    gap: 10px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -481,6 +579,7 @@
   }
 }
 .pharm-block4-btn-choose {
+  cursor: pointer;
   width: 850px;
   height: 78px;
   border-radius: 20px;
@@ -502,7 +601,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  @media screen and (max-width: 1919px) {
+    width: 687px;
+    height: 63px;
+    border-radius: 17px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
