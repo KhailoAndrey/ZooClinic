@@ -772,3 +772,53 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+//счетчик блока Компания в цифрах
+document.addEventListener('DOMContentLoaded', function () {
+  const counterElements = document.querySelectorAll('.cnibb-numbers');
+
+  counterElements.forEach(el => {
+    el.hasAnimated = false; // Инициализация свойства для отслеживания анимации
+    el.originalValue = parseInt(el.textContent.replace(/\s+/g, ''), 10); // Сохранение оригинального значения
+    el.textContent = '0'; // Установка начального значения в ноль
+  });
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        const element = entry.target;
+
+        if (entry.isIntersecting && !element.hasAnimated) {
+          element.hasAnimated = true;
+          setTimeout(() => startCounter(element, element.originalValue), 1000);
+        } else if (!entry.isIntersecting) {
+          element.hasAnimated = false;
+          element.textContent = '0'; // Сброс значения при уходе элемента с экрана
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  counterElements.forEach(el => {
+    observer.observe(el);
+  });
+
+  function startCounter(element, target) {
+    const duration = 3000; // Длительность анимации в миллисекундах
+    const increment = target / (duration / 16); // Обновление каждые 16 мс (приблизительно 60 fps)
+    let current = 0;
+
+    function updateCounter() {
+      current += increment;
+      if (current < target) {
+        element.textContent = Math.ceil(current).toLocaleString();
+        requestAnimationFrame(updateCounter);
+      } else {
+        element.textContent = target.toLocaleString();
+      }
+    }
+
+    updateCounter();
+  }
+});
