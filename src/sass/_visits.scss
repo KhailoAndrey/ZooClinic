@@ -55,7 +55,6 @@
     width: 150px;
     height: 120px;
     border-radius: 16px 16px 60px 16px;
-    
   }
   @media screen and (max-width: 767px) {
     width: 116px;
@@ -256,6 +255,11 @@
   }
 }
 .visit-before-after {
+  @media screen and (max-width: 1919px) {
+    width: 519px;
+    height: 163px;
+    border-radius: 23px;
+  }
   @media screen and (max-width: 767px) {
     width: 90%;
     height: auto;
@@ -267,7 +271,7 @@
   margin: 0;
   padding: 0;
   width: 627px;
-  height: 216.797px;
+  height: 217px;
   border-radius: 30px;
   border-top: 1.5px solid rgba(4, 164, 39, 0.4);
   border-bottom: 1.5px solid rgba(4, 164, 39, 0.4);
@@ -278,6 +282,9 @@
   justify-content: center;
 }
 .visit-before-after-text {
+  @media screen and (max-width: 1919px) {
+    font-size: 40px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 19px;
   }
@@ -291,6 +298,9 @@
   letter-spacing: -0.86px;
   text-transform: uppercase;
   span {
+    @media screen and (max-width: 1919px) {
+      font-size: 45px;
+    }
     @media screen and (max-width: 767px) {
       font-size: 22px;
     }
@@ -306,6 +316,12 @@
 }
 .visit-after {
   width: 100%;
+  @media screen and (max-width: 1919px) {
+    border-radius: 38px;
+    height: auto;
+    padding: 75px;
+    gap: 56px;
+  }
   @media screen and (max-width: 767px) {
     height: auto;
     border-radius: 25px;
@@ -323,6 +339,9 @@
   gap: 75px;
 }
 .visit-after-line1 {
+  @media screen and (max-width: 1919px) {
+    gap: 30px;
+  }
   @media screen and (max-width: 767px) {
     gap: 15px;
     align-items: start;
@@ -333,6 +352,9 @@
   gap: 42px;
   align-items: center;
   span {
+    @media screen and (max-width: 1919px) {
+      font-size: 16px;
+    }
     @media screen and (max-width: 767px) {
       font-size: 15px;
     }
@@ -359,6 +381,9 @@
   }
 }
 .visit-after-line2 {
+  @media screen and (max-width: 1919px) {
+    gap: 31px;
+  }
   @media screen and (max-width: 767px) {
     gap: 18px;
     display: grid;
@@ -373,6 +398,9 @@
   justify-content: center;
   position: relative;
   > span {
+    @media screen and (max-width: 1919px) {
+      font-size: 16px;
+    }
     @media screen and (max-width: 767px) {
       font-size: 15px;
       grid-column: 1 / 3;
@@ -424,6 +452,12 @@
   }
 }
 .visit-after-line2-item2-frame {
+  @media screen and (max-width: 1919px) {
+    border-radius: 30px;
+    height: 318px;
+    width: 424px;
+    padding: 50px 70px 20px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: 265px;
@@ -445,6 +479,10 @@
   justify-content: space-between;
   padding: 75px 130px 0;
   > span {
+    @media screen and (max-width: 1919px) {
+      display: inline-block;
+      font-size: 20px;
+    }
     @media screen and (max-width: 767px) {
       font-size: 19px;
     }
@@ -469,6 +507,9 @@
     }
   }
   button {
+    @media screen and (max-width: 1919px) {
+      bottom: 40px;
+    }
     @media screen and (max-width: 767px) {
       bottom: 10px;
     }
@@ -482,6 +523,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  @media screen and (max-width: 1919px) {
+    gap: 18px;
+  }
   @media screen and (max-width: 767px) {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
@@ -490,11 +534,18 @@
     transform: translateY(44px);
   }
   img {
+    @media screen and (max-width: 1919px) {
+      justify-self: center;
+    }
     @media screen and (max-width: 767px) {
       justify-self: center;
     }
   }
   span {
+    @media screen and (max-width: 1919px) {
+      width: 170px;
+      font-size: 16px;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
       font-size: 15px;
@@ -591,6 +642,11 @@
 //   mix-blend-mode: darken;
 // }
 .img-visits7 {
+  @media screen and (max-width: 1919px) {
+    width: 465px;
+    height: 502px;
+    border-radius: 30px;
+  }
   @media screen and (max-width: 767px) {
     width: 182px;
     height: 197px;
@@ -601,6 +657,11 @@
   border-radius: 40px;
 }
 .img-visits8 {
+  @media screen and (max-width: 1919px) {
+    width: 240px;
+    height: 248px;
+    border-radius: 23px;
+  }
   @media screen and (max-width: 767px) {
     width: 99px;
     height: 101px;
@@ -611,6 +672,11 @@
   border-radius: 30px;
 }
 .img-visits9 {
+  @media screen and (max-width: 1919px) {
+    width: 343px;
+    height: 370px;
+    border-radius: 30px;
+  }
   @media screen and (max-width: 767px) {
     width: 101px;
     height: 109px;
@@ -621,6 +687,11 @@
   border-radius: 40px;
 }
 .img-visits10 {
+  @media screen and (max-width: 1919px) {
+    width: 204px;
+    height: 210px;
+    border-radius: 23px;
+  }
   @media screen and (max-width: 767px) {
     width: 170px;
     height: 175px;
@@ -631,6 +702,11 @@
   border-radius: 30px;
 }
 .img-visits11 {
+  @media screen and (max-width: 1919px) {
+    width: 170px;
+    height: 158px;
+    border-radius: 23px;
+  }
   @media screen and (max-width: 767px) {
     width: 141px;
     height: 132px;

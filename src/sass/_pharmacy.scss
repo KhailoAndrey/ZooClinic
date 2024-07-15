@@ -527,6 +527,7 @@
   margin-top: 25px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
   @media screen and (max-width: 1919px) {
     margin-top: 30px;
