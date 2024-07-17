@@ -384,13 +384,18 @@
   align-items: start;
   position: absolute;
   z-index: 1;
+  @media screen and (max-width: 1919px) {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
     height: auto;
-    // border: 1px solid red;
     padding: 10px;
     gap: 0;
     position: relative;
@@ -400,11 +405,17 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  @media screen and (max-width: 1919px) {
+    gap: 15px;
+  }
   @media screen and (max-width: 767px) {
     gap: 10px;
   }
   img {
     border-radius: 25px;
+    @media screen and (max-width: 1919px) {
+      height: auto;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
     }
@@ -412,6 +423,9 @@
 }
 .checkbox-container {
   width: 240px;
+  @media screen and (max-width: 1919px) {
+    width: 200px;
+  }
 }
 .title {
   color: #095119;
@@ -422,6 +436,9 @@
   line-height: 110%; /* 19.8px */
   letter-spacing: 0.18px;
   text-transform: uppercase;
+  @media screen and (max-width: 1919px) {
+    font-size: 16px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 15px;
   }
@@ -432,6 +449,10 @@
   flex-direction: column;
   gap: 15px;
   align-items: flex-start;
+  @media screen and (max-width: 1919px) {
+    gap: 10px;
+    margin-top: 10px;
+  }
   @media screen and (max-width: 767px) {
     margin-top: 10px;
     gap: 5px;
@@ -454,6 +475,9 @@
   padding-left: 30px;
   cursor: pointer;
   user-select: none;
+  @media screen and (max-width: 1919px) {
+    font-size: 15px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 13px;
     padding-left: 20px;
@@ -475,8 +499,6 @@
   background-color: transparent;
   box-sizing: border-box;
   min-height: 20px;
-  // position: relative;
-  // border: 1px solid red;
   @media screen and (max-width: 767px) {
     width: 15px;
     min-height: 15px;
@@ -493,10 +515,6 @@
 .vacan-form-checkbox:checked + label::before {
   background-color: #04a427;
   border-color: #04a427;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // border: 1px solid red;
 }
 .vacan-checkbox:checked + label::after,
 .vacan-form-checkbox:checked + label::after {
@@ -536,6 +554,10 @@
     align-items: center;
     gap: 16px;
     margin-top: 20px;
+    @media screen and (max-width: 1919px) {
+      gap: 10px;
+      margin-top: 10px;
+    }
     @media screen and (max-width: 767px) {
       margin-top: 10px;
       gap: 5px;
@@ -546,8 +568,10 @@
   padding: 0;
   border: none;
   background: transparent;
-  // border: 1px solid red;
   margin-bottom: 20px;
+  @media screen and (max-width: 1919px) {
+    width: 30px;
+  }
   @media screen and (max-width: 767px) {
     width: 38px;
     position: absolute;
@@ -575,6 +599,13 @@
   line-height: 110%; /* 22px */
   letter-spacing: 0.2px;
   text-transform: uppercase;
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 15 10px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -585,6 +616,9 @@
   }
   > img {
     width: 76px;
+    @media screen and (max-width: 1919px) {
+      width: 50px;
+    }
     @media screen and (max-width: 767px) {
       width: 40px;
     }
@@ -623,6 +657,9 @@
   font-weight: 600;
   line-height: 110%; /* 17.6px */
   text-transform: uppercase;
+  @media screen and (max-width: 1919px) {
+    font-size: 15px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -1047,6 +1084,13 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 530px;
+    border-radius: 25px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -1058,9 +1102,6 @@
   .vacan-submit-overlay-close {
     padding: 0;
     width: 100%;
-    // height: 56px;
-    // height: auto;
-    // border: 1px solid red;
     display: flex;
     justify-content: flex-end;
     button {
@@ -1072,6 +1113,10 @@
     height: 142px;
     border-radius: 25px;
     margin-bottom: 40px;
+    @media screen and (max-width: 1919px) {
+      width: 40%;
+      height: auto;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
       max-width: 425px;

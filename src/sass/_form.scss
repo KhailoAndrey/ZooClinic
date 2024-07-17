@@ -173,6 +173,10 @@ form {
 input[type='text'],
 input[type='tel'],
 input[type='email'] {
+  @media screen and (max-width: 1919px) {
+    // height: auto;
+    height: 60px;
+  }
   @media screen and (max-width: 767px) {
     height: 44px;
     border-radius: 14px;
