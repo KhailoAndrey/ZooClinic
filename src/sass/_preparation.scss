@@ -4,7 +4,7 @@
   @media screen and (max-width: 767px) {
     padding: 35px 0 0;
   }
-  
+
   padding: 75px 0;
   display: flex;
   flex-direction: column;
@@ -13,22 +13,28 @@
   // overflow: hidden;
 }
 .reception-container > img {
+  @media screen and (max-width: 1919px) {
+    width: 1062px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     scale: 1.1;
   }
   width: 1420px;
+  z-index: 1000;
   // height: 600px;
   // border: 1px solid red;
   // position: absolute;
   // top: 47%;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  z-index: 1000;
   // border-radius: 40px;
 }
 .recep-title-group {
   display: flex;
+  @media screen and (max-width: 1919px) {
+    padding: 0 25px;
+  }
   @media screen and (max-width: 767px) {
     padding: 0 15px;
     flex-direction: column;
@@ -54,6 +60,9 @@
 }
 .recep-desc-group {
   display: flex;
+  @media screen and (max-width: 1919px) {
+    gap: 25px;
+  }
   @media screen and (max-width: 767px) {
     gap: 16px;
   }
@@ -61,6 +70,11 @@
   gap: 30px;
 }
 .recep-desc {
+  @media screen and (max-width: 1919px) {
+    font-size: 40px;
+    height: auto;
+    width: 940px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 19px;
     width: 100%;
@@ -77,6 +91,9 @@
   letter-spacing: 0.86px;
   text-transform: uppercase;
   span {
+    @media screen and (max-width: 1919px) {
+      font-size: 40px;
+    }
     @media screen and (max-width: 767px) {
       font-size: 19px;
     }
@@ -91,6 +108,9 @@
   }
 }
 .recep-subdesc {
+  @media screen and (max-width: 1919px) {
+    width: 410px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     font-size: 16px;
@@ -108,6 +128,13 @@
 }
 .recep-steps {
   display: flex;
+  @media screen and (max-width: 1919px) {
+    margin-top: -150px;
+    height: auto;
+    border-radius: 40px;
+    gap: 12px;
+    padding: 40px 25px;
+  }
   @media screen and (max-width: 767px) {
     // margin: 87px;
     flex-direction: column;
@@ -129,6 +156,14 @@
   gap: 15px;
 }
 .recep-step {
+  @media screen and (max-width: 1919px) {
+    width: 2668px;
+    height: 326px;
+    height: auto;
+    border-radius: 32px;
+    gap: 28px;
+    padding: 28px 28px 15px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -149,6 +184,10 @@
   padding: 0 30px;
 }
 .recep-step-number {
+  @media screen and (max-width: 1919px) {
+    font-size: 65px;
+    letter-spacing: 1.3px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 40px;
   }
@@ -174,6 +213,13 @@
   line-height: 127%; /* 20.32px */
 }
 .recep-btn-group {
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -192,6 +238,13 @@
   display: none;
 }
 .recep-btn-link {
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    height: 63px;
+    border-radius: 16px;
+    font-size: 17px;
+    gap: 10px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: 46px;
@@ -223,11 +276,17 @@
   gap: 14px;
 }
 .recep-btn-phone {
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    height: 63px;
+    border-radius: 16px;
+    font-size: 20px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     height: 46px;
     border-radius: 13px;
-  font-size: 15px;
+    font-size: 15px;
   }
   width: 840px;
   height: 78px;
