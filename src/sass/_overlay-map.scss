@@ -1,7 +1,7 @@
 .overlay-map-container {
   width: 100vw;
   height: 100%;
-// display: none;
+  // display: none;
 }
 .backdrop-overlay-map {
   width: 100%;
@@ -34,6 +34,9 @@
   align-items: center;
   justify-content: center;
   padding: 75px 110px;
+  @media screen and (max-width: 1919px) {
+    padding: 50 70 50 50;
+  }
   @media screen and (max-width: 767px) {
     width: 90%;
     height: 80%;
@@ -50,6 +53,10 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  @media screen and (max-width: 1919px) {
+    top: 20px;
+    right: 20px;
+  }
   @media screen and (max-width: 767px) {
     width: 32px;
     height: 32px;
