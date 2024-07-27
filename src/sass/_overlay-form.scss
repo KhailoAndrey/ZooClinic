@@ -24,7 +24,8 @@
 }
 .form-overlay {
   width: 1720px;
-  height: 723px;
+  height: auto;
+  // height: 723px;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(25px);
@@ -32,13 +33,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  // border: 1px solid red;
+  padding: 30px;
+  @media screen and (max-width: 1439px) {
+    align-items: start;
+  }
   @media screen and (max-width: 767px) {
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 10px;
-    // justify-content: center;
     overflow: scroll;
     overflow-x: hidden;
   }
@@ -52,7 +55,6 @@
     padding: 0;
     border-radius: 100%;
     z-index: 111;
-    // border: 1px solid red;
     @media screen and (max-width: 767px) {
       width: 38px;
       height: 38px;
@@ -70,6 +72,24 @@
   margin-bottom: 20px;
   margin-left: 100px;
   overflow: hidden;
+  @media screen and (max-width: 1919px) {
+    width: 220px;
+    height: 162px;
+    border-radius: 24px;
+    margin-bottom: 20;
+  }
+  @media screen and (max-width: 1439px) {
+    width: 182px;
+    height: 135px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -92,6 +112,16 @@
   align-items: center;
   gap: 20px;
   margin-left: auto;
+  @media screen and (max-width: 1919px) {
+    width: 486px;
+    height: auto;
+    gap: 20px;
+  }
+  @media screen and (max-width: 1439px) {
+    width: 405px;
+    height: auto;
+    gap: 17px;
+  }
   @media screen and (max-width: 767px) {
     width: 290px;
     height: 325px;
@@ -101,6 +131,13 @@
     position: relative;
   }
   img {
+    @media screen and (max-width: 1439px) {
+      border-radius: 27px;
+      -webkit-border-radius: 27px;
+      -moz-border-radius: 27px;
+      -ms-border-radius: 27px;
+      -o-border-radius: 27px;
+    }
     border-radius: 33px;
   }
 }
@@ -116,6 +153,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    border-radius: 32px;
+    padding: 32px 70px;
+    height: auto;
+  }
+  @media screen and (max-width: 1439px) {
+    width: 100%;
+    border-radius: 27px;
+    padding: 27px 55px;
+    height: auto;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    -ms-border-radius: 27px;
+    -o-border-radius: 27px;
+  }
   @media screen and (max-width: 767px) {
     padding: 0 10;
     margin: 0;
@@ -130,6 +183,9 @@
     bottom: 10px;
   }
   img {
+    @media screen and (max-width: 1919px) {
+      width: 45px;
+    }
     width: 46px;
   }
 }
@@ -139,6 +195,12 @@
   flex-direction: column;
   margin-left: 16px;
   margin-right: auto;
+  @media screen and (max-width: 1919px) {
+    width: 430px;
+  }
+  @media screen and (max-width: 1439px) {
+    width: 359px;
+  }
   @media screen and (max-width: 767px) {
     width: 290px;
     margin: 0;
@@ -167,6 +229,37 @@
   letter-spacing: 0.2px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @media screen and (max-width: 1919px) {
+    width: 100%;
+    padding: 70px 23px;
+    height: auto;
+    gap: 10px;
+    font-size: 21px;
+    margin-bottom: 20px;
+    border-radius: 32px;
+    img {
+      height: 74px;
+    }
+  }
+  @media screen and (max-width: 1439px) {
+    width: 100%;
+    padding: 60px 18px;
+    height: auto;
+    gap: 15px;
+    font-size: 17px;
+    margin-bottom: 16px;
+    border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    -ms-border-radius: 27px;
+    -o-border-radius: 27px;
+    img {
+      @media screen and (max-width: 1439px) {
+        height: 60px;
+      }
+      height: 74px;
+    }
+  }
   @media screen and (max-width: 767px) {
     padding: 6px 8px;
     margin: 10px 0;
@@ -207,6 +300,9 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 1919px) {
+    gap: 16px;
+  }
   @media screen and (max-width: 767px) {
     gap: 12px;
   }
@@ -215,6 +311,9 @@ form {
 .overlay-form-group {
   width: 100%;
   margin-bottom: 20px;
+  @media screen and (max-width: 1919px) {
+    margin: 0;
+  }
   @media screen and (max-width: 767px) {
     margin: 0;
   }
@@ -342,6 +441,10 @@ form {
   justify-content: center;
   border: none;
   transition: all 0.3s ease;
+  @media screen and (max-width: 1919px) {
+    width: 160px;
+    height: 160px;
+  }
   @media screen and (max-width: 767px) {
     width: 120px;
     height: 120px;
@@ -354,6 +457,10 @@ form {
   top: 25%;
   left: 35%;
   transform: translate(-25%, -35%);
+  @media screen and (max-width: 1919px) {
+    width: 22px;
+    height: 22px;
+  }
   @media screen and (max-width: 767px) {
     width: 15px;
     height: 15px;
@@ -372,6 +479,10 @@ form {
   font-weight: 600;
   line-height: 110%; /* 19.8px */
   text-transform: uppercase;
+  @media screen and (max-width: 1919px) {
+    font-size: 17px;
+    height: 32px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 13px;
     width: 106px;
@@ -383,6 +494,10 @@ form {
   top: 60%;
   left: 50%;
   transform: rotate(-30deg);
+  @media screen and (max-width: 1919px) {
+    width: 36px;
+    height: 23px;
+  }
   @media screen and (max-width: 767px) {
     width: 25px;
     height: 25px;
