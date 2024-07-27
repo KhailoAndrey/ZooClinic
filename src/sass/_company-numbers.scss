@@ -7,6 +7,9 @@
   @media screen and (max-width: 1919px) {
     padding: 75px 25px;
   }
+  @media screen and (max-width: 1439px) {
+    padding: 80px 25px 40px;
+  }
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 35px 15px;
@@ -32,6 +35,9 @@
   font-weight: 400;
   line-height: 110%; /* 22px */
   letter-spacing: -0.2px;
+  @media screen and (max-width: 1439px) {
+    font-size: 17px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 15px;
   }
@@ -50,6 +56,11 @@
     width: 900px;
     font-size: 40px;
   }
+  @media screen and (max-width: 1439px) {
+    width: 724px;
+    font-size: 30px;
+    text-align: left;
+  }
   @media screen and (max-width: 767px) {
     font-size: 19px;
     width: 100%;
@@ -67,6 +78,9 @@
   @media screen and (max-width: 1919px) {
     font-size: 45px;
   }
+  @media screen and (max-width: 1439px) {
+    font-size: 33px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 22px;
   }
@@ -79,6 +93,10 @@
   @media screen and (max-width: 1919px) {
     margin-top: 64px;
     gap: 24px;
+  }
+  @media screen and (max-width: 1439px) {
+    margin-top: 32px;
+    gap: 20px;
   }
   @media screen and (max-width: 767px) {
     gap: 10px;
@@ -93,6 +111,9 @@
   justify-content: space-between;
   @media screen and (max-width: 1919px) {
     gap: 24px;
+  }
+  @media screen and (max-width: 1439px) {
+    gap: 20px;
   }
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -116,6 +137,16 @@
     height: 216px;
     border-radius: 32px;
     padding: 20px;
+  }
+  @media screen and (max-width: 1439px) {
+    width: 568px;
+    height: 180px;
+    border-radius: 27px;
+    padding: 16px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    -ms-border-radius: 27px;
+    -o-border-radius: 27px;
   }
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -155,6 +186,9 @@
   @media screen and (max-width: 1919px) {
     font-size: 160px;
   }
+  @media screen and (max-width: 1439px) {
+    font-size: 133px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 65px;
     letter-spacing: 1.3px;
@@ -185,6 +219,13 @@
     height: 24px;
     font-size: 38px;
   }
+  @media screen and (max-width: 1439px) {
+    width: 20px;
+    height: 20px;
+    font-size: 34px;
+    top: 35;
+    right: 7;
+  }
   @media screen and (max-width: 767px) {
     width: 16px;
     height: 16px;
@@ -205,6 +246,9 @@
   font-weight: 400;
   line-height: 123%; /* 24.6px */
   text-transform: uppercase;
+  @media screen and (max-width: 1439px) {
+    font-size: 17px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 15px;
   }
