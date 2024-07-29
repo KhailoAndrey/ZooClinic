@@ -541,7 +541,7 @@
   }
 }
 .pharm-block4-btn-link {
-  width: 850px;
+  // width: 850px;
   height: 78px;
   border-radius: 20px;
   border: none;
@@ -563,13 +563,18 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  width: 100%;
   @media screen and (max-width: 1919px) {
-    width: 687px;
+    //width: 687px;
     height: 63px;
     border-radius: 16px;
     font-size: 17px;
     gap: 10px;
-  }
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
   @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -581,7 +586,7 @@
 }
 .pharm-block4-btn-choose {
   cursor: pointer;
-  width: 850px;
+  // width: 850px;
   height: 78px;
   border-radius: 20px;
   border: none;
@@ -602,8 +607,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   @media screen and (max-width: 1919px) {
-    width: 687px;
+    // width: 687px;
     height: 63px;
     border-radius: 17px;
   }
