@@ -184,8 +184,24 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   const popups = document.querySelectorAll('.filii-popap, .popap-phone');
 
-  // Функция для переключения видимости попапа
-  const togglePopup = popup => {
+  const togglePopup = (popup, button) => {
+    console.log('Toggling popup:', popup, 'for button:', button); // Лог для отладки
+
+    const viewportHeight = window.innerHeight;
+    const buttonRect = button.getBoundingClientRect();
+    const offset = 80; // фиксированный отступ от кнопки
+
+    // Определяем, куда открывать попап
+    if (buttonRect.top > viewportHeight / 2) {
+      // Кнопка ниже середины экрана - открываем попап вверх
+      popup.style.top = '';
+      popup.style.bottom = `${offset}px`;
+    } else {
+      // Кнопка выше середины экрана - открываем попап вниз
+      popup.style.bottom = '';
+      popup.style.top = `${offset}px`;
+    }
+
     if (popup.classList.contains('hidden')) {
       popup.classList.remove('hidden');
       setTimeout(() => {
@@ -205,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
   openPopupButtons.forEach((button, index) => {
     button.addEventListener('click', e => {
       e.stopPropagation(); // Останавливаем всплытие события
-      togglePopup(popups[index]);
+      togglePopup(popups[index], button);
     });
   });
 
@@ -217,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         !openPopupButtons[index].contains(e.target)
       ) {
         if (!popup.classList.contains('hidden')) {
-          togglePopup(popup);
+          togglePopup(popup, openPopupButtons[index]);
         }
       }
     });
@@ -228,13 +244,71 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') {
       popups.forEach((popup, index) => {
         if (!popup.classList.contains('hidden')) {
-          togglePopup(popup);
+          togglePopup(popup, openPopupButtons[index]);
           openPopupButtons[index].blur(); // Убираем фокус со всех кнопок
         }
       });
     }
   });
 });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const openPopupButtons = document.querySelectorAll(
+//     '.header__filii, .header__contacts-item-btn'
+//   );
+//   const popups = document.querySelectorAll('.filii-popap, .popap-phone');
+
+//   // Функция для переключения видимости попапа
+//   const togglePopup = popup => {
+//     if (popup.classList.contains('hidden')) {
+//       popup.classList.remove('hidden');
+//       setTimeout(() => {
+//         popup.classList.add('show');
+//         openPopupButtons.forEach(button => button.classList.add('active')); // Добавляем класс active при открытии попапа
+//       }, 10); // Небольшая задержка для срабатывания анимации
+//     } else {
+//       popup.classList.remove('show');
+//       setTimeout(() => {
+//         popup.classList.add('hidden');
+//         openPopupButtons.forEach(button => button.classList.remove('active')); // Убираем класс active при закрытии попапа
+//       }, 500); // Время должно совпадать с transition-duration в CSS
+//     }
+//   };
+
+//   // Открыть/закрыть попап по клику на кнопку
+//   openPopupButtons.forEach((button, index) => {
+//     button.addEventListener('click', e => {
+//       e.stopPropagation(); // Останавливаем всплытие события
+//       togglePopup(popups[index]);
+//     });
+//   });
+
+//   // Закрыть попап при клике вне его области
+//   document.addEventListener('click', e => {
+//     popups.forEach((popup, index) => {
+//       if (
+//         !popup.contains(e.target) &&
+//         !openPopupButtons[index].contains(e.target)
+//       ) {
+//         if (!popup.classList.contains('hidden')) {
+//           togglePopup(popup);
+//         }
+//       }
+//     });
+//   });
+
+//   // Закрыть попап по нажатию клавиши Esc
+//   document.addEventListener('keydown', e => {
+//     if (e.key === 'Escape') {
+//       popups.forEach((popup, index) => {
+//         if (!popup.classList.contains('hidden')) {
+//           togglePopup(popup);
+//           openPopupButtons[index].blur(); // Убираем фокус со всех кнопок
+//         }
+//       });
+//     }
+//   });
+// });
 
 // показ оверлеев
 document.addEventListener('DOMContentLoaded', () => {

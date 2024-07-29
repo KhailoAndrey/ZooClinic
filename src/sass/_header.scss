@@ -266,7 +266,7 @@
   align-items: center;
   justify-content: center;
   // border: 1px solid red;
-  position: relative;
+  // position: relative;
 }
 
 .phone-icon {
@@ -314,8 +314,7 @@
 .popap-phone {
   width: 400px;
   height: 415px;
-  position: absolute;
-  left: 0;
+  // left: 0;
   // top: 37px;
   bottom: 50;
   // border: 1px solid red;
@@ -326,6 +325,7 @@
   padding: 23px 21px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  position: absolute;
 }
 .popap-phone-wrap {
   width: 358px;
