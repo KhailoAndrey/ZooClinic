@@ -185,8 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const popups = document.querySelectorAll('.filii-popap, .popap-phone');
 
   const togglePopup = (popup, button) => {
-    console.log('Toggling popup:', popup, 'for button:', button); // Лог для отладки
-
     const viewportHeight = window.innerHeight;
     const buttonRect = button.getBoundingClientRect();
     const offset = 80; // фиксированный отступ от кнопки
