@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   z-index: 11111;
   @media screen and (max-width: 767px) {
     width: 51px;
@@ -47,6 +47,22 @@
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+.tel {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-image: url('../images/BgSms.png');
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    // background-image: url('../images/BgSms-mob.svg');
+    // border: 1px solid red;
+    width: 51px;
+    height: 51px;
   }
 }
 .sms {

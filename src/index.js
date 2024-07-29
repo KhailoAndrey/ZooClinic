@@ -893,9 +893,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
-
-
 // document.addEventListener('DOMContentLoaded', function () {
 //   const counterElements = document.querySelectorAll('.cnibb-numbers');
 
