@@ -785,6 +785,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const overlayContainer = document.querySelector('.pharm-choose-container');
   const closeButton = document.querySelector('.farm-overlay-close');
   const overlay = document.querySelector('.pharm-choose-overlay');
+  const pharmacyPopap = document.querySelector('.pharmacy-popap');
 
   function openOverlay() {
     overlayContainer.style.display = 'flex';
@@ -809,8 +810,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // overlay.addEventListener('click', function (event) {
+  //   event.stopPropagation();
+  // });
   overlay.addEventListener('click', function (event) {
-    event.stopPropagation();
+    if (!pharmacyPopap.contains(event.target)) {
+      closeOverlay();
+    }
   });
 });
 
