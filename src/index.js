@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     video.load();
     video.onended = function () {
-      console.log('Видео завершено');
+      // console.log('Видео завершено');
 
       videoContainer.classList.add('hidden');
       sliderContainer.classList.remove('hidden');
