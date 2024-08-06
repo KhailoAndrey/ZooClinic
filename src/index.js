@@ -97,7 +97,7 @@ const swiper2 = new Swiper('.serts-swiper-container', {
     // when window width is >= 1200px
     1200: {
       slidesPerView: 2,
-      spaceBetween: 18,
+      spaceBetween: 10,
     },
     // when window width is >= 1440px
     1440: {
@@ -947,3 +947,53 @@ document.addEventListener('DOMContentLoaded', function () {
 //     updateCounter();
 //   }
 // });
+
+// Оверлей для показа видео
+document.addEventListener('DOMContentLoaded', () => {
+  const openOverlayBtn = document.querySelector('.preps-btn');
+  const backdropOverlayPreps = document.querySelector(
+    '.preps-intro-backdrop-overlay'
+  );
+  const overlay = document.getElementById('preps-intro-overlay');
+  const closeOverlayBtn = document.getElementById(
+    'preps-intro-closeOverlayBtn'
+  );
+  const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
+  
+  openOverlayBtn.addEventListener('click', () => {
+    backdropOverlayPreps.style.display = 'flex';
+    overlay.style.display = 'flex';
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  closeOverlayBtn.addEventListener('click', closeOverlay);
+  overlay.addEventListener('click', event => {
+    if (event.target === overlay) {
+      closeOverlay();
+    }
+  });
+
+  youtubeVideo.addEventListener('play', () => {
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      closeOverlay();
+    }
+  }
+
+  function closeOverlay() {
+    stopVideo();
+    overlay.style.display = 'none';
+    backdropOverlayPreps.style.display = 'none';
+    openOverlayBtn.blur(); // Убираем фокус с кнопки
+    window.removeEventListener('keydown', handleKeydown);
+  }
+
+  function stopVideo() {
+    const src = youtubeVideo.src;
+    youtubeVideo.src = ''; // Очищаем источник видео
+    youtubeVideo.src = src; // Восстанавливаем источник видео, чтобы остановить его
+  }
+});
