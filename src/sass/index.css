@@ -10156,7 +10156,7 @@ address {
   justify-content: space-between;
 }
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
-  .rev-slider{
+  .rev-slider {
     display: none;
   }
 }
@@ -10165,11 +10165,11 @@ address {
   display: none;
 }
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
-  .rev-slider-tablet{
+  .rev-slider-tablet {
     width: 100%;
     display: flex;
     flex-basis: 100%;
-  justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -10524,9 +10524,8 @@ address {
   scale: 1.3;
 }
 
-.review-swiper-pagin .swiper-pagination-bullet-active, 
-.review-swiper-pagin-tablet .swiper-pagination-bullet-active 
-{
+.review-swiper-pagin .swiper-pagination-bullet-active,
+.review-swiper-pagin-tablet .swiper-pagination-bullet-active {
   padding: 0;
   width: 10px;
   height: 10px;
@@ -10626,6 +10625,12 @@ address {
     gap: 35px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .questions-container {
+    padding: 50px 20px 40px;
+    gap: 35px;
+  }
+}
 @media screen and (max-width: 767px) {
   .questions-container {
     padding: 0;
@@ -10684,6 +10689,13 @@ address {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .ques-title-group-desc {
+    width: 728px;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
 @media screen and (max-width: 767px) {
   .ques-title-group-desc {
     padding: 0;
@@ -10708,6 +10720,12 @@ address {
     font-size: 45px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .ques-title-group-desc span {
+    font-size: 34px;
+    letter-spacing: 0.68px;
+  }
+}
 @media screen and (max-width: 767px) {
   .ques-title-group-desc span {
     font-size: 22px;
@@ -10725,6 +10743,11 @@ address {
 @media screen and (max-width: 1919px) {
   .ques-main-group {
     gap: 50px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .ques-main-group {
+    gap: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10749,6 +10772,13 @@ address {
     width: 429px;
     height: 607px;
     border-radius: 32px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .ques-main-photo-block {
+    width: 358px;
+    height: 506px;
+    border-radius: 27px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10788,6 +10818,16 @@ address {
     bottom: -1px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .ques-photo-desc {
+    width: 342px;
+    height: 178px;
+    border-radius: 27px;
+    padding: 20px 15px 24px 30px;
+    gap: 15px;
+    bottom: 5px;
+  }
+}
 @media screen and (max-width: 767px) {
   .ques-photo-desc {
     width: 279px;
@@ -10816,6 +10856,14 @@ address {
     bottom: -9px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .ques-photo-desc .sign {
+    width: 78px;
+    height: 61px;
+    right: 5px;
+    bottom: 0px;
+  }
+}
 @media screen and (max-width: 767px) {
   .ques-photo-desc .sign {
     width: 88px;
@@ -10834,6 +10882,12 @@ address {
   .ques-main-block {
     width: 896px;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .ques-main-block {
+    width: 747px;
+    gap: 9px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10861,6 +10915,13 @@ address {
     padding: 20px;
     gap: 20px;
     border-radius: 17px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .ques-main-block-item {
+    padding: 16px;
+    gap: 15px;
+    border-radius: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10893,6 +10954,12 @@ address {
     width: 100%;
   }
 }
+@media screen and (max-width: 1439px) {
+  .item-question span {
+    font-size: 15px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   .item-question span {
     font-size: 15px;
@@ -10919,6 +10986,12 @@ address {
   .open-answer {
     font-size: 16px;
     width: 750px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .open-answer {
+    font-size: 15px;
+    width: 625px;
   }
 }
 @media screen and (max-width: 767px) {
