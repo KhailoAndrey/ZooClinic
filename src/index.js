@@ -142,6 +142,26 @@ const swiper3 = new Swiper('.review-swiper-container', {
     nextEl: '.review-swiper-next',
   },
 });
+// свайпер отзывов tablet
+const swiper4 = new Swiper('.review-swiper-container-tablet', {
+  loop: true,
+  slidesPerView: 1,
+  speed: 2000,
+  parallax: true,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'slide',
+  pagination: {
+    el: '.review-swiper-pagin-tablet',
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    prevEl: '.review-swiper-prev-tablet',
+    nextEl: '.review-swiper-next-tablet',
+  },
+});
 
 // раскрытие закрытие вопрос-ответ
 document.addEventListener('DOMContentLoaded', function () {
