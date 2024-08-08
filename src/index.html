@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="./sass/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="index.js" defer></script>
-    <!-- <script type="module" src="./js/lang.js"></script> -->
+    <script type="module" src="./js/lang.js"></script>
   </head>
 
   <body>
@@ -245,8 +245,7 @@
       </div>
     </div>
 
-    <!-- <section class="banner-container" id="main-banner">
-
+    <section class="banner-container" id="main-banner">
       <div id="video-container">
         <video
           id="intro-video"
@@ -260,7 +259,38 @@
           Your browser does not support the video tag.
         </video>
       </div>
-
+      <div class="preps-intro-backdrop-overlay">
+        <div id="banner-slide1-overlay">
+          <button type="button" id="preps-intro-closeOverlayBtn">
+            <img src="./images/btn-cross.svg" alt="close-button" />
+          </button>
+          <div class="preps-intro-overlay-content">
+            <iframe
+              id="preps-intro-youtubeVideo"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="preps-intro-backdrop-overlay">
+        <div id="banner-slide4-overlay">
+          <button type="button" id="preps-intro-closeOverlayBtn">
+            <img src="./images/btn-cross.svg" alt="close-button" />
+          </button>
+          <div class="preps-intro-overlay-content">
+            <iframe
+              id="preps-intro-youtubeVideo"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
       <div class="swiper slider" id="slider-container">
         <div class="swiper-wrapper slide-container">
           <div class="swiper-slide active" id="slide1">
@@ -284,7 +314,7 @@
                 <span class="slide-text">Мережа Ветеринарних клiнiк</span>
               </div>
               <div class="video-box">
-                <button>
+                <button class="slide1-video-btn">
                   <img src="./images/Polygon.svg" alt="button-play" />
                 </button>
                 <span>Дивитись вiдео про нашу Анаконду</span>
@@ -406,8 +436,8 @@
                 <div class="s4tb1-line2">
                   <span class="s4tb1l2-word1">лікує</span>
                   <span class="s4tb1l2-word2">людину</span>
-                </div>
-                <span class="s4tb1-line3">а Ветеринарія </span>
+                </div>                
+                  <span class="s4tb1-line3">а Ветеринарія </span>                
                 <div class="slide4-title-block2-box">
                   <span class="slide4-title-block2">Людств</span>
                   <button class="bigBtnYellow posSlide4 form-popap-btn">
@@ -500,11 +530,10 @@
               </div>
               <div class="slide4-circle4">
                 <img src="./images/slide4.jpg" alt="women" />
-                <button>
+                <!-- <button class="slide4-video-btn">
                   <img src="./images/Polygon.svg" alt="button-play" />
-                </button>
+                </button> -->
               </div>
-              
             </div>
           </div>
         </div>
@@ -512,7 +541,7 @@
         <div class="swiper-pagination pagination"></div>
         <span class="count">01</span>
       </div>
-    </section> -->
+    </section>
 
     <div class="overlay-container hidden">
       <div class="backdrop-overlay">
@@ -980,7 +1009,7 @@
           </ul>
         </div>
       </header>
-      <!-- <section class="company-numbers-container" id="numbers">
+      <section class="company-numbers-container" id="numbers">
         <div class="company-numbers-title">
           <span class="company-numbers-title-text">Kомпанiя у цифрах</span>
           <span class="company-numbers-title-desc">
@@ -994,9 +1023,7 @@
           <div class="cni-block">
             <div class="cni-block-box">
               <div class="cnibb-container">
-                <span class="cnibb-numbers"
-                  >30 000
-                </span>
+                <span class="cnibb-numbers">30 000 </span>
                 <span class="cnibb-text"
                   >Проведенно успiшних операцiй у тварин</span
                 >
@@ -1004,9 +1031,7 @@
             </div>
             <div class="cni-block-box">
               <div class="cnibb-container">
-                <span class="cnibb-numbers"
-                  >242 500
-                </span>
+                <span class="cnibb-numbers">242 500 </span>
                 <span class="cnibb-text"
                   >Здiйснено прийомів, консультацій, діагностик та інших
                   спеціалізованих дій з тваринами</span
@@ -1017,24 +1042,20 @@
           <div class="cni-block">
             <div class="cni-block-box">
               <div class="cnibb-container">
-                <span class="cnibb-numbers"
-                  >15 500
-                </span>
+                <span class="cnibb-numbers">15 500 </span>
                 <span class="cnibb-text">врятованних котiв</span>
               </div>
             </div>
             <div class="cni-block-box">
               <div class="cnibb-container">
-                <span class="cnibb-numbers"
-                  >8350
-                </span>
+                <span class="cnibb-numbers">8350 </span>
                 <span class="cnibb-text">Прооперованних собак</span>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="services-container" id="services">
+      </section>
+      <section class="services-container" id="services">
         <div class="services-title">
           <span class="services-name">Послуги</span>
           <div class="services-info">
@@ -1207,8 +1228,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="preparats-container" id="preparats">
+      </section>
+      <section class="preparats-container" id="preparats">
         <div class="preps-intro">
           <button class="preps-btn">
             <img src="./images/Polygon.svg" alt="button" />
@@ -1221,19 +1242,16 @@
         </div>
         <div class="preps-intro-backdrop-overlay">
           <div id="preps-intro-overlay">
-            <button
-            type="button"
-            id="preps-intro-closeOverlayBtn"
-          >
-            <img src="./images/btn-cross.svg" alt="close-button" />
-          </button>
-          <div class="preps-intro-overlay-content">
-            <iframe
-              id="preps-intro-youtubeVideo"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+            <button type="button" id="preps-intro-closeOverlayBtn">
+              <img src="./images/btn-cross.svg" alt="close-button" />
+            </button>
+            <div class="preps-intro-overlay-content">
+              <iframe
+                id="preps-intro-youtubeVideo"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
               ></iframe>
             </div>
           </div>
@@ -1283,8 +1301,8 @@
             </button>
           </div>
         </div>
-      </section>  -->
-      <!-- <section class="pharm-container" id="pharmacy">
+      </section>
+      <section class="pharm-container" id="pharmacy">
         <div class="pharm-wrapper">
           <div class="pharm-block1">
             <div class="pharm-title">
@@ -1376,8 +1394,8 @@
             </button>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="visits-container" id="visits">
+      </section>
+      <section class="visits-container" id="visits">
         <div class="visit-before">
           <div class="visit-before-info">
             <span class="visit-before-info-title">Для кого пiдiйде</span>
@@ -1491,8 +1509,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="coop-container" id="cooperation">
+      </section>
+      <section class="coop-container" id="cooperation">
         <span class="coop-title" id="vacan-mob">Спiвпраця</span>
         <span class="coop-vacancies-title-mob">
           <span> Запрошуємо до співпраці </span>
@@ -2196,8 +2214,8 @@
             </button>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="serts-container" id="serts">
+      </section>
+      <section class="serts-container" id="serts">
         <span class="serts-title">Ліцензії та сертифiкати</span>
         <span class="serts-desc"
           >Ми завжди розвиваємося, набуваємо нових знань і покращуємо
@@ -2262,8 +2280,8 @@
           <button class="close-img-btn">&times;</button>
           <img class="modal-content" id="modalImage" />
         </div>
-      </section> -->
-      <!-- <section class="reception-container" id="preparation">
+      </section>
+      <section class="reception-container" id="preparation">
         <div class="recep-title-group">
           <span class="recep-title">Пiдготовка до прийому</span>
           <div class="recep-desc-group">
@@ -2346,8 +2364,8 @@
             +38 063 230 60 07
           </button>
         </div>
-      </section> -->
-      <!-- <section class="reviews-container" id="reviews">
+      </section>
+      <section class="reviews-container" id="reviews">
         <div class="rev-title-group">
           <span class="rev-title">Вiдгуки</span>
           <span class="rev-desc"
@@ -2879,8 +2897,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="questions-container" id="questions">
+      </section>
+      <section class="questions-container" id="questions">
         <div class="ques-title-group">
           <span class="ques-title-group-name">Частi запитання</span>
           <span class="ques-title-group-desc"
@@ -3031,7 +3049,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="contacts-container" id="contacts">
         <div class="contacts-title-group">
           <span class="contacts-title-group-name">Контакти</span>
@@ -3067,7 +3085,6 @@
                 <span>+38 (067) 986 12 78</span>
               </a>
             </div>
-            <!-- сюда надо вставить реальные ссылки на соцсети -->
             <div class="cont-img-info-links">
               <a href="viber://chat?number=%2B380679861278" target="_blank"
                 >Viber</a
