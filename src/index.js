@@ -979,7 +979,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'preps-intro-closeOverlayBtn'
   );
   const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
-  
+
   openOverlayBtn.addEventListener('click', () => {
     backdropOverlayPreps.style.display = 'flex';
     overlay.style.display = 'flex';
@@ -1029,7 +1029,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'preps-intro-closeOverlayBtn'
   );
   const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
-  
+
   openOverlayBtn.addEventListener('click', () => {
     backdropOverlayPreps.style.display = 'flex';
     overlay.style.display = 'flex';
@@ -1078,7 +1078,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'preps-intro-closeOverlayBtn'
   );
   const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
-  
+
   openOverlayBtn.addEventListener('click', () => {
     backdropOverlayPreps.style.display = 'flex';
     overlay.style.display = 'flex';

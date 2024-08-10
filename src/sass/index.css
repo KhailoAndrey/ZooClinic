@@ -145,7 +145,7 @@ address {
   gap: 5px;
   z-index: 11111;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .callSms {
     width: 51px;
     bottom: 70px;
@@ -164,7 +164,7 @@ address {
   justify-content: center;
   border-radius: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .callSms button {
     width: 32px;
     height: 32px;
@@ -196,7 +196,7 @@ address {
   justify-content: center;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .tel {
     width: 51px;
     height: 51px;
@@ -211,7 +211,7 @@ address {
   justify-content: center;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .sms {
     width: 51px;
     height: 51px;
@@ -230,7 +230,7 @@ address {
   z-index: -1;
   animation: pulse 1s infinite;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .sms.pulse-anim::before {
     background-image: url('../images/BgSms-mob.svg');
   }
@@ -239,7 +239,7 @@ address {
 .filii-mob-btn {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .filii-mob-btn {
     display: flex;
   }
@@ -293,7 +293,7 @@ address {
   gap: 10px;
   z-index: 777;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .tel-popap {
     right: 26px;
     bottom: 26px;
@@ -324,12 +324,29 @@ address {
   backdrop-filter: blur(11px);
   z-index: 9999;
 }
+@media screen and (min-width: 425px) and (max-width: 1199px) {
+  .sms-popap {
+    display: flex;
+    width: 316px;
+    /* width: auto; */
+    height: 56px;
+    height: auto;
+    bottom: 7px;
+    right: 160px;
+  }
+}
 .sms-popap button,
 .sms-popap img {
   width: 56px;
   height: 56px;
 }
-
+@media screen and (max-width: 1199px) {
+  .sms-popap button,
+.sms-popap img {
+    width: 45px;
+  height: 45px;
+  }
+}
 .sms-close-popap {
   width: 56px;
   height: 56px;
@@ -385,35 +402,54 @@ address {
 }
 
 .head-mob-btn-container {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .head-mob-btn-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
 }
 
 .lang-switch-btn {
-  border: none;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14.838px; /* 114.137% */
-  background-color: transparent;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .lang-switch-btn {
+    display: block;
+    border: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.838px; /* 114.137% */
+    background-color: transparent;
+  }
+
 }
 
 .btn-contact-mob {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(1px);
-  display: flex;
-  padding: 2px;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .btn-contact-mob {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1px);
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
 }
 
 .burger-mob-btn {
@@ -422,6 +458,14 @@ address {
   padding: 0;
   border-radius: 100%;
   border: none;
+}
+.burger_tablet_btn {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .burger_tablet_btn {
+    display: block;
+  }
 }
 
 .main-container {
@@ -481,6 +525,11 @@ address {
 @media screen and (max-width: 1439px) {
   .header__nav-list {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__nav-list {
+    display: none;
   }
 }
 
@@ -608,6 +657,11 @@ address {
     height: 62px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .header__logo {
+    height: 47px;
+  }
+}
 
 .header__contacts {
   display: flex;
@@ -694,6 +748,13 @@ address {
   transition: opacity 0.5s ease-in-out;
   position: absolute;
 }
+@media screen and (max-width: 1199px) {
+  .popap-phone {
+    width: 310px;
+    height: 310px;
+    padding: 10px 10px;    
+  }
+}
 
 .popap-phone-wrap {
   width: 358px;
@@ -706,6 +767,12 @@ address {
   padding: 5px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1199px) {
+  .popap-phone-wrap {
+    width: 290px;
+    height: 290px;    
+  }  
 }
 
 .popap-phone-wrap > img {
@@ -720,7 +787,11 @@ address {
   flex-direction: column;
   gap: 15px;
 }
-
+@media screen and (max-width: 1199px) {
+  .popap-phone-info {
+    gap: 10px;  
+  }  
+}
 .popap-phone-info-title {
   display: flex;
   align-items: center;
@@ -745,6 +816,11 @@ address {
   flex-direction: column;
   gap: 5px;
 }
+@media screen and (max-width: 1199px) {
+  .popap-phone-info-numbers {
+    align-items: center;
+  }
+}
 .popap-phone-info-numbers span {
   color: #fff;
   text-align: justify;
@@ -755,6 +831,11 @@ address {
   line-height: 100%; /* 38px */
   letter-spacing: 0.76px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .popap-phone-info-numbers span {
+    font-size: 24px;    
+  }
 }
 
 .popap-phone-info-links {
@@ -769,7 +850,11 @@ address {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
 }
-
+@media screen and (max-width: 1199px) {
+  .popap-phone-info-links {
+    gap: 15px;  
+  }  
+}
 .header__button-link {
   display: inline-flex;
   padding: 3px 39px 3px 5px;
@@ -941,7 +1026,7 @@ address {
     height: calc(100svh - 92px);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .slider {
     height: calc(100svh - 67px);
   }
@@ -12678,6 +12763,11 @@ input[type='email']::placeholder {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1439px) {
+  .backdrop-overlay {
+    align-items: start;
+  }
+}
 
 .form-overlay {
   width: 1720px;
@@ -12696,6 +12786,14 @@ input[type='email']::placeholder {
     align-items: start;
   }
 }
+@media screen and (max-width: 1199px) {
+  .form-overlay {
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   .form-overlay {
     flex-direction: column;
@@ -12705,7 +12803,7 @@ input[type='email']::placeholder {
     overflow: scroll;
     overflow-x: hidden;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
   }
 }
 .form-overlay > button {
@@ -12754,6 +12852,16 @@ input[type='email']::placeholder {
     border-radius: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .overlay-form-small-photo {
+    max-width: 148px;
+    max-height: 110px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .overlay-form-small-photo {
     display: none;
@@ -12796,6 +12904,13 @@ input[type='email']::placeholder {
     gap: 17px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .overlay-form-main-photo {
+    max-width: 348px;
+    height: auto;
+    gap: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .overlay-form-main-photo {
     width: 290px;
@@ -12812,10 +12927,6 @@ input[type='email']::placeholder {
 @media screen and (max-width: 1439px) {
   .overlay-form-main-photo img {
     border-radius: 27px;
-    -webkit-border-radius: 27px;
-    -moz-border-radius: 27px;
-    -ms-border-radius: 27px;
-    -o-border-radius: 27px;
   }
 }
 
@@ -12893,6 +13004,11 @@ input[type='email']::placeholder {
     width: 359px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .overlay-form-send-block {
+    max-width: 359px;
+  }
+}
 @media screen and (max-width: 767px) {
   .overlay-form-send-block {
     width: 290px;
@@ -12951,6 +13067,20 @@ input[type='email']::placeholder {
     height: 74px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .overlay-form-send-block-title {
+    width: 100%;
+    padding: 40px 18px;
+    height: auto;
+    gap: 15px;
+    font-size: 17px;
+    margin-bottom: 16px;
+    border-radius: 27px;
+  }
+  .overlay-form-send-block-title img {
+    height: 60px;
+  }
+}
 @media screen and (max-width: 1439px) and (max-width: 1439px) {
   .overlay-form-send-block-title img {
     height: 60px;
@@ -12996,6 +13126,11 @@ form {
     gap: 16px;
   }
 }
+@media screen and (max-width: 1199px) {
+  form {
+    gap: 13px;
+  }
+}
 @media screen and (max-width: 767px) {
   form {
     gap: 12px;
@@ -13029,6 +13164,14 @@ form {
   background: #f3fff6;
   backdrop-filter: blur(3.5px);
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .overlay-input {
+    height: 48px !important;
+    border-radius: 14px;
+    border-top: 1px solid rgba(4, 164, 39, 0.4);
+    border-bottom: 1px solid rgba(4, 164, 39, 0.4);
+  }
 }
 @media screen and (max-width: 767px) {
   .overlay-input {
@@ -13155,6 +13298,18 @@ form {
     height: 160px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .overlay-btn-form-submit {
+    width: 145px;
+    height: 145px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .overlay-btn-form-submit {
+    width: 120px;
+    height: 120px;
+  }
+}
 @media screen and (max-width: 767px) {
   .overlay-btn-form-submit {
     width: 120px;
@@ -13174,6 +13329,12 @@ form {
   .overlay-btn-form-submit img:nth-child(1) {
     width: 22px;
     height: 22px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .overlay-btn-form-submit img:nth-child(1) {
+    width: 15px;
+    height: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -13202,6 +13363,19 @@ form {
     height: 32px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .overlay-btn-form-submit span {
+    font-size: 16px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .overlay-btn-form-submit span {
+    font-size: 13px;
+    width: 106px;
+    height: 22px;
+  }
+}
 @media screen and (max-width: 767px) {
   .overlay-btn-form-submit span {
     font-size: 13px;
@@ -13220,6 +13394,14 @@ form {
   .overlay-btn-form-submit img:nth-child(3) {
     width: 36px;
     height: 23px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .overlay-btn-form-submit img:nth-child(3) {
+    width: 25px;
+    height: 16px;
+    top: 65%;
+    left: 55%;
   }
 }
 @media screen and (max-width: 767px) {
