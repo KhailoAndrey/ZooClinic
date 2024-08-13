@@ -4939,6 +4939,13 @@ address {
     gap: 26px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preparats-container {
+    padding: 25px 15px 35px;
+    border-radius: 30px;
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .preparats-container {
     padding: 35px 13px;
@@ -4972,6 +4979,14 @@ address {
     min-height: 438px;
     padding: 40px;
     border-radius: 27px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .preps-intro {
+    height: auto;
+    min-height: 279px;
+    padding: 15px;
+    border-radius: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5027,6 +5042,15 @@ address {
     justify-content: start;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-title {
+    width: 308px;
+    height: 76px;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: start;
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-title {
     width: 100%;
@@ -5055,6 +5079,11 @@ address {
 @media screen and (max-width: 1439px) {
   .preps-title-text {
     width: 265px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .preps-title-text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5224,6 +5253,12 @@ address {
     gap: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-info {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-info {
     flex-direction: column;
@@ -5249,8 +5284,14 @@ address {
     gap: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-info-services {
+    flex-direction: row;
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-info-services {
+    flex-direction: column;
     gap: 15px;
   }
 }
@@ -5287,6 +5328,16 @@ address {
     padding: 3px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-info-serv {
+    width: 310px;
+    height: 420px;
+    border-radius: 20px;
+    gap: 15px;
+    padding: 15px 17px;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-info-serv {
     flex-direction: column;
@@ -5298,7 +5349,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .preps-info-serv:nth-child(2) {
     flex-direction: column-reverse;
   }
@@ -5324,6 +5375,13 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-info-serv-img {
+    width: 274px;
+    height: 202px;
+    border-radius: 27px;
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-info-serv-img {
     width: 100%;
@@ -5346,6 +5404,11 @@ address {
 @media screen and (max-width: 1439px) {
   .preps-info-serv-text {
     gap: 17px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .preps-info-serv-text {
+    gap: 13px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5380,6 +5443,14 @@ address {
     height: auto;
     font-size: 33px;
     letter-spacing: -0.66px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pist-title {
+    width: 210px;
+    height: auto;
+    font-size: 31px;
+    letter-spacing: -0.62px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5431,7 +5502,7 @@ address {
   text-align: right;
   justify-content: end;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .right {
     text-align: left;
     justify-content: start;
@@ -5462,12 +5533,24 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-info-serv-right {
+    width: 351px;
+    height: 270px;
+    border-radius: 27px;
+    background-size: 120%;
+    background-position: right;
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-info-serv-right {
     background-image: url('../images/prep4-mob.webp');
+    background-size: cover;
+  background-position: center;
     width: 100%;
-    min-height: 223px;
+    max-width: 375px;
     height: auto;
+    min-height: 223px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -5493,9 +5576,17 @@ address {
     bottom: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .preps-info-serv-right button {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
 @media screen and (max-width: 767px) {
   .preps-info-serv-right button {
     position: relative;
+    transform: translate(0, 0);
     left: auto;
     bottom: auto;
     width: 145px;
