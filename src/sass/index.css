@@ -4002,9 +4002,7 @@ address {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, auto);
-    grid-auto-rows: 250px; */
+    justify-content: space-around;
   }
 }
 
