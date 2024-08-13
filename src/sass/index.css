@@ -3309,6 +3309,11 @@ address {
     padding: 80px 25px 40px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .company-numbers-container {
+    padding: 35px 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .company-numbers-container {
     width: 100%;
@@ -3323,11 +3328,16 @@ address {
   justify-content: space-between;
   gap: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .company-numbers-title {
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .company-numbers-title {
+    gap: 20px;
   }
 }
 
@@ -3365,6 +3375,13 @@ address {
     text-align: left;
   }
 }
+@media screen and (max-width: 1199px) {
+  .company-numbers-title-desc {
+    width: 739px;
+    font-size: 28px;
+    text-align: left;
+  }
+}
 @media screen and (max-width: 767px) {
   .company-numbers-title-desc {
     font-size: 19px;
@@ -3392,6 +3409,11 @@ address {
     font-size: 33px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .cnti-color {
+    font-size: 31px;
+  }
+}
 @media screen and (max-width: 767px) {
   .cnti-color {
     font-size: 22px;
@@ -3416,6 +3438,12 @@ address {
     gap: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .company-numbers-info {
+    margin-top: 35px;
+    gap: 18px;
+  }
+}
 @media screen and (max-width: 767px) {
   .company-numbers-info {
     gap: 10px;
@@ -3428,7 +3456,7 @@ address {
   flex-direction: row;
   gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media screen and (max-width: 1919px) {
   .cni-block {
@@ -3438,6 +3466,11 @@ address {
 @media screen and (max-width: 1439px) {
   .cni-block {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cni-block {
+    gap: 18px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3474,10 +3507,15 @@ address {
     height: 180px;
     border-radius: 27px;
     padding: 16px;
-    -webkit-border-radius: 27px;
-    -moz-border-radius: 27px;
-    -ms-border-radius: 27px;
-    -o-border-radius: 27px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cni-block-box {
+    width: 360px;
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3506,6 +3544,13 @@ address {
     justify-content: center;
   }
 }
+@media screen and (max-width: 1199px) {
+  .cnibb-container {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .cnibb-container {
     width: 100%;
@@ -3531,6 +3576,11 @@ address {
 @media screen and (max-width: 1439px) {
   .cnibb-numbers {
     font-size: 133px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cnibb-numbers {
+    font-size: 78px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3576,6 +3626,15 @@ address {
     right: 7px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .cnibb-numbers::after {
+    width: 16px;
+    height: 16px;
+    font-size: 22px;
+    top: 20px;
+    right: 5px;
+  }
+}
 @media screen and (max-width: 767px) {
   .cnibb-numbers::after {
     width: 16px;
@@ -3601,6 +3660,11 @@ address {
 @media screen and (max-width: 1439px) {
   .cnibb-text {
     font-size: 17px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cnibb-text {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3630,6 +3694,12 @@ address {
     padding: 40px 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-container {
+    border-radius: 30px 30px 0px 0px;
+    padding: 45px 15px 35px;
+  }
+}
 @media screen and (max-width: 767px) {
   .services-container {
     padding: 35px 15px;
@@ -3647,9 +3717,14 @@ address {
   align-items: start;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .services-title {
     flex-direction: column;
+    gap: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services-title {
     gap: 20px;
   }
 }
@@ -3678,6 +3753,11 @@ address {
 @media screen and (max-width: 1439px) {
   .services-info {
     width: 720px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .services-info {
+    width: 737px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3709,6 +3789,12 @@ address {
     letter-spacing: 0.6px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-desc {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+}
 @media screen and (max-width: 767px) {
   .services-desc {
     font-size: 19px;
@@ -3738,6 +3824,12 @@ address {
     letter-spacing: 0.7px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-desc-color {
+    font-size: 31px;
+    letter-spacing: 0.62px;
+  }
+}
 @media screen and (max-width: 767px) {
   .services-desc-color {
     font-size: 22px;
@@ -3750,11 +3842,16 @@ address {
   flex-direction: row;
   gap: 60px;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 @media screen and (max-width: 1919px) {
   .services-team {
     gap: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .services-team {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3772,6 +3869,11 @@ address {
 @media screen and (max-width: 1919px) {
   .services-team-info {
     width: 410px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .services-team-info {
+    width: 450px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3840,6 +3942,14 @@ address {
     height: 197px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-team-img-mob {
+    display: block;
+    border-radius: 17px;
+    width: 250px;
+    height: 173px;
+  }
+}
 @media screen and (max-width: 767px) {
   .services-team-img-mob {
     display: block;
@@ -3867,10 +3977,34 @@ address {
     gap: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-main {
+    /* margin-top: 35px;
+    gap: 20px; */
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .services-main {
+    display: flex;
+    flex-direction: column;
     gap: 15px;
     margin: 0;
+  }
+}
+.services-main-tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services-main-tablet {
+    margin-top: 35px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, auto);
+    grid-auto-rows: 250px; */
   }
 }
 
@@ -3899,6 +4033,14 @@ address {
   .services-main-block3-line1 {
     height: 250px;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .services-main-line1,
+  .services-main-line2,
+  .services-main-block3-line1 {
+    height: 250px;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3949,6 +4091,13 @@ address {
     border-radius: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .big-box {
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .big-box {
     width: 100%;
@@ -3983,6 +4132,12 @@ address {
   .services-main-box-title {
     font-size: 34px;
     letter-spacing: -0.68px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .services-main-box-title {
+    font-size: 31px;
+    letter-spacing: -0.6px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4026,6 +4181,14 @@ address {
     height: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-main-box-info {
+    font-size: 16px;
+    border-radius: 67px;
+    width: 128px;
+    height: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .services-main-box-info {
     width: 128px;
@@ -4057,6 +4220,13 @@ address {
 @media screen and (max-width: 1439px) {
   .small-box {
     width: 255px;
+    border-radius: 20px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .small-box {
+    width: 250px;
     border-radius: 20px;
     padding: 30px;
   }
@@ -4104,6 +4274,14 @@ address {
     padding: 9px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .mid-box {
+    width: 217px;
+    height: 250px;
+    border-radius: 27px;
+    padding: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mid-box {
     width: 100%;
@@ -4132,7 +4310,7 @@ address {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .mid-box span {
     font-size: 15px;
   }
@@ -4146,6 +4324,14 @@ address {
     grid-column: 1/3;
     grid-row: 5/6;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .big-box,
+  .mid-box,
+  .small-box {
+    height: 250px;
+  }
+  
 }
 
 .sml1-box4 {
@@ -4209,6 +4395,12 @@ address {
 .sml1-box6 {
   background-image: url('../images/services6.webp');
 }
+@media screen and (max-width: 1199px) {
+  .sml1-box6 {
+    background-position: right;
+    padding: 30px 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .sml1-box6 {
     width: 100%;
@@ -4268,13 +4460,21 @@ address {
     border-radius: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .sml1-box8 {
+    width: 255px;
+    height: 250px;
+    border-radius: 20px;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 767px) {
   .sml1-box8 {
     background-image: url('../images/services8-mob.webp');
+    background-size: contain;
     width: 100%;
     border-radius: 20px;
     min-height: 250px;
-    /* height: auto; */
     grid-column: 1 / span 2;
     grid-row: 3;
   }
@@ -4490,6 +4690,12 @@ address {
     letter-spacing: -0.68px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .services-main-block3-line2-right-up div span {
+    font-size: 31px;
+    letter-spacing: -0.6px;
+  }
+}
 
 .services-main-block3-line2-right-down {
   display: flex;
@@ -4665,6 +4871,13 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .sml3-box13 {
+    width: 297px;
+    height: 213px;
+    border-radius: 27px;
+  }
+}
 @media screen and (max-width: 767px) {
   .sml3-box13 {
     width: 100%;
@@ -4693,6 +4906,11 @@ address {
     width: 96px;
     height: 60px;
   }
+}
+.tablet-grid-item-12 {
+  width: 280px;
+  height: 250px;
+  border-radius: 27px;
 }
 
 /* // @import './preparats'; */
