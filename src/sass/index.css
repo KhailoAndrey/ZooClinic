@@ -10277,6 +10277,11 @@ address {
     padding: 40px 0;
   }
 }
+@media screen and (max-width: 1199px) {
+  .reception-container {
+    padding: 35px 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .reception-container {
     padding: 35px 0 0;
@@ -10295,6 +10300,11 @@ address {
 @media screen and (max-width: 1439px) {
   .reception-container > img {
     width: 885px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .reception-container > img {
+    width: 665px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10320,6 +10330,13 @@ address {
 @media screen and (max-width: 1439px) {
   .recep-title-group {
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .recep-title-group {
+    padding: 0 15px;
+    flex-direction: column;
+    gap: 25px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10382,6 +10399,13 @@ address {
     width: 747px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .recep-desc {
+    font-size: 28px;
+    height: auto;
+    width: 738px;
+  }
+}
 @media screen and (max-width: 767px) {
   .recep-desc {
     font-size: 19px;
@@ -10409,6 +10433,11 @@ address {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .recep-desc span {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 767px) {
   .recep-desc span {
     font-size: 19px;
@@ -10434,6 +10463,13 @@ address {
 @media screen and (max-width: 1439px) {
   .recep-subdesc {
     width: 323px;
+    font-size: 17px;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .recep-subdesc {
+    width: 465px;
     font-size: 17px;
     text-align: start;
   }
@@ -10476,6 +10512,16 @@ address {
     border-radius: 27px;
     gap: 12px;
     padding: 40px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .recep-steps {
+    border-radius: 30px;
+    gap: 15px;
+    padding: 70px 15px 35px;
+    margin-top: -100px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -10524,6 +10570,16 @@ address {
     border-radius: 32px;
     gap: 23px;
     padding: 24px 40px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .recep-step {
+    width: 350px;
+    height: 250px;
+    height: auto;
+    border-radius: 30px;
+    gap: 23px;
+    padding: 25px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10599,6 +10655,11 @@ address {
     gap: 13px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .recep-btn-group {
+    gap: 9px;
+  }
+}
 @media screen and (max-width: 767px) {
   .recep-btn-group {
     display: none;
@@ -10658,6 +10719,15 @@ address {
     gap: 7px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .recep-btn-link {
+    width: 100%;
+    height: 46px;
+    border-radius: 13px;
+    font-size: 15px;
+    gap: 7px;
+  }
+}
 @media screen and (max-width: 767px) {
   .recep-btn-link {
     width: 100%;
@@ -10702,6 +10772,14 @@ address {
     height: 53px;
     border-radius: 13px;
     font-size: 17px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .recep-btn-phone {
+    width: 100%;
+    height: 46px;
+    border-radius: 13px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 767px) {
