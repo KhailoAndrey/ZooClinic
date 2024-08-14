@@ -5665,6 +5665,12 @@ address {
     padding: 40px 20px 0;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-container {
+    width: 100%;
+    padding: 35px 15px 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-container {
     width: 100%;
@@ -5689,9 +5695,17 @@ address {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block1 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block1 {
     flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 }
@@ -5727,6 +5741,11 @@ address {
   .pharm-title img {
     width: 170px;
     height: 179px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-title img {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5780,8 +5799,19 @@ address {
     letter-spacing: 0.6px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-description {
+    min-width: 751px;
+    width: 100%;
+    font-size: 28px;
+    height: auto;
+    margin: 0;
+    letter-spacing: 0.56px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-description {
+    min-width: 282px;
     width: 100%;
     height: auto;
     margin: 0;
@@ -5805,6 +5835,11 @@ address {
 @media screen and (max-width: 1439px) {
   .parm-desc-green1 {
     font-size: 34px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .parm-desc-green1 {
+    font-size: 31px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5838,6 +5873,12 @@ address {
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block2 {
+    height: 420px;
+    margin-top: 35px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block2 {
     width: 100%;
@@ -5853,6 +5894,13 @@ address {
   justify-content: start;
   flex-direction: row;
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block2-cont {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block2-cont {
     flex-direction: column;
@@ -5863,6 +5911,17 @@ address {
 
 .pharm-block2-img-mob {
   display: none;
+}
+@media screen and (max-width: 1199px) {
+  .pharm-block2-img-mob {
+    display: block;
+    width: 87px;
+    height: 92px;
+    border-radius: 9px;
+    margin-left: 140px;
+    position: absolute;
+    top: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .pharm-block2-img-mob {
@@ -5900,6 +5959,14 @@ address {
     left: 40px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-circles {
+    width: 563px;
+    height: 563px;
+    top: -52px;
+    left: 37px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-circles {
     width: 232px;
@@ -5929,6 +5996,12 @@ address {
     height: 506px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-circles > div {
+    width: 473px;
+    height: 473px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-circles > div {
     width: 196px;
@@ -5952,6 +6025,12 @@ address {
   .pharm-circles > div > div {
     width: 396px;
     height: 396px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-circles > div > div {
+    width: 370px;
+    height: 370px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5987,6 +6066,13 @@ address {
     top: 130px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-title-word1 {
+    font-size: 57px;
+    letter-spacing: -5px;
+    top: 130px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-title-word1 {
     font-size: 21px;
@@ -6016,6 +6102,13 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block2-img {
+    width: 390px;
+    height: 422px;
+    border-radius: 25px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block2-img {
     width: 152px;
@@ -6043,6 +6136,12 @@ address {
   .pharm-title-line2 {
     gap: 5px;
     left: 62px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-title-line2 {
+    gap: 5px;
+    left: 45px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -6076,6 +6175,13 @@ address {
     margin: -5px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-title-line2-word1 {
+    font-size: 103px;
+    line-height: 70%;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-title-line2-word1 {
     font-size: 41px;
@@ -6105,6 +6211,13 @@ address {
 @media screen and (max-width: 1439px) {
   .pharm-title-line2-word2 {
     font-size: 42px;
+    letter-spacing: -2px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-title-line2-word2 {
+    font-size: 40px;
     letter-spacing: -2px;
     margin: 0;
   }
@@ -6162,6 +6275,16 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block2-desc {
+    width: 329px;
+    height: 110px;
+    border-radius: 27px;
+    position: absolute;
+    left: 13px;
+    bottom: 13px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block2-desc {
     display: none;
@@ -6192,6 +6315,13 @@ address {
     height: 69px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block2-desc span {
+    font-size: 15px;
+    width: 280px;
+    height: 57px;
+  }
+}
 
 .pharm-small-img {
   width: 126px;
@@ -6213,6 +6343,13 @@ address {
     width: 85px;
     height: 105px;
     border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-small-img {
+    width: 79px;
+    height: 98px;
+    border-radius: 9px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -6252,6 +6389,14 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block3 {
+    height: auto;
+    margin-top: 35px;
+    padding: 8px;
+    border-radius: 27px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block3 {
     width: 100%;
@@ -6281,6 +6426,13 @@ address {
     border-radius: 23px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block3 > img {
+    width: 342px;
+    height: 271px;
+    border-radius: 23px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block3 > img {
     width: 100%;
@@ -6303,6 +6455,12 @@ address {
 @media screen and (max-width: 1439px) {
   .pharm-block3-right {
     padding: 40px 30px 35px 35px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-block3-right {
+    padding: 0;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -6341,6 +6499,14 @@ address {
     letter-spacing: 0.6px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block3-desc {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block3-desc {
     width: 100%;
@@ -6364,10 +6530,19 @@ address {
 @media screen and (max-width: 1439px) {
   .pharm-block3-right-down {
     padding: 0;
+    justify-content: start;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-block3-right-down {
+    justify-content: space-around;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 767px) {
   .pharm-block3-right-down {
+    justify-content: space-around;
     margin-top: 25px;
     gap: 9px;
   }
@@ -6413,7 +6588,7 @@ address {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .pharm-block3-right-down-block span {
     font-size: 14px;
   }
@@ -6435,6 +6610,13 @@ address {
   .pharm-img-5 {
     width: 242px;
     height: 183px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-img-5 {
+    width: 166px;
+    height: 126px;
     border-radius: 20px;
   }
 }
@@ -6492,6 +6674,12 @@ address {
     gap: 13px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block4 {
+    gap: 9px;
+    margin-top: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block4 {
     width: 100%;
@@ -6541,6 +6729,12 @@ address {
     gap: 5px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pharm-block4-btn-link {
+    height: 46px;
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pharm-block4-btn-link {
     width: 100%;
@@ -6586,6 +6780,12 @@ address {
   .pharm-block4-btn-choose {
     height: 53px;
     border-radius: 13px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .pharm-block4-btn-choose {
+    height: 46px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 767px) {
