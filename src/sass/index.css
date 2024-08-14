@@ -6831,6 +6831,12 @@ address {
     gap: 40px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visits-container {
+    margin: 35px 15px 0;
+    gap: 35px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visits-container {
     width: 100%;
@@ -6873,6 +6879,14 @@ address {
     border-radius: 27px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-before {
+    width: 100%;
+    height: auto;
+    padding: 35px 15px;
+    border-radius: 27px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-before {
     width: 100%;
@@ -6904,6 +6918,14 @@ address {
 @media screen and (max-width: 1439px) {
   .visit-before > img {
     width: 126px;
+    height: 100px;
+    border-radius: 13px 13px 13px 50px;
+    left: -5px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .visit-before > img {
+    width: 116px;
     height: 100px;
     border-radius: 13px 13px 13px 50px;
     left: -5px;
@@ -6974,6 +6996,12 @@ address {
     letter-spacing: -0.68px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-before-info-text {
+    font-size: 31px;
+    letter-spacing: -0.62px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-before-info-text {
     width: 100%;
@@ -7002,6 +7030,12 @@ address {
     letter-spacing: -0.6px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-before-info-text span {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-before-info-text span {
     font-size: 19px;
@@ -7014,11 +7048,31 @@ address {
   flex-direction: row;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .visit-before-images {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .visit-before-images {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+  }
+  .visit-before-images-block-first {
+    grid-column: 1 / 4; 
+  }  
+  .visit-before-images-block-second {
+    grid-column: 1 / 3; 
+    justify-self: end;
+  }
+  .visit-before-images-block-third {
+    grid-column: 3 / 4; 
+    justify-self: end;
+  }
+}
+
 
 .visit-image-title {
   color: #095119;
@@ -7037,6 +7091,11 @@ address {
 @media screen and (max-width: 1439px) {
   .visit-image-title {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .visit-image-title {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -7086,6 +7145,11 @@ address {
   width: 198px;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .img5 {
+    width: 192px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img5 {
     width: 190px;
@@ -7107,6 +7171,13 @@ address {
   .visit-before-images-block-first {
     gap: 77px;
     margin-top: -44px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .visit-before-images-block-first {
+    justify-content: start;
+    gap: 15px;
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -7143,6 +7214,7 @@ address {
 @media screen and (max-width: 1439px) {
   .visit-before-images-block-second {
     gap: 60px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -7163,6 +7235,16 @@ address {
 @media screen and (max-width: 1919px) {
   .vis3 {
     align-self: flex-end;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .vis3 {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .vis3 {
+    align-self: flex-start;
   }
 }
 
@@ -7205,6 +7287,13 @@ address {
     border-radius: 19px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-before-after {
+    width: 432px;
+    height: 100px;
+    border-radius: 19px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-before-after {
     width: 90%;
@@ -7237,6 +7326,12 @@ address {
     letter-spacing: -0.6px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-before-after-text {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-before-after-text {
     font-size: 19px;
@@ -7261,6 +7356,12 @@ address {
   .visit-before-after-text span {
     font-size: 34px;
     letter-spacing: -0.68px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .visit-before-after-text span {
+    font-size: 31px;
+    letter-spacing: -0.62px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -7296,6 +7397,15 @@ address {
     padding: 40px 60px;
     gap: 46px;
     width: calc(100% + 40px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .visit-after {
+    border-radius: 31px;
+    height: auto;
+    padding: 40px 15px 35px;
+    gap: 46px;
+    width: calc(100% + 30px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -7346,6 +7456,11 @@ address {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-after-line1 span {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-after-line1 span {
     font-size: 15px;
@@ -7376,6 +7491,11 @@ address {
     gap: 24px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-after-line2 {
+    gap: 18px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-after-line2 {
     gap: 18px;
@@ -7399,6 +7519,11 @@ address {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .visit-after-line2 > span {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .visit-after-line2 > span {
     font-size: 15px;
@@ -7414,6 +7539,13 @@ address {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 1199px) {
+  .line2-img-pos {
+    left: 0;
+    top: 36px;
+    transform: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .line2-img-pos {
@@ -7628,6 +7760,13 @@ address {
     border-radius: 13px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .img-visits1 {
+    width: 161px;
+    height: 196px;
+    border-radius: 13px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img-visits1 {
     width: 115px;
@@ -7651,6 +7790,13 @@ address {
 @media screen and (max-width: 1439px) {
   .img-visits2 {
     width: 207px;
+    height: 146px;
+    border-radius: 13px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .img-visits2 {
+    width: 168px;
     height: 146px;
     border-radius: 13px;
   }
@@ -7682,6 +7828,13 @@ address {
     border-radius: 13px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .img-visits3 {
+    width: 110px;
+    height: 110px;
+    border-radius: 13px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img-visits3 {
     width: 110px;
@@ -7703,6 +7856,13 @@ address {
   }
 }
 @media screen and (max-width: 1439px) {
+  .img-visits4 {
+    width: 130px;
+    height: 120px;
+    border-radius: 13px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .img-visits4 {
     width: 130px;
     height: 120px;
@@ -7736,6 +7896,13 @@ address {
     border-radius: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .img-visits5 {
+    width: 183px;
+    height: 240px;
+    border-radius: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img-visits5 {
     width: 183px;
@@ -7760,6 +7927,13 @@ address {
   .img-visits7 {
     width: 388px;
     height: 418px;
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .img-visits7 {
+    width: 274px;
+    height: 296px;
     border-radius: 25px;
   }
 }
@@ -7790,6 +7964,13 @@ address {
     border-radius: 19px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .img-visits8 {
+    width: 149px;
+    height: 153px;
+    border-radius: 19px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img-visits8 {
     width: 99px;
@@ -7817,6 +7998,13 @@ address {
     border-radius: 25px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .img-visits9 {
+    width: 181px;
+    height: 195px;
+    border-radius: 25px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img-visits9 {
     width: 101px;
@@ -7838,6 +8026,13 @@ address {
   }
 }
 @media screen and (max-width: 1439px) {
+  .img-visits10 {
+    width: 170px;
+    height: 175px;
+    border-radius: 19px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .img-visits10 {
     width: 170px;
     height: 175px;
@@ -7903,6 +8098,18 @@ address {
     padding: 50px 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .coop-container {
+    height: auto;
+    padding: 30px 15px 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coop-container > span {
+    margin-left: 15px;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .coop-container {
     height: auto;
@@ -7942,6 +8149,12 @@ address {
     top: 50px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .coop-title {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .coop-title {
     position: static;
@@ -7951,6 +8164,27 @@ address {
 
 .coop-vacancies-title-mob {
   display: none;
+}
+@media screen and (max-width: 1199px) {
+  .coop-vacancies-title-mob {
+    display: block;
+    width: 453px;
+    color: #04a427;
+    font-family: 'Cormorant Unicase';
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: 0.62px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .coop-vacancies-title-mob span {
+    display: inline;
+    background-color: #f3fff6;
+    border-radius: 5px;
+    box-decoration-break: clone; /* Разбиваем на строки */
+  }
 }
 @media screen and (max-width: 767px) {
   .coop-vacancies-title-mob {
@@ -8012,6 +8246,16 @@ address {
     margin-right: -25px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .coop-bage {
+    width: 349px;
+    height: 972px;
+    transform-origin: right center;
+    transform: rotate(8deg);
+    margin: 0;
+    margin-top: -413px;
+  }
+}
 @media screen and (max-width: 767px) {
   .coop-bage {
     width: 310px;
@@ -8045,7 +8289,7 @@ address {
     height: 275px;
     border-radius: 24px;
     margin: 0;
-    margin-left: -23px;
+    margin-left: -22px;
     margin-bottom: 13px;
   }
 }
@@ -8121,6 +8365,13 @@ address {
   .sign {
     width: 50px;
     height: 36px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .sign {
+    width: 50px;
+    height: 44px;
+    right: -5px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -8228,7 +8479,7 @@ address {
     margin-left: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .coop-vacancies-title {
     display: none;
   }
@@ -8254,6 +8505,12 @@ address {
   .green {
     font-size: 33px;
     letter-spacing: 0.67px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .green {
+    font-size: 28px;
+    letter-spacing: 0.56px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -8286,6 +8543,13 @@ address {
     font-size: 11px;
     margin-left: 60px;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .sub-title {
+    font-size: 11px;
+    margin: 0;
+    margin-left: 70px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -8326,6 +8590,15 @@ address {
     border-radius: 27px;
     margin-top: 14px;
     padding: 5px 7px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .coop-vacan-block {
+    width: 738px;
+    border-radius: 27px;
+    margin-top: 14px;
+    padding: 5px 7px;
+    background-position: calc(100% - 8px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -9261,6 +9534,12 @@ address {
     bottom: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .bigBtnGreen {
+    bottom: 20px;
+    right: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .bigBtnGreen {
     width: 145px;
@@ -9362,7 +9641,7 @@ address {
 }
 
 .bigBtnGreen:hover {
-  box-shadow: 0 0 20px rgba(53, 114, 3, 0.9);
+  box-shadow: 0 0 10px rgba(53, 114, 3, 0.9);
   animation: rotateBtn 2s infinite linear;
 }
 
@@ -9557,6 +9836,13 @@ address {
     gap: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .serts-container {
+    border-radius: 27px;
+    padding: 35px 15px 25px;
+    gap: 25px;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-container {
     border-radius: 25px;
@@ -9592,8 +9878,16 @@ address {
     left: 20px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .serts-title {
+    position: static;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-title {
+    position: absolute;
     top: 35px;
     left: 15px;
   }
@@ -9629,6 +9923,14 @@ address {
     height: auto;
   }
 }
+@media screen and (max-width: 1199px) {
+  .serts-desc {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+    width: 100%;
+    height: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-desc {
     height: auto;
@@ -9660,6 +9962,12 @@ address {
     letter-spacing: 0.68px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .serts-desc-green {
+    font-size: 31px;
+    letter-spacing: 0.62px;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-desc-green {
     font-size: 22px;
@@ -9689,6 +9997,13 @@ address {
     margin-right: 100px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .serts-swiper-container {
+    max-width: 650px;
+    padding: 0;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-swiper-container {
     padding: 0;
@@ -9709,6 +10024,12 @@ address {
     border-radius: 32px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .serts-slide > img {
+    width: 270px;
+    border-radius: 27px;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-slide > img {
     width: 100%;
@@ -9720,15 +10041,22 @@ address {
   display: flex;
   gap: 25px;
   margin: 50px 100px 0;
+  justify-content: space-around;
 }
 @media screen and (max-width: 1439px) {
   .nav-btn-cont {
     margin: 25px 85px 0;
   }
 }
+@media screen and (max-width: 1199px) {
+  .nav-btn-cont {
+    margin: 17px 85px 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .nav-btn-cont {
-    margin: 8px 45px 10px;
+    margin: 8px 35px 10px;
+    gap: 13px;
   }
 }
 
@@ -9736,6 +10064,12 @@ address {
   .nav-btn-cont img {
     width: 45px;
     height: 45px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .nav-btn-cont img {
+    width: 38px;
+    height: 38px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -9754,6 +10088,9 @@ address {
   background-color: transparent;
   opacity: 1 !important;
   cursor: pointer;
+}
+.pagin-btn-group.swiper-pagination-bullets {
+  width: auto;
 }
 .pagin-btn-group .swiper-pagination-bullet:hover {
   opacity: 0.5;
@@ -9781,6 +10118,11 @@ address {
     gap: 15px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .pagin-btn-group {
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .pagin-btn-group {
     gap: 10px;
@@ -9795,6 +10137,12 @@ address {
   height: 56px;
   border-radius: 100%;
 }
+@media screen and (max-width: 1199px) {
+  .serts-btn-prev {
+    width: 38px;
+    height: 38px;
+  }
+}
 @media screen and (max-width: 767px) {
   .serts-btn-prev {
     width: 38px;
@@ -9808,6 +10156,12 @@ address {
   padding: 0;
   width: 56px;
   height: 56px;
+}
+@media screen and (max-width: 1199px) {
+  .serts-btn-next {
+    width: 38px;
+    height: 38px;
+  }
 }
 @media screen and (max-width: 767px) {
   .serts-btn-next {
