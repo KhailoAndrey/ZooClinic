@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     video.load();
     video.onended = function () {
-      console.log('Видео завершено');
-
       videoContainer.classList.add('hidden');
       sliderContainer.classList.remove('hidden');
 
@@ -97,7 +95,7 @@ const swiper2 = new Swiper('.serts-swiper-container', {
     // when window width is >= 1200px
     1200: {
       slidesPerView: 2,
-      spaceBetween: 18,
+      spaceBetween: 10,
     },
     // when window width is >= 1440px
     1440: {
@@ -140,6 +138,26 @@ const swiper3 = new Swiper('.review-swiper-container', {
   navigation: {
     prevEl: '.review-swiper-prev',
     nextEl: '.review-swiper-next',
+  },
+});
+// свайпер отзывов tablet
+const swiper4 = new Swiper('.review-swiper-container-tablet', {
+  loop: true,
+  slidesPerView: 1,
+  speed: 2000,
+  parallax: true,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'slide',
+  pagination: {
+    el: '.review-swiper-pagin-tablet',
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    prevEl: '.review-swiper-prev-tablet',
+    nextEl: '.review-swiper-next-tablet',
   },
 });
 
@@ -947,3 +965,152 @@ document.addEventListener('DOMContentLoaded', function () {
 //     updateCounter();
 //   }
 // });
+
+// Оверлей для показа видео в препаратах
+document.addEventListener('DOMContentLoaded', () => {
+  const openOverlayBtn = document.querySelector('.preps-btn');
+  const backdropOverlayPreps = document.querySelector(
+    '.preps-intro-backdrop-overlay'
+  );
+  const overlay = document.getElementById('preps-intro-overlay');
+  const closeOverlayBtn = document.getElementById(
+    'preps-intro-closeOverlayBtn'
+  );
+  const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
+
+  openOverlayBtn.addEventListener('click', () => {
+    backdropOverlayPreps.style.display = 'flex';
+    overlay.style.display = 'flex';
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  closeOverlayBtn.addEventListener('click', closeOverlay);
+  overlay.addEventListener('click', event => {
+    if (event.target === overlay) {
+      closeOverlay();
+    }
+  });
+
+  youtubeVideo.addEventListener('play', () => {
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      closeOverlay();
+    }
+  }
+
+  function closeOverlay() {
+    stopVideo();
+    overlay.style.display = 'none';
+    backdropOverlayPreps.style.display = 'none';
+    openOverlayBtn.blur(); // Убираем фокус с кнопки
+    window.removeEventListener('keydown', handleKeydown);
+  }
+
+  function stopVideo() {
+    const src = youtubeVideo.src;
+    youtubeVideo.src = ''; // Очищаем источник видео
+    youtubeVideo.src = src; // Восстанавливаем источник видео, чтобы остановить его
+  }
+});
+
+// Оверлей для показа видео в банере слайд 1
+document.addEventListener('DOMContentLoaded', () => {
+  const openOverlayBtn = document.querySelector('.slide1-video-btn');
+  const backdropOverlayPreps = document.querySelector(
+    '.preps-intro-backdrop-overlay'
+  );
+  const overlay = document.getElementById('banner-slide1-overlay');
+  const closeOverlayBtn = document.getElementById(
+    'preps-intro-closeOverlayBtn'
+  );
+  const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
+
+  openOverlayBtn.addEventListener('click', () => {
+    backdropOverlayPreps.style.display = 'flex';
+    overlay.style.display = 'flex';
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  closeOverlayBtn.addEventListener('click', closeOverlay);
+  overlay.addEventListener('click', event => {
+    if (event.target === overlay) {
+      closeOverlay();
+    }
+  });
+
+  youtubeVideo.addEventListener('play', () => {
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      closeOverlay();
+    }
+  }
+
+  function closeOverlay() {
+    stopVideo();
+    overlay.style.display = 'none';
+    backdropOverlayPreps.style.display = 'none';
+    openOverlayBtn.blur(); // Убираем фокус с кнопки
+    window.removeEventListener('keydown', handleKeydown);
+  }
+
+  function stopVideo() {
+    const src = youtubeVideo.src;
+    youtubeVideo.src = ''; // Очищаем источник видео
+    youtubeVideo.src = src; // Восстанавливаем источник видео, чтобы остановить его
+  }
+});
+// Оверлей для показа видео в банере слайд 4
+document.addEventListener('DOMContentLoaded', () => {
+  const openOverlayBtn = document.querySelector('.slide4-video-btn');
+  const backdropOverlayPreps = document.querySelector(
+    '.preps-intro-backdrop-overlay'
+  );
+  const overlay = document.getElementById('banner-slide4-overlay');
+  const closeOverlayBtn = document.getElementById(
+    'preps-intro-closeOverlayBtn'
+  );
+  const youtubeVideo = document.getElementById('preps-intro-youtubeVideo');
+
+  openOverlayBtn.addEventListener('click', () => {
+    backdropOverlayPreps.style.display = 'flex';
+    overlay.style.display = 'flex';
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  closeOverlayBtn.addEventListener('click', closeOverlay);
+  overlay.addEventListener('click', event => {
+    if (event.target === overlay) {
+      closeOverlay();
+    }
+  });
+
+  youtubeVideo.addEventListener('play', () => {
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      closeOverlay();
+    }
+  }
+
+  function closeOverlay() {
+    stopVideo();
+    overlay.style.display = 'none';
+    backdropOverlayPreps.style.display = 'none';
+    openOverlayBtn.blur(); // Убираем фокус с кнопки
+    window.removeEventListener('keydown', handleKeydown);
+  }
+
+  function stopVideo() {
+    const src = youtubeVideo.src;
+    youtubeVideo.src = ''; // Очищаем источник видео
+    youtubeVideo.src = src; // Восстанавливаем источник видео, чтобы остановить его
+  }
+});
